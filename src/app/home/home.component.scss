@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #home-intro{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background-image:url('/assets/images/pride2024.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        mat-card{
+            width: fit-content;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: rgba(90, 90, 90, 0.6);
+
+            h1 {
+                width: min-content;
+                margin: 20px;
+            }
+            
+            p {
+                width: 300px;
+                margin: 20px;
+            }
+        }
+    }
+
+    .image-background{
+        
+    }
+}

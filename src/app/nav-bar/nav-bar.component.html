@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+    </a>
+    <a routerLink="/events" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <button mat-menu-item>
+        <mat-icon>calendar_month</mat-icon>
+        <span>Events</span>
+      </button>
+    </a>
+  </mat-menu>
+  <span>Queer Warrington</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
