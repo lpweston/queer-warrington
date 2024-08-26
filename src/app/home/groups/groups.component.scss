@@ -25,7 +25,6 @@
         
         mat-card {
             flex: 1 1;
-            color: white;
             min-width: 300px;
 
             mat-card-content{
@@ -34,12 +33,10 @@
                 color: black;
                 padding: 8px;
                 flex-grow: 1;
-        }
+            }
         }
 
         mat-list-item{
-            background: rgb(231, 231, 231);
-
             .link-text{
                 color: black;
             }
@@ -50,6 +47,11 @@
                 border-radius: 50%;
                 margin-right: 10px;
             }
+        }
+
+        #calendar-card-home > .mat-mdc-card-content {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }

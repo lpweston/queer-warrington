@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { Calendar } from '@fullcalendar/core/index.js';
+import { APIKey, CalendarAddress } from '../../constants';
+import googleCalendarPlugin from '@fullcalendar/google-calendar'
+import listPlugin from '@fullcalendar/list';
 
 type GroupInfo = {
   name: string,
@@ -31,7 +35,7 @@ type socialInfo = {
   templateUrl: './groups.component.html',
   styleUrl: './groups.component.scss'
 })
-export class GroupsComponent {
+export class GroupsComponent implements OnInit {
   groups: GroupInfo[] = [
     {
       name: "Queer Coffee",
@@ -66,6 +70,40 @@ export class GroupsComponent {
       name: 'Warrington LGBTQ+',
       link: 'https://www.facebook.com/groups/875204472503810/',
       icon: '/assets/images/fb.png'
+    },
+    {
+      name:'Northern Lesbians',
+      link:'https://www.facebook.com/groups/Nlesuk/',
+      icon: '/assets/images/fb.png'
     }
   ]
+
+  ngOnInit() {
+  const calendarListEl = document.getElementById('calendar-list-home');
+
+    if (calendarListEl) {
+      const calendarList = new Calendar(calendarListEl, {
+        plugins: [
+          googleCalendarPlugin,
+          listPlugin
+        ],
+        initialView: 'listMonth',
+        googleCalendarApiKey: APIKey,
+        events: {
+          googleCalendarId: CalendarAddress
+        },
+        headerToolbar: {
+          start: 'title', // will normally be on the left. if RTL, will be on the right
+          center: '',
+          end: 'prev,next' // will normally be on the right. if RTL, will be on the left
+        },
+        titleFormat: { month: 'long' },
+        height: 'auto', 
+      });
+      
+      calendarList.render();
+
+      (document.querySelector('#calendar-list-home .fc-header-toolbar') as HTMLElement).style.margin = "0 10px 10px 10px";
+    }
+  }
 }

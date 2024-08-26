@@ -3,3 +3,16 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 a, a:visited, a:hover, a:focus, a:hover, a:active { text-decoration: none !important; color: inherit !important; }
+
+mat-card.mat-mdc-card{
+    background: rgb(231, 231, 231);
+
+    mat-card-header{
+        color: white;
+        background: #1e1a1d;
+    }
+    
+    mat-card-content{
+        color: black;
+    }
+}
