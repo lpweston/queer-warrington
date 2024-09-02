@@ -42,8 +42,7 @@ export class GroupsComponent implements OnInit {
       subtitle: '18+',
       icon: 'queer-coffee-icon',
       imagePath: '/assets/images/queerCoffeePhoto.png',
-      description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.
-          <br/>
+      description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.<br/>
           We meet up (at a minimum) on the last Saturday of each month at the Geek Retreat Warrington at 11.30 am. And are open to adding different locations and different activities on top of this.
           This group is for anyone aged 18 or over.`,
       link: 'https://linktr.ee/queercoffee'
@@ -99,6 +98,14 @@ export class GroupsComponent implements OnInit {
         },
         titleFormat: { month: 'long' },
         height: 'auto', 
+        eventClick: function(info) {
+          info.jsEvent.preventDefault(); // don't let the browser navigate
+  
+          if (info?.event?._def?.extendedProps) {
+            // open up a dialog and display 'description', 'location', date and time 
+            //info?.event?._def?.extendedProps?['description']
+          }
+        }
       });
       
       calendarList.render();
