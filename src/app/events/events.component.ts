@@ -1,18 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { Calendar } from '@fullcalendar/core'
 import listPlugin from '@fullcalendar/list';
 import dayGridPlugin from '@fullcalendar/daygrid'
 import { getCalendar, setNavigateCalendarButton } from './events.utils';
+import { MatDialog } from '@angular/material/dialog';
+import { SubmitEventComponent } from "./submit-event/submit-event.component";
 
 @Component({
   selector: 'app-events',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule, SubmitEventComponent],
   templateUrl: './events.component.html',
   styleUrl: './events.component.scss'
 })
 export class EventsComponent implements OnInit {
+  readonly dialog = inject(MatDialog);
+  
  ngOnInit(){
   const calendarEl = document.getElementById('calendar');
   const calendarListEl = document.getElementById('calendar-list');
@@ -20,12 +24,12 @@ export class EventsComponent implements OnInit {
   let calendarList: Calendar | null = null;
 
   if (calendarEl) {
-    calendar = getCalendar(calendarEl, dayGridPlugin, 'dayGridMonth')
+    calendar = getCalendar(calendarEl, dayGridPlugin, 'dayGridMonth', this.dialog)
     calendar.render();
   }
 
   if (calendarListEl) {
-    calendarList = getCalendar(calendarListEl, listPlugin, 'listMonth')
+    calendarList = getCalendar(calendarListEl, listPlugin, 'listMonth', this.dialog)
     calendarList.render();
   }
 

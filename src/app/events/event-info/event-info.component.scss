@@ -1,0 +1,22 @@
+:host {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 0px;
+        }
+        
+        button {
+            margin-right: 20px;
+        }
+    }
+
+    mat-dialog-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 5px;
+    }
+}
