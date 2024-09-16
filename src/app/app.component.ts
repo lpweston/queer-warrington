@@ -18,4 +18,6 @@ import { EventsComponent } from './events/events.component';
 })
 export class AppComponent {
   title = 'queer-warrington';
+
+  // TODO add meta tags
 }

@@ -22,7 +22,7 @@
       <mat-list>
         @for (social of socials; track social) {
           <mat-list-item>
-            <img matListItemIcon [src]="social.icon" />
+            <img matListItemIcon [src]="social.icon" [alt]="social.iconAlt"/>
             <a [href]="social.link">
               <span class="link-text">{{social.name}}</span>
             </a>

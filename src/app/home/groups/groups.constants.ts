@@ -11,7 +11,8 @@ export type GroupInfo = {
 export type SocialInfo = {
     name: string,
     link: string,
-    icon: string
+    icon: string,
+    iconAlt: string
   }
 
 export const groups: GroupInfo[] = [
@@ -41,17 +42,20 @@ export const groups: GroupInfo[] = [
     {
       name: 'LGBT Warrington',
       link: 'https://www.facebook.com/groups/lgbtwarrington/',
-      icon: '/assets/images/fb.png'
+      icon: '/assets/images/fb.png',
+      iconAlt: "facebook"
     },
     {
       name: 'Warrington LGBTQ+',
       link: 'https://www.facebook.com/groups/875204472503810/',
-      icon: '/assets/images/fb.png'
+      icon: '/assets/images/fb.png',
+      iconAlt: "facebook"
     },
     {
-      name:'Northern Lesbians',
-      link:'https://www.facebook.com/groups/Nlesuk/',
-      icon: '/assets/images/fb.png'
+      name: 'Northern Lesbians',
+      link: 'https://www.facebook.com/groups/Nlesuk/',
+      icon: '/assets/images/fb.png',
+      iconAlt: "facebook"
     }
   ]
 
@@ -59,16 +63,19 @@ export const groups: GroupInfo[] = [
     {
       name: 'Sam Small Ink',
       link: 'https://samsmallink.co.uk/',
-      icon: 'storefront'
+      icon: 'storefront',
+      iconAlt: ""
     },
     {
       name: 'Coven Beauty',
       link: 'https://www.facebook.com/covenbeautyacademy/',
-      icon: 'storefront'
+      icon: 'storefront',
+      iconAlt: ""
     },
     {
-      name:'Mamars',
-      link:'https://mamars.co.uk/',
-      icon: 'storefront'
+      name: 'Mamars',
+      link: 'https://mamars.co.uk/',
+      icon: 'storefront',
+      iconAlt: ""
     }
   ]
