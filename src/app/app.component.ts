@@ -17,7 +17,7 @@ import { EventsComponent } from './events/events.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'queer-warrington';
+  title = 'LGBTQ+-warrington';
 
   // TODO add meta tags
 }

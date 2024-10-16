@@ -27,33 +27,31 @@ export const groups: GroupInfo[] = [
       link: 'https://linktr.ee/queercoffee'
     },
     {
-      name: "Tags",
+      name: "Lorem Ipsum",
       subtitle: '11-17 and 17-24 years',
       icon: 'tags-icon',
-      imagePath: '/assets/images/tagsIcon.jpg',
-      description: `TAGS provides LGBTQ+ 1-2-1 targeted support or group support to young people aged 11-17 years (Youth TAGS) and 17-24 years.<br/>
-            Tags provides a safe space for LGBTQ+ young people to meet, socialise, access support, and develop skills and confidence.<br/>
-            Tags aims to empower young people to be active members of the group, to inspire them to pursue leading roles in the future - the group is entirely LGBTQ+ youth-led. to enable us to access additional funding to help support the group to provide additional opportunities for young people.`,
-      link: 'https://www.warrington.gov.uk/node/11259'
+      imagePath: '/assets/images/download.png',
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+      link: 'https://www.google.com'
     }
   ]
 
   export const socials: SocialInfo[] = [
     {
-      name: 'LGBT Warrington',
-      link: 'https://www.facebook.com/groups/lgbtwarrington/',
+      name: 'LGBT group 1',
+      link: 'https://www.google.com',
       icon: '/assets/images/fb.png',
       iconAlt: "facebook"
     },
     {
-      name: 'Warrington LGBTQ+',
-      link: 'https://www.facebook.com/groups/875204472503810/',
+      name: 'LGBT group 2',
+      link: 'https://www.google.com',
       icon: '/assets/images/fb.png',
       iconAlt: "facebook"
     },
     {
-      name: 'Northern Lesbians',
-      link: 'https://www.facebook.com/groups/Nlesuk/',
+      name: 'LGBT group 3',
+      link: 'https://www.google.com',
       icon: '/assets/images/fb.png',
       iconAlt: "facebook"
     }
@@ -61,20 +59,20 @@ export const groups: GroupInfo[] = [
 
   export const companies: SocialInfo[] = [
     {
-      name: 'Sam Small Ink',
-      link: 'https://samsmallink.co.uk/',
+      name: 'LGBT company 1',
+      link: 'https://www.google.com',
       icon: 'storefront',
       iconAlt: ""
     },
     {
-      name: 'Coven Beauty',
-      link: 'https://www.facebook.com/covenbeautyacademy/',
+      name: 'LGBT company 2',
+      link: 'https://www.google.com',
       icon: 'storefront',
       iconAlt: ""
     },
     {
-      name: 'Mamars',
-      link: 'https://mamars.co.uk/',
+      name: 'LGBT company 3',
+      link: 'https://www.google.com',
       icon: 'storefront',
       iconAlt: ""
     }
