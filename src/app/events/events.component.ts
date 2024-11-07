@@ -5,12 +5,11 @@ import listPlugin from '@fullcalendar/list';
 import dayGridPlugin from '@fullcalendar/daygrid'
 import { getCalendar, setNavigateCalendarButton } from './events.utils';
 import { MatDialog } from '@angular/material/dialog';
-import { SubmitEventComponent } from "./submit-event/submit-event.component";
 
 @Component({
   selector: 'app-events',
   standalone: true,
-  imports: [MatCardModule, SubmitEventComponent],
+  imports: [MatCardModule],
   templateUrl: './events.component.html',
   styleUrl: './events.component.scss'
 })

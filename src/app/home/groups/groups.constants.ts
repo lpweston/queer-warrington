@@ -18,21 +18,26 @@ export type SocialInfo = {
 export const groups: GroupInfo[] = [
     {
       name: "Queer Coffee",
-      subtitle: '18+',
+      subtitle: 'Community Group',
       icon: 'queer-coffee-icon',
       imagePath: '/assets/images/queerCoffeePhoto.png',
-      description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.<br/>
+      description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.<br/><br/>
           We meet up (at a minimum) on the last Saturday of each month at the Geek Retreat Warrington at 11.30 am. And are open to adding different locations and different activities on top of this.
           This group is for anyone aged 18 or over.`,
       link: 'https://linktr.ee/queercoffee'
     },
     {
-      name: "Lorem Ipsum",
-      subtitle: '11-17 and 17-24 years',
-      icon: 'tags-icon',
-      imagePath: '/assets/images/download.png',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-      link: 'https://www.google.com'
+      name: "LovingMe",
+      subtitle: 'Support Service',
+      icon: 'loving-me-icon',
+      imagePath: '/assets/images/Logo-1-loving-me.png',
+      description: `We work with trans / non-binary adults in England who are experiencing domestic abuse or sexual violence. 
+      We offer one-to-one support and advocacy, and have a refuge in Lancashire which is specifically for trans / non-binary people.
+      We have a small team of staff all of whom are trans or non-binary ourselves.<br/><br/>
+      Contacted us via our website at <a href='lovingme.uk'>lovingme.uk</a>,<br/>
+      calling 07902 478958<br/>
+      or emailing help@lovingme.uk.`,
+      link: 'https://linktr.ee/lovingme_uk'
     }
   ]
 
