@@ -1,0 +1,9 @@
+.page {
+    margin: 0 10%;
+}
+
+@media (max-width: 790px) {
+    .page{
+        margin: 0;
+    }
+  }
