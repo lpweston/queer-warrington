@@ -34,9 +34,9 @@ export const groups: GroupInfo[] = [
       description: `We work with trans / non-binary adults in England who are experiencing domestic abuse or sexual violence. 
       We offer one-to-one support and advocacy, and have a refuge in Lancashire which is specifically for trans / non-binary people.
       We have a small team of staff all of whom are trans or non-binary ourselves.<br/><br/>
-      Contacted us via our website at <a href='lovingme.uk'>lovingme.uk</a>,<br/>
-      calling 07902 478958<br/>
-      or emailing help@lovingme.uk.`,
+      Website: <a href='lovingme.uk'>lovingme.uk</a><br/>
+      Call: 07902 478958<br/>
+      Email: help@lovingme.uk`,
       link: 'https://linktr.ee/lovingme_uk'
     }
   ]
