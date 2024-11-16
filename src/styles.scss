@@ -8,6 +8,11 @@ mat-card.mat-mdc-card{
     mat-card-header{
         color: white;
     }
+
+    mat-card-actions{
+      border-radius: 1em;
+      background: rgb(30, 26, 29);
+  }
 }
 
 .gradient-box {
