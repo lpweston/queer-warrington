@@ -5,14 +5,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 a, a:visited, a:hover, a:focus, a:hover, a:active { text-decoration: none !important; color: inherit !important; }
 
 mat-card.mat-mdc-card{
-    background: rgb(231, 231, 231);
-
     mat-card-header{
         color: white;
-        background: #1e1a1d;
-    }
-    
-    mat-card-content{
-        color: black;
     }
 }
+
+.gradient-box {
+    $border: 6px;
+    border-radius: 1em;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -$border;
+      border-radius: inherit;
+      background: linear-gradient(55deg, rgba(200, 0, 0, 0.9), rgba(255,0,0,0) 40%),
+      linear-gradient(336deg, rgb(200, 200, 0), rgba(255,0,0,0) 60%),
+      linear-gradient(276deg, rgba(0, 200, 0, 0.9), rgba(0,255,0,0) 40%),
+      linear-gradient(217deg, rgb(0, 200, 200), rgba(0,255,0,0) 40%),
+      linear-gradient(172deg, rgba(0, 0, 200 , 0.9), rgba(0,0,255,0) 40%),
+      linear-gradient(127deg, rgb(200, 0, 200), rgba(0,0,255,0) 40%);
+    }
+  }
