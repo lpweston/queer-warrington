@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'app/variables' as v;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -26,11 +27,11 @@ mat-card.mat-mdc-card{
       z-index: -1;
       margin: -$border;
       border-radius: inherit;
-      background: linear-gradient(55deg, rgba(200, 0, 0, 0.9), rgba(255,0,0,0) 40%),
-      linear-gradient(336deg, rgb(200, 200, 0), rgba(255,0,0,0) 60%),
-      linear-gradient(276deg, rgba(0, 200, 0, 0.9), rgba(0,255,0,0) 40%),
-      linear-gradient(217deg, rgb(0, 200, 200), rgba(0,255,0,0) 40%),
-      linear-gradient(172deg, rgba(0, 0, 200 , 0.9), rgba(0,0,255,0) 40%),
-      linear-gradient(127deg, rgb(200, 0, 200), rgba(0,0,255,0) 40%);
+      background: v.$rainbow-colour
     }
   }
+
+.rainbow-bar{
+    height: 15px;
+    background: v.$rainbow-horizontal;
+}

@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { HomeComponent } from "./home/home.component";
 import { EventsComponent } from './events/events.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { EventsComponent } from './events/events.component';
     RouterOutlet,
     NavBarComponent,
     HomeComponent,
-    EventsComponent
+    EventsComponent,
+    ContactComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -1,6 +1,10 @@
 :host {
     section{
-        margin: 10px 0;
+        margin: 25px 10%;
+        @media (max-width: 790px) {
+            margin: 10px;
+        }
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
