@@ -5,6 +5,11 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 a, a:visited, a:hover, a:focus, a:hover, a:active { text-decoration: none !important; color: inherit !important; }
 
+h1 {
+  padding-top: 30px;
+  text-align: center;
+}
+
 mat-card.mat-mdc-card{
     mat-card-header{
         color: white;

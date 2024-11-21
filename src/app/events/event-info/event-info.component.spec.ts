@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EventInfoComponent } from './event-info.component';
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 describe('EventInfoComponent', () => {
   let component: EventInfoComponent;
@@ -8,7 +9,10 @@ describe('EventInfoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EventInfoComponent]
+      imports: [EventInfoComponent, MatDialogModule],
+      providers: [
+        { provide: MatDialogRef,useValue: {} },
+        { provide: MAT_DIALOG_DATA,useValue: {} }],
     })
     .compileComponents();
 

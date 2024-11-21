@@ -1,48 +1,42 @@
-<mat-toolbar>
-  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <a
-      routerLink="/home"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      <button mat-menu-item>
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
+<nav>
+  <mat-toolbar>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+      </a>
+      <a
+        routerLink="/events"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        <button mat-menu-item>
+          <mat-icon>calendar_month</mat-icon>
+          <span>Events</span>
+        </button>
+      </a>
+    </mat-menu>
+    <span>LGBTQ+ Warrington</span>
+    <span class="spacer"></span>
+    <a href="#contact" ariaCurrentWhenActive="page">
+      <button mat-icon-button matTooltip="Contact Us">
+        <mat-icon>contact_page</mat-icon>
       </button>
     </a>
-    <a
-      routerLink="/events"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      <button mat-menu-item>
+    <a href="#calendar" ariaCurrentWhenActive="page">
+      <button mat-icon-button matTooltip="Events">
         <mat-icon>calendar_month</mat-icon>
-        <span>Events</span>
       </button>
     </a>
-  </mat-menu>
-  <span>LGBTQ+ Warrington</span>
-  <span class="spacer"></span>
-  <a
-    routerLink="/contact"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page"
-  >
-    <button mat-icon-button matTooltip="Contact Us">
-      <mat-icon>contact_page</mat-icon>
-    </button>
-  </a>
-  <a
-    routerLink="/events"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page"
-  >
-    <button mat-icon-button matTooltip="Events">
-      <mat-icon>calendar_month</mat-icon>
-    </button>
-  </a>
-</mat-toolbar>
-<div class="rainbow-bar"></div>
+  </mat-toolbar>
+  <div class="rainbow-bar"></div>
+</nav>
