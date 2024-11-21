@@ -1,6 +1,6 @@
 import { Calendar, FormatterInput, PluginDef, ToolbarInput } from '@fullcalendar/core/index.js';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
-import { APIKey, CalendarAddress } from '../constants';
+import { APIKey, CalendarAddress } from '../../constants';
 import { EventInfoComponent } from './event-info/event-info.component';
 import { MatDialog } from '@angular/material/dialog';
 
