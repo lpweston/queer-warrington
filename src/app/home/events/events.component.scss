@@ -8,21 +8,22 @@
             display: flex;
             gap: 5rem;
 
+            
+            @media (max-width: 790px) {
+                flex-direction: column;
+            }
+
             div {
                 padding: 1rem;
+                background-color: white;
+                flex-grow: 1;
                 
                 &#calendar {
-                    background-color: white;
-                    flex-grow: 1;
                     min-width: 60%;
-                    width: 800px;
                 }
                 
                 &#calendar-list {
-                    background-color: white;
                     min-width: 30%;
-                    width: 600px;
-                    flex-grow: 1;
                 }
             }
         }

@@ -10,7 +10,6 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     RouterOutlet,
     NavBarComponent,
-    HomeComponent,
     ContactComponent
 ],
   templateUrl: './app.component.html',
