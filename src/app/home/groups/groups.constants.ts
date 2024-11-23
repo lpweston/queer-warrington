@@ -38,6 +38,20 @@ export const groups: GroupInfo[] = [
       Call: 07902 478958<br/>
       Email: help@lovingme.uk`,
       link: 'https://linktr.ee/lovingme_uk'
+    },
+    {
+      name: "Trans Without Abuse",
+      subtitle: 'Support Service',
+      icon: 'cwa-icon',
+      imagePath: '/assets/images/CWA.png',
+      description: `Cheshire Without Abuse (CWA) offer support across the whole of Cheshire. Our main domestic abuse service is with CWA 
+      and offers support to everyone; inclusive of all of the LGBTQIA+ communities.
+      Trans without Abuse specifically supports trans and non-binary people, across Cheshire, that have been affected by domestic abuse.
+      We also offer professional training in trans and non-binary domestic abuse practice, as well as bespoke programmes for domestic abuse recovery.<br/><br/>
+      Website: <a href='www.transwithoutabuse.org.uk'>www.transwithoutabuse.org.uk</a><br/>
+      Call: 01270 972 208<br/>
+      Email: debbie.c@mycwa.org.uk`,
+      link: 'www.transwithoutabuse.org.uk'
     }
   ]
 
