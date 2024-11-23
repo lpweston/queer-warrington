@@ -1,7 +1,9 @@
+@use '../variables' as v;
+
 :host {
     #contact {
         padding: 20px;
-        background-color: rgb(30, 26, 29);
-        color: white
+        background-color: v.$dark;
+        color: v.$light;
     }
 }

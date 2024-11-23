@@ -1,4 +1,4 @@
-@use '../variables';
+@use '../variables' as v;
 
 :host {
     display: flex;
@@ -19,14 +19,14 @@
 
         mat-card{
             width: fit-content;
-            color: white;
+            color: v.$light;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             max-width: 90%;
-            background-color: rgba(90, 90, 90, 0.7);
+            background-color: v.$grey;
 
             h1 {
                 width: min-content;

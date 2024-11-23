@@ -12,12 +12,12 @@ h1 {
 
 mat-card.mat-mdc-card{
     mat-card-header{
-        color: white;
+        color: v.$light;
     }
 
     mat-card-actions{
       border-radius: 1em;
-      background: rgb(30, 26, 29);
+      background: v.$dark;
   }
 }
 
@@ -47,17 +47,17 @@ mat-card.mat-mdc-card{
 }
 
 .fc .fc-button {
-  background-color: rgb(216, 140, 0);
+  background-color: v.$orange-light;
   border: 0;
   margin: 0 3px;
 
   &.fc-button-primary:not(:disabled):active {
-    background-color: rgb(165, 91, 0);
+    background-color: v.$orange-dark
   }
 
   &:hover,&.fc-button-primary:not(:disabled):focus{
     box-shadow: none;
-    background-color: rgb(180, 99, 0);
+    background-color: v.$orange-mid;
   }
 }
 

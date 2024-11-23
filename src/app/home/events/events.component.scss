@@ -1,3 +1,5 @@
+@use '../../variables' as v;
+
 :host {
     section {
         padding-bottom: 3rem;
@@ -22,7 +24,7 @@
             mat-card {
                 padding: 1rem;
                 flex-grow: 1;
-                background: white;
+                background: v.$light;
                 height: auto;
             }
             
@@ -37,7 +39,7 @@
                 gap: 10px;
 
                 mat-card-actions{
-                    background-color: white;
+                    background-color: v.$light;
                 }
             }
         }
