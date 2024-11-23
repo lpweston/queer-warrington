@@ -24,7 +24,7 @@ export const setNavigateCalendarButton = (buttonSelector: string, calendar: Cale
   }
 }
 
-export const getCalendar = ( calendarEl: HTMLElement, plugin: PluginDef, initialView: string, dialog: MatDialog, headerToolbar: boolean = false, titleFormat: boolean = false) => {
+export const getCalendar = ( calendarEl: HTMLElement, plugin: PluginDef, initialView: string, dialog: MatDialog, titleFormat: boolean = false) => {
   return new Calendar(calendarEl, {
     plugins: [
       googleCalendarPlugin,
@@ -36,8 +36,13 @@ export const getCalendar = ( calendarEl: HTMLElement, plugin: PluginDef, initial
     events: {
       googleCalendarId: CalendarAddress
     },
-    headerToolbar: headerToolbar? customHeaderToolbar : undefined,
+    headerToolbar: customHeaderToolbar,
     titleFormat: titleFormat? customTitleFormat: undefined,
+    eventTimeFormat: {
+      hour: 'numeric',
+      minute: '2-digit',
+      meridiem: 'short'
+    },
     eventClick: (info) => clickEvent(info, dialog)
   });
 }
@@ -48,7 +53,7 @@ export const customHeaderToolbar: ToolbarInput = {
   end: 'prev,next' // will normally be on the right. if RTL, will be on the left
 }
 
-export const customTitleFormat: FormatterInput = { month: 'long' }
+export const customTitleFormat: FormatterInput = { month: 'short', year:'2-digit' }
 
 const clickEvent = (info: any, dialog: MatDialog) => {
   info.jsEvent.preventDefault();

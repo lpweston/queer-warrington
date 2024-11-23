@@ -1,7 +1,12 @@
 :host {
     section {
-        background-color: rgb(252, 236, 208);
         padding-bottom: 3rem;
+
+        .gradient-box{
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
 
         .calendar-box{
             margin: 0 10%;
@@ -11,19 +16,28 @@
             
             @media (max-width: 790px) {
                 flex-direction: column;
+                margin: 0 0.5rem;
             }
 
-            div {
+            mat-card {
                 padding: 1rem;
-                background-color: white;
                 flex-grow: 1;
-                
-                &#calendar {
-                    min-width: 60%;
-                }
-                
-                &#calendar-list {
-                    min-width: 30%;
+                background: white;
+                height: auto;
+            }
+            
+            mat-card:first-child {
+                min-width: 60%;
+            }
+    
+            mat-card:last-child {
+                min-width: 30%;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                mat-card-actions{
+                    background-color: white;
                 }
             }
         }

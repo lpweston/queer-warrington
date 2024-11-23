@@ -21,14 +21,15 @@ export class EventsComponent implements OnInit {
   const calendarListEl = document.getElementById('calendar-list');
   let calendar: Calendar | null = null; 
   let calendarList: Calendar | null = null;
+  const isSmallscreen = window.innerWidth < 790
 
   if (calendarEl) {
-    calendar = getCalendar(calendarEl, dayGridPlugin, 'dayGridMonth', this.dialog)
+    calendar = getCalendar(calendarEl, dayGridPlugin, 'dayGridMonth', this.dialog, isSmallscreen)
     calendar.render();
   }
 
   if (calendarListEl) {
-    calendarList = getCalendar(calendarListEl, listPlugin, 'listMonth', this.dialog)
+    calendarList = getCalendar(calendarListEl, listPlugin, 'listMonth', this.dialog, isSmallscreen)
     calendarList.render();
   }
 

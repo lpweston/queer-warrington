@@ -40,3 +40,33 @@ mat-card.mat-mdc-card{
     height: 15px;
     background: v.$rainbow-horizontal;
 }
+
+.rainbow-bar-sm{
+  height: 5px;
+  background: v.$rainbow-horizontal;
+}
+
+.fc .fc-button {
+  background-color: rgb(216, 140, 0);
+  border: 0;
+  margin: 0 3px;
+
+  &.fc-button-primary:not(:disabled):active {
+    background-color: rgb(165, 91, 0);
+  }
+
+  &:hover,&.fc-button-primary:not(:disabled):focus{
+    box-shadow: none;
+    background-color: rgb(180, 99, 0);
+  }
+}
+
+.fc-event.fc-daygrid-event{
+  display: flex;
+  flex-wrap: wrap;
+
+  .fc-event-title{
+    text-wrap: auto;
+    font-weight: 600;
+  }
+}
