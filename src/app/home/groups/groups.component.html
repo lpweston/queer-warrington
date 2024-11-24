@@ -1,34 +1,11 @@
-<h1>Local Groups and Charities</h1>
-<section>
-  @for (group of groups; track group) {
-  <article>
-    <mat-card>
-      <div class="gradient-box">
-        <mat-card-header>
-          <div mat-card-avatar [id]="group.icon"></div>
-          <mat-card-title>{{ group.name }}</mat-card-title>
-          <mat-card-subtitle>{{ group.subtitle }}</mat-card-subtitle>
-        </mat-card-header>
-        <div class="rainbow-bar-sm"></div>
-        <img
-          mat-card-image
-          [src]="group.imagePath"
-          [alt]="'Photo of ' + group.name"
-        />
-        <mat-card-content
-          ><p [innerHTML]="group.description"></p
-        ></mat-card-content>
-        <div class="rainbow-bar-sm"></div>
-        <mat-card-actions>
-          <a [href]="group.link"><button mat-button>WEBSITE</button></a>
-        </mat-card-actions>
-      </div>
-    </mat-card>
-  </article>
-  }
-  <article>
-    <mat-card>
-      <div class="gradient-box">
+<section class="off-white">
+  <h1 class="off-white">Local Groups</h1>
+  <div>
+    @for (group of groups; track group) {
+    <app-info-card [group]="group"></app-info-card>
+    }
+    <article>
+      <mat-card>
         <mat-card-header>
           <mat-card-title>Other Groups</mat-card-title>
           <mat-card-subtitle
@@ -41,7 +18,7 @@
             @for (social of socials; track social) {
             <mat-list-item>
               <img matListItemIcon [src]="social.icon" [alt]="social.iconAlt" />
-              <a [href]="social.link">
+              <a [href]="social.link" target="_blank">
                 <span class="link-text">{{ social.name }}</span>
               </a>
             </mat-list-item>
@@ -64,7 +41,7 @@
               <mat-icon style="color: rgb(30, 26, 29)">{{
                 company.icon
               }}</mat-icon>
-              <a [href]="company.link">
+              <a [href]="company.link" target="_blank">
                 <span class="link-text">{{ company.name }}</span>
               </a>
             </mat-list-item>
@@ -74,7 +51,15 @@
         </mat-card-content>
         <div class="rainbow-bar-sm"></div>
         <mat-card-actions></mat-card-actions>
-      </div>
-    </mat-card>
-  </article>
+      </mat-card>
+    </article>
+  </div>
+</section>
+<section>
+  <h1>Support Services</h1>
+  <div>
+    @for (service of supportServices; track service) {
+    <app-info-card [group]="service"></app-info-card>
+    }
+  </div>
 </section>

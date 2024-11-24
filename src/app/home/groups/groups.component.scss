@@ -1,22 +1,26 @@
 @use '../../variables' as v;
 
 :host {
-    background-color: v.$light2;
+    .off-white{
+        background-color: v.$light2;
+    }
     
     section {
-        margin: 25px 10%;
+        padding: 25px 10%;
         @media (max-width: 790px) {
             margin: 10px;
         }
 
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 25px;
-        justify-content: center;
+        app-info-card{
+            flex: 1 1;
+        }
 
-        .mat-mdc-card-image{
-            width: 100%;
+        >div{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 25px;
+            justify-content: center;
         }
 
         article {
@@ -25,18 +29,16 @@
 
             mat-card {         
                 height: 100%;
-                
-                .gradient-box{
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                }
 
                 mat-card-content{
                     background: v.$light;
                     color: v.$dark;
                     padding: 8px;
                     flex-grow: 1;
+                }
+
+                mat-card-actions{
+                    color:white;
                 }
             }
 
@@ -46,10 +48,7 @@
                 }
 
                 .icon, mat-icon{
-                    width: 24px;
-                    height: 24px;
                     border-radius: 50%;
-                    margin-right: 10px;
                 }
             }
 
@@ -61,30 +60,12 @@
                 padding-left: 0;
                 padding-right: 0;
             }
-        }
 
-        #queer-coffee-icon {
-            background-image: url('/assets/images/queerCoffeeLogo.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        #loving-me-icon {
-            background-image: url('/assets/images/logo-loving-me.png');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        #tags-icon {
-            background-image: url('/assets/images/download.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        #cwa-icon{
-            background-image: url('/assets/images/TWAlogo.jpg');
-            background-size: cover;
-            background-position: center;
+            .icon, mat-icon, .mat-mdc-list-item-icon{
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
         }
     }
 }
