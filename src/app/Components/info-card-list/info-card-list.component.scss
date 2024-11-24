@@ -21,7 +21,8 @@
         }
 
         &:hover{
-            background-color: v.$orange-lite;
+            background-color: v.$lite2;
+            cursor:pointer;
         }
 
         &:active{
