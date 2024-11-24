@@ -3,10 +3,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { GroupInfo, SocialInfo, groups, socials, companies, supportServices } from './groups.constants';
+import { GroupInfo, SocialInfo, groups, socials, companies, supportServices, charities } from './groups.constants';
 import { MatDialog } from '@angular/material/dialog';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { InfoCardComponent } from '../../Components/info-card/info-card.component';
+import { InfoCardListComponent } from '../../Components/info-card-list/info-card-list.component';
 
 @Component({
   selector: 'app-groups',
@@ -18,7 +19,8 @@ import { InfoCardComponent } from '../../Components/info-card/info-card.componen
     MatIconModule,
     RouterLink,
     RouterLinkActive,
-    InfoCardComponent
+    InfoCardComponent,
+    InfoCardListComponent
   ],
   templateUrl: './groups.component.html',
   styleUrl: './groups.component.scss'
@@ -28,5 +30,6 @@ export class GroupsComponent {
   supportServices: GroupInfo[] = supportServices;
   socials: SocialInfo[] = socials;
   companies: SocialInfo[] = companies;
+  charities: SocialInfo[] = charities;
   readonly dialog = inject(MatDialog);
 }

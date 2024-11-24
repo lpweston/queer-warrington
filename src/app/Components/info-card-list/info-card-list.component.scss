@@ -1,0 +1,20 @@
+@use '../../variables' as v;
+
+:host {
+    mat-list-item{
+        .link-text{
+            color: v.$dark;
+        }
+
+        .icon, mat-icon{
+            border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+
+                // .mdc-list-item__content{
+                //     font-weight: 700;
+                // }
+            }
+    }
+}

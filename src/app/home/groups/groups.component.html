@@ -14,17 +14,7 @@
         </mat-card-header>
         <div class="rainbow-bar-sm"></div>
         <mat-card-content>
-          <mat-list>
-            @for (social of socials; track social) {
-            <mat-list-item>
-              <img matListItemIcon [src]="social.icon" [alt]="social.iconAlt" />
-              <a [href]="social.link" target="_blank">
-                <span class="link-text">{{ social.name }}</span>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            }
-          </mat-list>
+          <app-info-card-list [items]="socials"></app-info-card-list>
         </mat-card-content>
         <div class="rainbow-bar-sm"></div>
         <mat-card-header>
@@ -35,19 +25,7 @@
         </mat-card-header>
         <div class="rainbow-bar-sm"></div>
         <mat-card-content class="flex-grow-content">
-          <mat-list>
-            @for (company of companies; track company) {
-            <mat-list-item>
-              <mat-icon style="color: rgb(30, 26, 29)">{{
-                company.icon
-              }}</mat-icon>
-              <a [href]="company.link" target="_blank">
-                <span class="link-text">{{ company.name }}</span>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            }
-          </mat-list>
+          <app-info-card-list [items]="companies"></app-info-card-list>
         </mat-card-content>
         <div class="rainbow-bar-sm"></div>
         <mat-card-actions></mat-card-actions>
@@ -61,5 +39,19 @@
     @for (service of supportServices; track service) {
     <app-info-card [group]="service"></app-info-card>
     }
+    <article>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Other Support Services</mat-card-title>
+          <mat-card-subtitle>Links to other services</mat-card-subtitle>
+        </mat-card-header>
+        <div class="rainbow-bar-sm"></div>
+        <mat-card-content>
+          <app-info-card-list [items]="charities"></app-info-card-list>
+        </mat-card-content>
+        <div class="rainbow-bar-sm"></div>
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+    </article>
   </div>
 </section>
