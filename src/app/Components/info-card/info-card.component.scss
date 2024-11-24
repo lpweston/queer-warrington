@@ -1,0 +1,67 @@
+@use '../../variables' as v;
+
+:host {        
+    article {
+        flex: 1 1;
+        min-width: 300px;
+        height: 100%;
+
+        mat-card {         
+            height: 100%;
+
+            mat-card-content{
+                background: v.$light;
+                color: v.$dark;
+                padding: 8px;
+                flex-grow: 1;
+            }
+
+            mat-card-actions{
+                color:white;
+            }
+        }
+
+        .mat-mdc-card-image{
+            width: 100%;
+        }
+        
+        .flex-grow-content {
+            flex-grow: 1;
+        }
+
+        #calendar-card-home > .mat-mdc-card-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .icon, mat-icon, .mat-mdc-list-item-icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        #queer-coffee-icon {
+            background-image: url('/assets/images/queerCoffeeLogo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #loving-me-icon {
+            background-image: url('/assets/images/logo-loving-me.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #tags-icon {
+            background-image: url('/assets/images/download.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #cwa-icon{
+            background-image: url('/assets/images/TWAlogo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

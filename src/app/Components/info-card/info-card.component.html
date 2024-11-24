@@ -1,0 +1,30 @@
+<article>
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar [id]="group.icon"></div>
+      <mat-card-title>{{ group.name }}</mat-card-title>
+      <mat-card-subtitle>{{ group.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="rainbow-bar-sm"></div>
+    <img
+      mat-card-image
+      [src]="group.imagePath"
+      [alt]="'Photo of ' + group.name"
+    />
+    <mat-card-content class="flex-grow-content"
+      ><p [innerHTML]="group.description"></p
+    ></mat-card-content>
+    <div class="rainbow-bar-sm"></div>
+    <mat-card-actions>
+      @for (link of group.links; track link) {
+      <a [href]="link.link" target="_blank">
+        @if(link.icon.includes('/assets')){
+        <img matListItemIcon [src]="link.icon" [alt]="link.iconAlt" />
+        } @else {
+        <mat-icon>{{ link.icon }}</mat-icon>
+        }
+      </a>
+      }
+    </mat-card-actions>
+  </mat-card>
+</article>
