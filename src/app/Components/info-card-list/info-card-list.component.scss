@@ -2,19 +2,30 @@
 
 :host {
     mat-list-item{
-        .link-text{
+        height: auto;
+        padding: 10px;
+
+        .icon, mat-icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .mat-mdc-list-item-title{
+            font-weight: 700;
+        }
+
+        .text-item, .mat-icon{
+            text-wrap: wrap;
             color: v.$dark;
         }
 
-        .icon, mat-icon{
-            border-radius: 50%;
-                width: 24px;
-                height: 24px;
-                margin-right: 10px;
+        &:hover{
+            background-color: v.$orange-lite;
+        }
 
-                // .mdc-list-item__content{
-                //     font-weight: 700;
-                // }
-            }
+        &:active{
+            background-color: v.$orange-mid;
+        }
     }
 }

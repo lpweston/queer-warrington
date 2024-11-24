@@ -24,7 +24,7 @@
             mat-card {
                 padding: 1rem;
                 flex-grow: 1;
-                background: v.$light;
+                background: v.$lite;
                 height: auto;
             }
             
@@ -39,7 +39,7 @@
                 gap: 10px;
 
                 mat-card-actions{
-                    background-color: v.$light;
+                    background-color: v.$lite;
                 }
             }
         }

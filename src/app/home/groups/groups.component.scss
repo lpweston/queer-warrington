@@ -2,7 +2,7 @@
 
 :host {
     .off-white{
-        background-color: v.$light2;
+        background-color: v.$lite2;
     }
     
     section {
@@ -31,7 +31,7 @@
                 height: 100%;
 
                 mat-card-content{
-                    background: v.$light;
+                    background: v.$lite;
                     color: v.$dark;
                     padding: 8px;
                     flex-grow: 1;
@@ -39,16 +39,6 @@
 
                 mat-card-actions{
                     color:white;
-                }
-            }
-
-            mat-list-item{
-                .link-text{
-                    color: v.$dark;
-                }
-
-                .icon, mat-icon{
-                    border-radius: 50%;
                 }
             }
 

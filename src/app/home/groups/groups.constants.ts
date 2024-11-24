@@ -10,6 +10,7 @@ export type GroupInfo = {
 
 export type SocialInfo = {
     name: string,
+    subtitle?: string,
     link: string,
     icon: string,
     iconAlt: string
@@ -168,12 +169,14 @@ export const companies: SocialInfo[] = [
 export const charities: SocialInfo[] = [
   {
     name: 'Albert Kennedy Trust',
+    subtitle: "Helping young LGBTQ+ people at risk of or experiencing homelessness or hostile living environment.",
     link: 'https://www.akt.org.uk/',
     icon: 'volunteer_activism',
     iconAlt: ""
   },
   {
     name: 'Mermaids',
+    subtitle: "Supporting trans, non-binary and gender-diverse children, young people and their families",
     link: 'https://mermaidsuk.org.uk/',
     icon: 'volunteer_activism',
     iconAlt: ""
