@@ -21,7 +21,7 @@ export const groups: GroupInfo[] = [
     name: "Queer Coffee",
     subtitle: 'Community Group',
     icon: 'queer-coffee-icon',
-    imagePath: '/assets/images/queerCoffeePhoto.png',
+    imagePath: '/assets/images/queerCoffeePhoto.webp',
     description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.<br/><br/>
         We meet up (at a minimum) on the last Saturday of each month at the Geek Retreat Warrington at 11.30 am. And are open to adding different locations and different activities on top of this.
         This group is for anyone aged 18 or over.`,
@@ -29,13 +29,13 @@ export const groups: GroupInfo[] = [
       {
         name: "",
         link: 'https://linktr.ee/queercoffee',
-        icon: '/assets/icons/linktree.png',
+        icon: '/assets/icons/linktree.webp',
         iconAlt: 'Queer Coffee Linktree',
       },
       { 
         name: "",
         link: 'https://www.facebook.com/groups/warringtonqueercoffee',
-        icon: '/assets/icons/fb-wh.png',
+        icon: '/assets/icons/fb-wh.webp',
         iconAlt: 'Queer Coffee Facebook'
       },
       { 
@@ -50,7 +50,7 @@ export const groups: GroupInfo[] = [
     name: "Example Group",
     subtitle: 'Community Group',
     icon: 'queer-coffee-icon',
-    imagePath: '/assets/images/download.png',
+    imagePath: '/assets/images/download.webp',
     description: `This is an example group, and some example text in here to see how it would look.
     Please contact us via email or via our website`,
     links: [
@@ -69,7 +69,7 @@ export const supportServices: GroupInfo[] = [
     name: "LovingMe",
     subtitle: 'Support Service',
     icon: 'loving-me-icon',
-    imagePath: '/assets/images/Logo-1-loving-me.png',
+    imagePath: '/assets/images/Logo-1-loving-me.webp',
     description: `We work with trans / non-binary adults in England who are experiencing domestic abuse or sexual violence. 
     We offer one-to-one support and advocacy, and have a refuge in Lancashire which is specifically for trans / non-binary people.
     We have a small team of staff all of whom are trans or non-binary ourselves.<br/><br/>
@@ -85,13 +85,13 @@ export const supportServices: GroupInfo[] = [
       {
         name: "",
         link: 'https://linktr.ee/lovingme_uk',
-        icon: '/assets/icons/linktree.png',
+        icon: '/assets/icons/linktree.webp',
         iconAlt: 'Queer Coffee Linktree',
       },
       { 
         name: "",
         link: 'https://www.facebook.com/lovingme.uk?_rdr',
-        icon: '/assets/icons/fb-wh.png',
+        icon: '/assets/icons/fb-wh.webp',
         iconAlt: 'Loving Me Facebook'
       },
       { 
@@ -106,7 +106,7 @@ export const supportServices: GroupInfo[] = [
     name: "Trans Without Abuse",
     subtitle: 'Support Service',
     icon: 'cwa-icon',
-    imagePath: '/assets/images/CWA.png',
+    imagePath: '/assets/images/CWA.webp',
     description: `Cheshire Without Abuse (CWA) offer support across the whole of Cheshire. Our main domestic abuse service is with CWA 
     and offers support to everyone; inclusive of all of the LGBTQIA+ communities.
     Trans without Abuse specifically supports trans and non-binary people, across Cheshire, that have been affected by domestic abuse.
@@ -128,19 +128,19 @@ export const socials: SocialInfo[] = [
   {
     name: 'LGBT group 1',
     link: 'https://www.google.com',
-    icon: '/assets/icons/fb.png',
+    icon: '/assets/icons/fb.webp',
     iconAlt: "facebook"
   },
   {
     name: 'LGBT group 2',
     link: 'https://www.google.com',
-    icon: '/assets/icons/fb.png',
+    icon: '/assets/icons/fb.webp',
     iconAlt: "facebook"
   },
   {
     name: 'LGBT group 3',
     link: 'https://www.google.com',
-    icon: '/assets/icons/fb.png',
+    icon: '/assets/icons/fb.webp',
     iconAlt: "facebook"
   }
 ]
@@ -178,6 +178,20 @@ export const charities: SocialInfo[] = [
     name: 'Mermaids',
     subtitle: "Supporting trans, non-binary and gender-diverse children, young people and their families",
     link: 'https://mermaidsuk.org.uk/',
+    icon: 'volunteer_activism',
+    iconAlt: ""
+  },
+  {
+    name: 'TransActual',
+    subtitle: "TransActual are a trans led and run advocacy, education and empowerment organisation.",
+    link: 'https://transactual.org.uk/',
+    icon: 'volunteer_activism',
+    iconAlt: ""
+  },
+  {
+    name: 'Gendered Intelligence',
+    subtitle: "Expanding understandings of gender to improve trans lives.",
+    link: 'https://genderedintelligence.co.uk/',
     icon: 'volunteer_activism',
     iconAlt: ""
   },

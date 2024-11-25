@@ -1,4 +1,4 @@
-@use '../../variables' as v;
+@use '../../styles/variables' as v;
 
 :host {        
     article {
@@ -41,25 +41,25 @@
         }
 
         #queer-coffee-icon {
-            background-image: url('/assets/images/queerCoffeeLogo.jpg');
+            background-image: url('/assets/images/queerCoffeeLogo.webp');
             background-size: cover;
             background-position: center;
         }
 
         #loving-me-icon {
-            background-image: url('/assets/images/logo-loving-me.png');
+            background-image: url('/assets/images/logo-loving-me.webp');
             background-size: cover;
             background-position: center;
         }
         
         #tags-icon {
-            background-image: url('/assets/images/download.png');
+            background-image: url('/assets/images/download.webp');
             background-size: cover;
             background-position: center;
         }
 
         #cwa-icon{
-            background-image: url('/assets/images/TWAlogo.jpg');
+            background-image: url('/assets/images/TWAlogo.webp');
             background-size: cover;
             background-position: center;
         }
