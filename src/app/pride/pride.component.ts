@@ -24,45 +24,79 @@ export class PrideComponent implements OnInit {
   private startDate = new Date("2024-06-08T08:00");
   private endDate = new Date("2024-06-09T03:00");
 
+  private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
+  private xAxis!: d3.ScaleTime<number, number, never>;
+  private yAxis!: d3.ScaleOrdinal<string, number, never>;
+
   ngOnInit() {
+    this.initScales();
+    this.initSvg();
+    this.drawAxis();
+    this.addData();
+  }
+
+  private initScales() {
     // Declare the x (horizontal position) scale.
-    const x = d3.scaleUtc()
-        .domain([this.startDate , this.endDate])
-        .range([this.marginLeft, this.width - this.marginRight]);
+    this.xAxis = d3.scaleUtc()
+    .domain([this.startDate , this.endDate])
+    .range([this.marginLeft, this.width - this.marginRight]);
 
     const locations = Object.values(WarringtonLocation).map(v => v.toString());
-    const y = d3.scaleOrdinal()
+    this.yAxis = d3.scaleOrdinal()
               .domain([...locations])
               .range(this.getLocationsRange(locations.length)) as d3.ScaleOrdinal<string, number, never>;
+  }
 
+  private initSvg() {
     // Create the SVG container.
-    const dataGroup = d3.select("#chart")
-        .attr("width", this.width)
-        .attr("height", this.height);
-        
-        // x-axis
-        dataGroup.append("g")
-        .attr("transform", `translate(0,${this.height - this.marginBottom})`)
-        .call(d3.axisBottom(x));
-        
-        // y-axis
-        dataGroup.append("g")
-        .attr("transform", `translate(${this.marginLeft},0)`)
-        .call(d3.axisLeft(y));
+    this.chart = d3.select("#chart")
+    .attr("width", this.width)
+    .attr("height", this.height);
 
-        // data
-        dataGroup.append("g")
-            .attr("class", "bars")
-            .selectAll("rect")
-            .data(test)
-            .join("rect")
-            .attr("x", d => x(d.start))
-            .attr("y", d => y(d.location) -10)
-            .attr("width", d => this.getWidthOfBar(d.start, d.end))
-            .attr("height", 20)
-            .attr("fill", d => this.getNextColor());
+    //Adding Tooltip
+    d3.select('body').append("div")
+    .classed('chart-tooltip', true)
+    .style('display', 'none');
+  }
+
+  private drawAxis() {
+    if (this.chart){
+      this.chart.append("g")
+      .attr("transform", `translate(0,${this.height - this.marginBottom})`)
+      .call(d3.axisBottom(this.xAxis));
+      this.chart.append("g")
+      .attr("transform", `translate(${this.marginLeft},0)`)
+      .call(d3.axisLeft(this.yAxis));
+    }
     }
 
+    private addData() {
+      if (this.chart){
+        this.chart.append("g")
+                  .attr("class", "bars")
+                  .selectAll("rect")
+                  .data(test)
+                  .join("rect")
+                  .attr("x", d => this.xAxis(d.start))
+                  .attr("y", d => this.yAxis(d.location) -10)
+                  .attr("width", d => this.getWidthOfBar(d.start, d.end))
+                  .attr("height", 20)
+                  .attr("fill", d => this.getNextColor())
+                  .on("mouseover", ()=>{
+                    d3.select('.chart-tooltip').style("display", null)
+                    })
+                  .on("mouseout", ()=>{
+                    d3.select('.chart-tooltip').style("display", "none")
+                  })
+                  .on("mousemove", (event, d:any)=>{
+                    d3.select('.chart-tooltip')
+                      .style("left", event.pageX + 15 + "px")
+                      .style("top", event.pageY - 25 + "px")
+                      .text(d.name);
+                  });    
+      }
+    }
+          
     private getLocationsRange(locationsCount: number): number[] {
       const space = this.height - this.marginTop;
       const step = space / locationsCount;
