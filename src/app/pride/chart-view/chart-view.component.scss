@@ -1,0 +1,21 @@
+:host{
+    header{
+        margin: auto;
+        width: 50%;
+    }
+
+    .main{
+        display: flex;
+        justify-content: space-around;
+
+        #map{
+            img {
+                width: 500px;
+            }
+        }
+    }
+    
+    .chart-tooltip{
+        position: absolute;
+    }
+}

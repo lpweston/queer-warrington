@@ -25,14 +25,14 @@
     {
         location: WarringtonLocation.market,
         name: "Kiki Inferno and Friends Drag Cabaret",
-        start:   new Date("2024-06-07T20:00"),
-        end:  new Date("2024-06-07T23:00"),
+        start: new Date("2024-06-07T20:00"),
+        end: new Date("2024-06-07T23:00"),
     },
     {
         location: WarringtonLocation.market,
         name: "Live Music",
-        start:   new Date("2024-06-08T20:00"),
-        end:  new Date("2024-06-08T24:00")
+        start: new Date("2024-06-08T20:00"),
+        end: new Date("2024-06-08T24:00")
     },
     {
         location: WarringtonLocation.university,

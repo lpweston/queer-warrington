@@ -1,0 +1,11 @@
+<h2>List View</h2>
+<div class="locations">
+  @for (location of locations| keyvalue; track location) {
+  <h3>{{ location.key }}</h3>
+  <div class="events">
+    @for (event of location.value; track event) {
+    <app-tooltip [event]="event"></app-tooltip>
+    }
+  </div>
+  }
+</div>
