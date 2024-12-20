@@ -1,0 +1,23 @@
+@if (event) {
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{ event.name }}
+    </mat-card-title>
+  </mat-card-header>
+  <div class="rainbow-bar-sm"></div>
+  <mat-card-content>
+    <p>
+      {{ event.start.toLocaleTimeString().replace(regex, "") }} -
+      {{ event.end.toLocaleTimeString().replace(regex, "") }}
+      <br />
+      {{ event.start.toLocaleDateString() }}
+      <br />
+      {{ event.location }}
+    </p>
+    @if (event.description){
+    <p>{{ event.description }}</p>
+    }
+  </mat-card-content>
+</mat-card>
+}

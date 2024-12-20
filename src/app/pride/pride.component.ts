@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
-import { test, WarringtonLocation } from './pride2024.constants';
+import { PrideEvent, test, WarringtonLocation } from './pride2024.constants';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @Component({
   selector: 'app-pride',
   standalone: true,
-  imports: [],
+  imports: [TooltipComponent],
   templateUrl: './pride.component.html',
   styleUrl: './pride.component.scss'
 })
 export class PrideComponent implements OnInit {
   // Declare the chart dimensions and margins.
+  selectedEvent: PrideEvent | undefined;
+
   private width = 1200;
   private height = 400;
   private marginTop = 20;
@@ -27,12 +30,14 @@ export class PrideComponent implements OnInit {
   private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
   private xAxis!: d3.ScaleTime<number, number, never>;
   private yAxis!: d3.ScaleOrdinal<string, number, never>;
+  private bars!: d3.Selection<d3.BaseType, PrideEvent, SVGGElement, unknown>;
 
   ngOnInit() {
     this.initScales();
     this.initSvg();
     this.drawAxis();
     this.addData();
+    this.initTooltips();
   }
 
   private initScales() {
@@ -52,11 +57,6 @@ export class PrideComponent implements OnInit {
     this.chart = d3.select("#chart")
     .attr("width", this.width)
     .attr("height", this.height);
-
-    //Adding Tooltip
-    d3.select('body').append("div")
-    .classed('chart-tooltip', true)
-    .style('display', 'none');
   }
 
   private drawAxis() {
@@ -72,7 +72,7 @@ export class PrideComponent implements OnInit {
 
     private addData() {
       if (this.chart){
-        this.chart.append("g")
+        this.bars = this.chart.append("g")
                   .attr("class", "bars")
                   .selectAll("rect")
                   .data(test)
@@ -81,21 +81,24 @@ export class PrideComponent implements OnInit {
                   .attr("y", d => this.yAxis(d.location) -10)
                   .attr("width", d => this.getWidthOfBar(d.start, d.end))
                   .attr("height", 20)
-                  .attr("fill", d => this.getNextColor())
-                  .on("mouseover", ()=>{
-                    d3.select('.chart-tooltip').style("display", null)
-                    })
-                  .on("mouseout", ()=>{
-                    d3.select('.chart-tooltip').style("display", "none")
-                  })
-                  .on("mousemove", (event, d:any)=>{
-                    d3.select('.chart-tooltip')
-                      .style("left", event.pageX + 15 + "px")
-                      .style("top", event.pageY - 25 + "px")
-                      .text(d.name);
-                  });    
+                  .attr("fill", d => this.getNextColor())  
       }
     }
+    
+  private initTooltips() {
+    this.bars.on("mouseover", ()=>{
+                d3.select('.chart-tooltip').style("display", null)
+                })
+              .on("mouseout", ()=>{
+                d3.select('.chart-tooltip').style("display", "none")
+              })
+              .on("mousemove", (event: MouseEvent, d: PrideEvent)=>{
+                d3.select('.chart-tooltip')
+                  .style("left", event.pageX + 15 + "px")
+                  .style("top", event.pageY - 25 + "px")
+                  this.selectedEvent = d;
+              });  
+  }
           
     private getLocationsRange(locationsCount: number): number[] {
       const space = this.height - this.marginTop;

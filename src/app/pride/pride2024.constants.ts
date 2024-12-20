@@ -1,5 +1,5 @@
   // get these from google api?
-  type prideEvent = {
+  export type PrideEvent = {
     name: string,
     location: WarringtonLocation,
     start: Date,
@@ -21,7 +21,7 @@
     pyramid = "Pyramid Art Centre"
   }
 
-  export const test: prideEvent[] = [
+  export const test: PrideEvent[] = [
     {
         location: WarringtonLocation.market,
         name: "Kiki Inferno and Friends Drag Cabaret",
