@@ -1,5 +1,5 @@
 <mat-list>
-  @for (item of items; track item) {
+  @for (item of items; track item) { @if (item.link) {
   <a [href]="item.link" target="_blank">
     <mat-list-item>
       @if (item.icon.includes('/assets')){
@@ -13,6 +13,19 @@
       }
     </mat-list-item>
   </a>
+  } @else {
+  <mat-list-item>
+    @if (item.icon.includes('/assets')){
+    <img matListItemIcon [src]="item.icon" [alt]="item.iconAlt" />
+    } @else {
+    <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+    }
+    <span matListItemTitle class="text-item">{{ item.name }}</span>
+    @if(item.subtitle){
+    <span class="text-item" matListItemLine>{{ item.subtitle }}</span>
+    }
+  </mat-list-item>
+  }
   <mat-divider></mat-divider>
   }
 </mat-list>

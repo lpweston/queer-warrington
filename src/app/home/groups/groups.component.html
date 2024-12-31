@@ -16,16 +16,38 @@
         <mat-card-content>
           <app-info-card-list [items]="socials"></app-info-card-list>
         </mat-card-content>
-        <div class="rainbow-bar-sm"></div>
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+    </article>
+  </div>
+</section>
+<section>
+  <h1>Businesses</h1>
+  <p>
+    These businesses have been visited by our members. Their staff have been
+    courteous towards those who do not display normative gender indicators,
+    therefore trans and non-binary people have not been dismissed, ignored or
+    asked to leave. This is why we approve them.<br /><br />
+    The list is not exclusive! We hope there are many more businesses in town
+    who are willing to engage with us in a respectful manner.
+  </p>
+  <div>
+    @for (group of companies; track group) {
+    <app-info-card [group]="group"></app-info-card>
+    }
+    <article>
+      <mat-card>
         <mat-card-header>
-          <mat-card-title>LGBTQ+ Businesses</mat-card-title>
+          <mat-card-title>LGBTQ+ Friendly Businesses</mat-card-title>
           <mat-card-subtitle
-            >Owned or friendly to the community</mat-card-subtitle
-          >
+            >to our knowledge these are not LGBT+ owned, but they have proven
+            themselves to be LGBT+ friendly by hosting events or responding well
+            towards our members.
+          </mat-card-subtitle>
         </mat-card-header>
         <div class="rainbow-bar-sm"></div>
         <mat-card-content class="flex-grow-content">
-          <app-info-card-list [items]="companies"></app-info-card-list>
+          <app-info-card-list [items]="friendly"></app-info-card-list>
         </mat-card-content>
         <div class="rainbow-bar-sm"></div>
         <mat-card-actions></mat-card-actions>
@@ -33,8 +55,8 @@
     </article>
   </div>
 </section>
-<section>
-  <h1>Support Services</h1>
+<section class="off-white">
+  <h1 class="off-white">Support Services</h1>
   <div>
     @for (service of supportServices; track service) {
     <app-info-card [group]="service"></app-info-card>

@@ -11,7 +11,7 @@ export type GroupInfo = {
 export type SocialInfo = {
     name: string,
     subtitle?: string,
-    link: string,
+    link?: string,
     icon: string,
     iconAlt: string
   }
@@ -19,7 +19,7 @@ export type SocialInfo = {
 export const groups: GroupInfo[] = [
   {
     name: "Queer Coffee",
-    subtitle: 'Community Group',
+    subtitle: 'Adult Group',
     icon: 'queer-coffee-icon',
     imagePath: '/assets/images/queerCoffeePhoto.webp',
     description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.<br/><br/>
@@ -47,16 +47,19 @@ export const groups: GroupInfo[] = [
     ]
   },
   {
-    name: "Example Group",
-    subtitle: 'Community Group',
-    icon: 'queer-coffee-icon',
-    imagePath: '/assets/images/download.webp',
-    description: `This is an example group, and some example text in here to see how it would look.
-    Please contact us via email or via our website`,
+    name: "TAGS",
+    subtitle: 'Youth Group',
+    icon: 'tags-icon',
+    imagePath: '/assets/images/tagsIcon.webp',
+    description: `TAGS provides LGBTQ+ 1-2-1 targeted support or group support to young people aged 11-17 years (Youth TAGS) and 17 - 24 years.
+                  Tags provides a safe space for LGBTQ+ young people to meet, socialise, access support, and develop skills and confidence.
+                  Tags aims to empower young people to be active members of the group, to inspire them to pursue leading roles in the future - 
+                  the group is entirely LGBTQ+ youth-led. to enable us to access additional funding to help support the group to provide additional
+                   opportunities for young people.`,
     links: [
       {
         name: "",
-        link: 'https://www.google.com',
+        link: 'https://www.warrington.gov.uk/node/11259',
         icon: 'home',
         iconAlt: 'home',
       },
@@ -126,44 +129,130 @@ export const supportServices: GroupInfo[] = [
 
 export const socials: SocialInfo[] = [
   {
-    name: 'LGBT group 1',
-    link: 'https://www.google.com',
+    name: 'Warrington LGBTQ+ Social network',
+    link: 'https://www.facebook.com/groups/875204472503810',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "facebook"
+    iconAlt: "Facebook"
   },
   {
-    name: 'LGBT group 2',
-    link: 'https://www.google.com',
+    name: 'LGBT Warrington',
+    link: 'https://www.facebook.com/groups/lgbtwarrington',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "facebook"
+    iconAlt: "Facebook"
   },
   {
-    name: 'LGBT group 3',
-    link: 'https://www.google.com',
+    name: 'North-West Lesbians (Over 35) UK',
+    link: 'https://www.facebook.com/groups/1265007937483904',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "facebook"
+    iconAlt: "Facebook"
   }
 ]
 
-export const companies: SocialInfo[] = [
+export const companies: GroupInfo[] = [
   {
-    name: 'LGBT company 1',
-    link: 'https://www.google.com',
-    icon: 'storefront',
-    iconAlt: ""
+    name: 'Sam Small Ink',
+    description: `Hey, I'm Sam and welcome to Sam Small Ink! Our ink-slinging haven where we create stories on skin.<br />
+                  We're masters of the art of Dot work, illustration & blackwork tattoos, and we've been doing it for over 6 years in Warrington. <br />
+                  If you're looking for a safe, friendly space to get your tatt on, then you've come to the right place! We love all our peeps, 
+                  especially our LGQBTQ+ pals, and guess what? Our tattoos are all vegan friendly too! So, let's get to work and make some tattoo magic! `,
+    icon: 'sam-icon',
+    subtitle: "Tattoo Parlour",
+    imagePath: "/assets/images/sam.jpeg",
+    links: [
+      {
+      link: 'https://samsmallink.co.uk/',
+      name: "",
+      icon: "home",
+      iconAlt: "Homepage"
+      },
+      {
+        link: "https://www.instagram.com/sam_small_ink_",
+        name: "",
+        icon: '/assets/icons/Instagram_Glyph_White.svg',
+        iconAlt: "Instagram"
+      }
+    ],
   },
   {
-    name: 'LGBT company 2',
-    link: 'https://www.google.com',
+    name: 'Porter\'s Ale House',
+    subtitle: "Bar",
     icon: 'storefront',
-    iconAlt: ""
+    imagePath: "/assets/images/porters.png",
+    description: "",
+    links: [
+      {
+        name: "",
+        link: "https://www.facebook.com/groups/woapah/?locale=en_GB",
+        icon: '/assets/icons/fb-wh.webp',
+        iconAlt: 'Facebook'
+      }
+    ]
   },
   {
-    name: 'LGBT company 3',
-    link: 'https://www.google.com',
+    name: 'Jacqueline Fontaine',
     icon: 'storefront',
-    iconAlt: ""
+    subtitle: "Comedian",
+    imagePath: "/assets/images/jacqueline.png",
+    description: `Jacqueline Fontaine is a comedian, cabaret artist and titled countess! Called the Welsh Joan Rivers by Radio Cymru despite being English,
+                  she's known for hosting pride/queer events across the country and for her charity work`,
+    links: [
+      {
+        name: "",
+        link: "https://www.instagram.com/jacqueline_fontaine_comedy/",
+        icon: '/assets/icons/Instagram_Glyph_White.svg',
+        iconAlt: 'Instagram'
+      }
+    ]
   }
+]
+
+export const friendly: SocialInfo[] = [
+  {
+    name: 'Central Library & Museum',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Coven Hair And Beauty',
+    link: 'https://linktr.ee/covenbeauty',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Geek Retreat',
+    link: 'https://www.facebook.com/GeekRetreatWarrington',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Culture Warrington',
+    link: 'https://culturewarrington.org/',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Deaf Centre',
+    link: 'https://warringtondeafcentre.wixsite.com/warrington-deaf-club',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Mamar\'s',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Nice N Naughty',
+    link: 'https://nicennaughty.co.uk/',
+    icon: 'storefront',
+    iconAlt: ""
+  },
+  {
+    name: 'Dolly Daydream',
+    link: 'https://www.dolly-daydream.co.uk',
+    icon: 'storefront',
+    iconAlt: ""
+  },
 ]
 
 export const charities: SocialInfo[] = [
