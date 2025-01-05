@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { GroupInfo } from '../../home/groups/groups.constants';
+import { GroupInfo } from '../../types';
 
 @Component({
   selector: 'app-info-card',

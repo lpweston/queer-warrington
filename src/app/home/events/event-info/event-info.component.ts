@@ -8,9 +8,9 @@ import {
   MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
-import { EventData } from '../events.utils';
 import { DatePipe } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
+import { EventData } from '../../../types';
 
 @Component({
   selector: 'app-event-info',

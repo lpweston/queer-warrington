@@ -3,14 +3,7 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import { APIKey, CalendarAddress } from '../../constants';
 import { EventInfoComponent } from './event-info/event-info.component';
 import { MatDialog } from '@angular/material/dialog';
-
-export interface EventData {
-  name: string;
-  description: string;
-  location: string;
-  start: Date | undefined;
-  end: Date | undefined;
-}
+import { EventData } from '../../types';
 
 export const setNavigateCalendarButton = (buttonSelector: string, calendar: Calendar, next: boolean): void => {
   if (next) {
@@ -70,10 +63,6 @@ const clickEvent = (info: any, dialog: MatDialog) => {
       end: instance?.range?.end
     }
     
-    const dialogRef = dialog.open(EventInfoComponent, {data});
-    
-    dialogRef.afterClosed().subscribe(() => {
-      console.log('The dialog was closed');
-    });
+    dialog.open(EventInfoComponent, {data});
   };
 }

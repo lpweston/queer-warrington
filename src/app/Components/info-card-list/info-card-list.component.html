@@ -1,5 +1,5 @@
 <mat-list>
-  @for (item of items; track item) { @if (item.link) {
+  @for (item of items; track item) { @if (!item.description) {
   <a [href]="item.link" target="_blank">
     <mat-list-item>
       @if (item.icon.includes('/assets')){
@@ -14,7 +14,7 @@
     </mat-list-item>
   </a>
   } @else {
-  <mat-list-item>
+  <mat-list-item (click)="openDialog(item)">
     @if (item.icon.includes('/assets')){
     <img matListItemIcon [src]="item.icon" [alt]="item.iconAlt" />
     } @else {

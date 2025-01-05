@@ -3,7 +3,8 @@
   <button mat-mini-fab mat-dialog-close><mat-icon>close</mat-icon></button>
 </div>
 <mat-dialog-content>
-  @if (data.start) {
+  @if (data.link) {<mat-icon>home</mat-icon
+  ><span [innerHTML]="data.link"></span>} @if (data.start) {
   <mat-icon>today</mat-icon>
   <div>
     <span>{{ data.start | date : "longDate" }}</span>
