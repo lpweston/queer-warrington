@@ -56,6 +56,17 @@
                 height: 24px;
                 margin-right: 10px;
             }
+
+        }
+    }
+    
+    #businesses-intro{
+        width: 75%;
+        margin: auto;
+        padding-bottom: 10px;
+        
+        @media (max-width: 790px) {
+            width: 100%;
         }
     }
 }

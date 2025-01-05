@@ -22,5 +22,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-
+//   switchTheme(theme: 'light' | 'dark') {
+//     document.body.classList.remove('light-theme', 'dark-theme');
+//     document.body.classList.add(`${theme}-theme`);
+//    }
 }

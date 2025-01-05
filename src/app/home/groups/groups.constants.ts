@@ -51,8 +51,8 @@ export const groups: GroupInfo[] = [
     subtitle: 'Youth Group',
     icon: 'tags-icon',
     imagePath: '/assets/images/tagsIcon.webp',
-    description: `TAGS provides LGBTQ+ 1-2-1 targeted support or group support to young people aged 11-17 years (Youth TAGS) and 17 - 24 years.
-                  Tags provides a safe space for LGBTQ+ young people to meet, socialise, access support, and develop skills and confidence.
+    description: `TAGS provides LGBTQ+ 1-2-1 targeted support or group support to young people aged 11-17 years (Youth TAGS) and 17 - 24 years.<br/><br/>
+                  Tags provides a safe space for LGBTQ+ young people to meet, socialise, access support, and develop skills and confidence.<br/><br/>
                   Tags aims to empower young people to be active members of the group, to inspire them to pursue leading roles in the future - 
                   the group is entirely LGBTQ+ youth-led. to enable us to access additional funding to help support the group to provide additional
                    opportunities for young people.`,

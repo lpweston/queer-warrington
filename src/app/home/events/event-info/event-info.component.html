@@ -1,24 +1,25 @@
 <div class="header">
-  <h2 mat-dialog-title>{{data.name}}</h2>
+  <h2 mat-dialog-title>{{ data.name }}</h2>
   <button mat-mini-fab mat-dialog-close><mat-icon>close</mat-icon></button>
 </div>
 <mat-dialog-content>
   @if (data.start) {
-    <mat-icon>today</mat-icon>
-    <div>
-      <span>{{data.start | date:'longDate'}}</span>
+  <mat-icon>today</mat-icon>
+  <div>
+    <span>{{ data.start | date : "longDate" }}</span>
     @if(data.end && data.end.getDate() != data.start.getDate()) {
-      <span> - {{data.end | date:'longDate'}}</span>
+    <span> - {{ data.end | date : "longDate" }}</span>
     }
-    </div>
-    <mat-icon>schedule</mat-icon>
-    <div>
-      <span>{{data.start | date:'shortTime'}}</span>
-      @if(data.end && data.end != data.start){
-        <span> - {{data.end | date:'shortTime'}} </span>
-      }
-    </div>
+  </div>
+  <mat-icon>schedule</mat-icon>
+  <div>
+    <span>{{ data.start | date : "shortTime" }}</span>
+    @if(data.end && data.end != data.start){
+    <span> - {{ data.end | date : "shortTime" }} </span>
     }
-  @if (data.location) {<mat-icon>location_on</mat-icon><span>{{data.location}}</span>}
-  @if (data.description) {<mat-icon>description</mat-icon><span>{{data.description}}</span>}
+  </div>
+  } @if (data.location) {<mat-icon>location_on</mat-icon
+  ><span>{{ data.location }}</span
+  >} @if (data.description) {<mat-icon>description</mat-icon
+  ><span [innerHTML]="data.description"></span>}
 </mat-dialog-content>
