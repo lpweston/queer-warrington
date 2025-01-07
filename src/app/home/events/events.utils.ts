@@ -36,6 +36,7 @@ export const getCalendar = ( calendarEl: HTMLElement, plugin: PluginDef, initial
       minute: '2-digit',
       meridiem: 'short'
     },
+    listDaySideFormat: titleFormat ? {weekday: 'short'} : {weekday: 'long' },
     eventClick: (info) => clickEvent(info, dialog)
   });
 }

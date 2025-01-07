@@ -138,10 +138,11 @@ export const companies: GroupInfo[] = [
     description: `Hey, I'm Sam and welcome to Sam Small Ink! Our ink-slinging haven where we create stories on skin.<br />
                   We're masters of the art of Dot work, illustration & blackwork tattoos, and we've been doing it for over 6 years in Warrington. <br /><br />
                   If you're looking for a safe, friendly space to get your tatt on, then you've come to the right place! We love all our peeps, 
-                  especially our LGQBTQ+ pals, and guess what? Our tattoos are all vegan friendly too! So, let's get to work and make some tattoo magic! `,
+                  especially our LGQBTQ+ pals, and guess what? Our tattoos are all vegan friendly too! So, let's get to work and make some tattoo magic!<br/><br/>
+                  25 Rylands Street, Warrington, WA1 1EJ<br/>+447961306831`,
     icon: 'sam-icon',
     subtitle: "Tattoo Parlour",
-    imagePath: "/assets/images/sam.jpeg",
+    imagePath: "/assets/images/sam.webp",
     links: [
       {
       link: 'https://samsmallink.co.uk/',
@@ -154,6 +155,18 @@ export const companies: GroupInfo[] = [
         name: "",
         icon: '/assets/icons/Instagram_Glyph_White.svg',
         iconAlt: "Instagram"
+      },
+      {
+        link:"https://www.facebook.com/samsmallink/",
+        name: '',
+        icon: '/assets/icons/fb-wh.webp',
+        iconAlt: 'Facebook'
+      },
+      {
+        link:"https://www.tiktok.com/@samsmalltattoo",
+        name: '',
+        icon: '/assets/icons/tiktok.webp',
+        iconAlt: 'TikTok'
       }
     ],
   },
@@ -161,7 +174,7 @@ export const companies: GroupInfo[] = [
     name: 'Porter\'s Ale House',
     subtitle: "Bar",
     icon: 'porters-icon',
-    imagePath: "/assets/images/porters.png",
+    imagePath: "/assets/images/porters.webp",
     description: `Queer run bar, with a pool table. Check their facebook for details of their live music and events.<br/><br/>
                   78 Buttermarket St,<br/>Warrington<br/>WA1 2NN<br/><br/>
                   Open from 2pm.<br/>
@@ -179,15 +192,22 @@ export const companies: GroupInfo[] = [
     name: 'Jacqueline Fontaine',
     icon: 'jacqueline-icon',
     subtitle: "Comedian",
-    imagePath: "/assets/images/jacqueline.png",
+    imagePath: "/assets/images/jacqueline.webp",
     description: `Jacqueline Fontaine is a comedian, cabaret artist and titled countess! Called the Welsh Joan Rivers by Radio Cymru despite being English,
-                  she's known for hosting pride/queer events across the country and for her charity work`,
+                  she's known for hosting pride/queer events across the country and for her charity work<br/><br/>
+                  Contact her via her Facebook or Instagram (linked below).`,
     links: [
       {
         name: "",
         link: "https://www.instagram.com/jacqueline_fontaine_comedy/",
         icon: '/assets/icons/Instagram_Glyph_White.svg',
         iconAlt: 'Instagram'
+      },
+      {
+        name: "",
+        link: "https://www.facebook.com/jack.haselden",
+        icon: '/assets/icons/fb-wh.webp',
+        iconAlt: 'Facebook'
       }
     ]
   }
@@ -222,20 +242,6 @@ export const friendly: SocialInfo[] = [
                   Let us know if you can recommend a business.`
   },
   {
-    name: 'Geek Retreat',
-    link: 'https://www.facebook.com/GeekRetreatWarrington',
-    icon: 'casino',
-    iconAlt: "",
-    location: "4 Crown Parade, WA1 2AE (under the railway arches of Warrington Central)",
-    description: `Our venue for Queer Coffee meetings! Owned by Doug and usually staffed by Joseph. 
-                  There is sometimes a French pug on the premises called Hazel. We do check when they 
-                  have game launches as there are likely to be a lot more people in on those days which 
-                  can affect sound quality and comfort for some of us. Queer Coffee will post this info 
-                  on our Facebook page if a launch event coincides with out meeting.<br/><br/>
-                  Wheelchair access at front although the door is a heavy push. Accessible loo. 
-                  Long indoor ramp to second level where the café is.`
-  },
-  {
     name: 'Culture Warrington',
     link: ['https://culturewarrington.org/', 'https://pyramid.culturewarrington.org/'],
     icon: 'theater_comedy',
@@ -260,6 +266,29 @@ export const friendly: SocialInfo[] = [
               (it flashes a light inside) and someone will come and assist you.`
   },
   {
+    name: 'Dolly Daydream',
+    link: 'https://www.dolly-daydream.co.uk',
+    icon: 'storefront',
+    iconAlt: "",
+    location: "The Courtyard, 45 Horse Market Street",
+    description: `Feminine-styled clothing in a traditional shop setting with changing rooms. They also sell online via their website.<br/><br/>
+                  Access is level going in and so are the two changing rooms. These are not very big, so some mobility would be required. `
+  },
+  {
+    name: 'Geek Retreat',
+    link: 'https://www.facebook.com/GeekRetreatWarrington',
+    icon: 'casino',
+    iconAlt: "",
+    location: "4 Crown Parade, WA1 2AE (under the railway arches of Warrington Central)",
+    description: `Our venue for Queer Coffee meetings! Owned by Doug and usually staffed by Joseph. 
+                  There is sometimes a French pug on the premises called Hazel. We do check when they 
+                  have game launches as there are likely to be a lot more people in on those days which 
+                  can affect sound quality and comfort for some of us. Queer Coffee will post this info 
+                  on our Facebook page if a launch event coincides with out meeting.<br/><br/>
+                  Wheelchair access at front although the door is a heavy push. Accessible loo. 
+                  Long indoor ramp to second level where the café is.`
+  },
+  {
     name: 'Mamar\'s Artisan Bakery & Delicatessen',
     icon: 'local_cafe',
     iconAlt: "",
@@ -276,15 +305,6 @@ export const friendly: SocialInfo[] = [
     iconAlt: "",
     location: "66a Sankey Street, Warrington WA1 1SB",
     description: "Lingerie and fetish clothing, sex toys, etc. Trans-masculine and trans-feminine accessories (e.g. binders, breastforms, wigs). "
-  },
-  {
-    name: 'Dolly Daydream',
-    link: 'https://www.dolly-daydream.co.uk',
-    icon: 'storefront',
-    iconAlt: "",
-    location: "The Courtyard, 45 Horse Market Street",
-    description: `Feminine-styled clothing in a traditional shop setting with changing rooms. They also sell online via their website.<br/><br/>
-                  Access is level going in and so are the two changing rooms. These are not very big, so some mobility would be required. `
   },
 ]
 
