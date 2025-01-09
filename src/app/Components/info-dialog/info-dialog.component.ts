@@ -10,25 +10,24 @@ import {
 } from '@angular/material/dialog';
 import { DatePipe } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
-import { EventData } from '../../../types';
+import { EventData } from '../../types';
 
 @Component({
-  selector: 'app-event-info',
+  selector: 'app-info-dialog',
   standalone: true,
   imports: [
     MatButtonModule,
     MatDialogTitle,
     MatDialogContent,
-    MatDialogActions,
     MatDialogClose,
     MatIcon,
     DatePipe
   ],
-  templateUrl: './event-info.component.html',
-  styleUrl: './event-info.component.scss'
+  templateUrl: './info-dialog.component.html',
+  styleUrl: './info-dialog.component.scss'
 })
-export class EventInfoComponent {
-  readonly dialogRef = inject(MatDialogRef<EventInfoComponent>);
+export class InfoDialogComponent {
+  readonly dialogRef = inject(MatDialogRef<InfoDialogComponent>);
   readonly data = inject<EventData>(MAT_DIALOG_DATA);
 
   onNoClick(): void {

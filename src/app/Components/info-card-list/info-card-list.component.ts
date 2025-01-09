@@ -4,7 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatDialog } from '@angular/material/dialog';
-import { EventInfoComponent } from '../../home/events/event-info/event-info.component';
+import { InfoDialogComponent } from '../info-dialog/info-dialog.component';
 import { SocialInfo } from '../../types';
 
 @Component({
@@ -24,7 +24,7 @@ export class InfoCardListComponent {
   readonly dialog = inject(MatDialog);
   
   openDialog(item: SocialInfo) {
-    this.dialog.open(EventInfoComponent, { data: {
+    this.dialog.open(InfoDialogComponent, { data: {
       name: item.name,
       description: item.description,
       location: item.location,

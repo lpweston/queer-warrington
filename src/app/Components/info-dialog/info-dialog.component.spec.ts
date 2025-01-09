@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EventInfoComponent } from './event-info.component';
+import { InfoDialogComponent } from './info-dialog.component';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
-describe('EventInfoComponent', () => {
-  let component: EventInfoComponent;
-  let fixture: ComponentFixture<EventInfoComponent>;
+describe('InfoDialogComponent', () => {
+  let component: InfoDialogComponent;
+  let fixture: ComponentFixture<InfoDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EventInfoComponent, MatDialogModule],
+      imports: [InfoDialogComponent, MatDialogModule],
       providers: [
         { provide: MatDialogRef,useValue: {} },
         { provide: MAT_DIALOG_DATA,useValue: {} }],
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EventInfoComponent);
+    fixture = TestBed.createComponent(InfoDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

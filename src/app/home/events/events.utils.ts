@@ -1,9 +1,9 @@
 import { Calendar, FormatterInput, PluginDef, ToolbarInput } from '@fullcalendar/core/index.js';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import { APIKey, CalendarAddress } from '../../constants';
-import { EventInfoComponent } from './event-info/event-info.component';
 import { MatDialog } from '@angular/material/dialog';
 import { EventData } from '../../types';
+import { InfoDialogComponent } from '../../Components/info-dialog/info-dialog.component';
 
 export const setNavigateCalendarButton = (buttonSelector: string, calendar: Calendar, next: boolean): void => {
   if (next) {
@@ -64,6 +64,6 @@ const clickEvent = (info: any, dialog: MatDialog) => {
       end: instance?.range?.end
     }
     
-    dialog.open(EventInfoComponent, {data});
+    dialog.open(InfoDialogComponent, {data});
   };
 }
