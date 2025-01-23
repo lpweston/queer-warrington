@@ -15,7 +15,7 @@ import { ContactComponent } from './contact/contact.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'LGBTQ+-warrington';
+  title = 'Queer warrington';
 
   // TODO add meta tags
 }
