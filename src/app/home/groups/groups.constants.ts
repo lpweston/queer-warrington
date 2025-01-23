@@ -171,24 +171,6 @@ export const companies: GroupInfo[] = [
     ],
   },
   {
-    name: 'Porter\'s Ale House',
-    subtitle: "Bar",
-    icon: 'porters-icon',
-    imagePath: "/assets/images/porters.webp",
-    description: `Queer run bar, with a pool table. Check their facebook for details of their live music and events.<br/><br/>
-                  78 Buttermarket St,<br/>Warrington<br/>WA1 2NN<br/><br/>
-                  Open from 2pm.<br/>
-                  Steps to main entrance.`,
-    links: [
-      {
-        name: "",
-        link: "https://www.facebook.com/groups/woapah/?locale=en_GB",
-        icon: '/assets/icons/fb-wh.webp',
-        iconAlt: 'Facebook'
-      }
-    ]
-  },
-  {
     name: 'Jacqueline Fontaine',
     icon: 'jacqueline-icon',
     subtitle: "Comedian",
@@ -265,15 +247,15 @@ export const friendly: SocialInfo[] = [
               Front access via steps, rear access via ramp but there may be cars parked across it. Ring the bell 
               (it flashes a light inside) and someone will come and assist you.`
   },
-  {
-    name: 'Dolly Daydream',
-    link: 'https://www.dolly-daydream.co.uk',
-    icon: 'storefront',
-    iconAlt: "",
-    location: "The Courtyard, 45 Horse Market Street",
-    description: `Feminine-styled clothing in a traditional shop setting with changing rooms. They also sell online via their website.<br/><br/>
-                  Access is level going in and so are the two changing rooms. These are not very big, so some mobility would be required. `
-  },
+  // {
+  //   name: 'Dolly Daydream',
+  //   link: 'https://www.dolly-daydream.co.uk',
+  //   icon: 'storefront',
+  //   iconAlt: "",
+  //   location: "The Courtyard, 45 Horse Market Street",
+  //   description: `Feminine-styled clothing in a traditional shop setting with changing rooms. They also sell online via their website.<br/><br/>
+  //                 Access is level going in and so are the two changing rooms. These are not very big, so some mobility would be required. `
+  // },
   {
     name: 'Geek Retreat',
     link: 'https://www.facebook.com/GeekRetreatWarrington',
@@ -288,16 +270,16 @@ export const friendly: SocialInfo[] = [
                   Wheelchair access at front although the door is a heavy push. Accessible loo. 
                   Long indoor ramp to second level where the café is.`
   },
-  {
-    name: 'Mamar\'s Artisan Bakery & Delicatessen',
-    icon: 'local_cafe',
-    iconAlt: "",
-    link: "https://mamars.co.uk/",
-    location: "31 Sankey St, Warrington WA1 1XG",
-    description: `Freshly baked savoury & sweet Artisan Breads & Cakes (all baked products are made and baked onsite), Artisan Cheeses, 
-                  Meats & Deli, Teas, Coffees, Chocolate, Alcohol, dry goods. Retail. Wholesale. Eat in & Take Away. Events & Classes. Private Hire.<br/><br/>
-                  Mamar's has hosted pride events in the past.`
-  },
+  // {
+  //   name: 'Mamar\'s Artisan Bakery & Delicatessen',
+  //   icon: 'local_cafe',
+  //   iconAlt: "",
+  //   link: "https://mamars.co.uk/",
+  //   location: "31 Sankey St, Warrington WA1 1XG",
+  //   description: `Freshly baked savoury & sweet Artisan Breads & Cakes (all baked products are made and baked onsite), Artisan Cheeses, 
+  //                 Meats & Deli, Teas, Coffees, Chocolate, Alcohol, dry goods. Retail. Wholesale. Eat in & Take Away. Events & Classes. Private Hire.<br/><br/>
+  //                 Mamar's has hosted pride events in the past.`
+  // },
   {
     name: 'Nice N Naughty',
     link: 'https://nicennaughty.co.uk/',
