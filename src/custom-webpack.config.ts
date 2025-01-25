@@ -1,6 +1,8 @@
 const Dotenv = require('dotenv-webpack');
+
+const fs = require('fs')
+fs.writeFileSync('./.env', `calendarAddress=${process.env["calendarAddress"]}\ncalendarAPI=${process.env["calendarAPI"]}\n`)
+
 module.exports = {
-  plugins: [new Dotenv({
-    systemvars: true, //Set to true if you would rather load all system variables as well (useful for CI purposes)
-  })],
+  plugins: [new Dotenv({systemvars: true})],
 };
