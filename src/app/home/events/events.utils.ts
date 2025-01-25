@@ -1,6 +1,5 @@
 import { Calendar, FormatterInput, PluginDef, ToolbarInput } from '@fullcalendar/core/index.js';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
-import { APIKey, CalendarAddress } from '../../constants';
 import { MatDialog } from '@angular/material/dialog';
 import { EventData } from '../../types';
 import { InfoDialogComponent } from '../../Components/info-dialog/info-dialog.component';
@@ -25,9 +24,9 @@ export const getCalendar = ( calendarEl: HTMLElement, plugin: PluginDef, initial
     ],
     initialView: initialView,
     contentHeight: 'auto',
-    googleCalendarApiKey: APIKey,
+    googleCalendarApiKey: process.env["calendarAPI"],
     events: {
-      googleCalendarId: CalendarAddress
+      googleCalendarId: process.env["calendarAddress"]
     },
     headerToolbar: customHeaderToolbar,
     titleFormat: titleFormat? customTitleFormat: undefined,

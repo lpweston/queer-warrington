@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
 
+## Environment Set Up
+
+Create a `.env` file in the root folder, containing the following:
+```
+calendarAddress=[EnterCalendarAddressHere]
+calendarAPI=[EnterCalendarAPIHere]
+```
+Replacing the square brackets with the relevant keys (final version should have no square brackets).
+Calendar API can be found at https://console.cloud.google.com/apis/credentials when logged in with the queerwarrington@gmail.com account.
+Calendar Address is most likely queerwarrington@gmail.com. otherwise it can be found on https://calendar.google.com/calendar when logged into the queerwarrington@gmail.com account.
+By opening the settings of the calendar and looking for Calendar ID.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
