@@ -18,6 +18,8 @@
         background-size: cover;
 
         mat-card{
+            margin: 50px 10%;
+            border: 2px solid yellow;
             width: fit-content;
             color: v.$lite;
             display: flex;
@@ -26,7 +28,7 @@
             align-items: center;
             justify-content: center;
             max-width: 90%;
-            background-color: v.$grey;
+            background-color: #000000da;
 
             h1 {
                 width: min-content;
@@ -35,8 +37,9 @@
             }
             
             p {
-                width: 300px;
+                width: 350px;
                 margin: 20px;
+                font-size: x-large;
             }
         }
     }
