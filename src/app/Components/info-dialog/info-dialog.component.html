@@ -4,7 +4,7 @@
 </div>
 <mat-dialog-content>
   @if (data.link) {<mat-icon>home</mat-icon
-  ><span [innerHTML]="data.link"></span>} @if (data.start) {
+  ><span [innerHTML]="data.link | convertToLink"></span>} @if (data.start) {
   <mat-icon>today</mat-icon>
   <div>
     <span>{{ data.start | date : "longDate" }}</span>

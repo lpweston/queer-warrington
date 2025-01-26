@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {
   MAT_DIALOG_DATA,
-  MatDialogActions,
   MatDialogClose,
   MatDialogContent,
   MatDialogRef,
@@ -11,6 +10,7 @@ import {
 import { DatePipe } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
 import { EventData } from '../../types';
+import { ConvertToLinkPipe } from "../../convert-to-link.pipe";
 
 @Component({
   selector: 'app-info-dialog',
@@ -21,8 +21,9 @@ import { EventData } from '../../types';
     MatDialogContent,
     MatDialogClose,
     MatIcon,
-    DatePipe
-  ],
+    DatePipe,
+    ConvertToLinkPipe
+],
   templateUrl: './info-dialog.component.html',
   styleUrl: './info-dialog.component.scss'
 })
