@@ -6,6 +6,7 @@
 
         h2 {
             margin-bottom: 0px;
+            max-width: calc(100% - 60px);
         }
         
         button {
@@ -20,6 +21,10 @@
 
         div {
             padding-top: 3px;
+        }
+        
+        span {
+            overflow: auto;
         }
     }
 }
