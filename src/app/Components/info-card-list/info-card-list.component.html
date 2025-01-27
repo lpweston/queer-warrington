@@ -14,7 +14,11 @@
     </mat-list-item>
   </a>
   } @else {
-  <mat-list-item (click)="openDialog(item)">
+  <mat-list-item
+    (click)="openDialog(item)"
+    (keyup.enter)="openDialog(item)"
+    tabindex="0"
+  >
     @if (item.icon.includes('/assets')){
     <img matListItemIcon [src]="item.icon" [alt]="item.iconAlt" />
     } @else {

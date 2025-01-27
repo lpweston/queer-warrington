@@ -45,7 +45,7 @@ export const groups: GroupInfo[] = [
         name: "",
         link: 'https://www.warrington.gov.uk/node/11259',
         icon: 'home',
-        iconAlt: 'home',
+        iconAlt: 'TAGS homepage',
       },
     ]
   }
@@ -67,7 +67,7 @@ export const supportServices: GroupInfo[] = [
         name: "",
         link: 'https://www.lovingme.uk/',
         icon: 'home',
-        iconAlt: 'Loving Me Website',
+        iconAlt: 'Loving Me Homepage',
       },
       {
         name: "",
@@ -148,25 +148,25 @@ export const companies: GroupInfo[] = [
       link: 'https://samsmallink.co.uk/',
       name: "",
       icon: "home",
-      iconAlt: "Homepage"
+      iconAlt: "Sam Small Ink Homepage"
       },
       {
         link: "https://www.instagram.com/sam_small_ink_",
         name: "",
         icon: '/assets/icons/Instagram_Glyph_White.svg',
-        iconAlt: "Instagram"
+        iconAlt: "Sam Small Ink Instagram"
       },
       {
         link:"https://www.facebook.com/samsmallink/",
         name: '',
         icon: '/assets/icons/fb-wh.webp',
-        iconAlt: 'Facebook'
+        iconAlt: 'Sam Small Ink Facebook'
       },
       {
         link:"https://www.tiktok.com/@samsmalltattoo",
         name: '',
         icon: '/assets/icons/tiktok.webp',
-        iconAlt: 'TikTok'
+        iconAlt: 'Sam Small Ink TikTok'
       }
     ],
   },
@@ -183,13 +183,13 @@ export const companies: GroupInfo[] = [
         name: "",
         link: "https://www.instagram.com/jacqueline_fontaine_comedy/",
         icon: '/assets/icons/Instagram_Glyph_White.svg',
-        iconAlt: 'Instagram'
+        iconAlt: 'Jacqueline Fontaine Instagram'
       },
       {
         name: "",
         link: "https://www.facebook.com/jack.haselden",
         icon: '/assets/icons/fb-wh.webp',
-        iconAlt: 'Facebook'
+        iconAlt: 'Jacqueline Fontaine Facebook'
       }
     ]
   }

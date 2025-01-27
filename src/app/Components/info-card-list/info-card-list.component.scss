@@ -20,7 +20,7 @@
             color: v.$dark;
         }
 
-        &:hover{
+        &:hover, &:focus{
             background-color: v.$lite2;
             cursor:pointer;
         }
