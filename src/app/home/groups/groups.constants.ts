@@ -6,9 +6,13 @@ export const groups: GroupInfo[] = [
     subtitle: 'Adult Group',
     icon: 'queer-coffee-icon',
     imagePath: '/assets/images/queerCoffeePhoto.webp',
-    description: `This group started to be a queer safe place in the warrington area. It's a group for everyone: the shes/zies/theys/hes/zers and everyone in-between who is part of the LGBTQIA+ community.<br/><br/>
-        We meet up (at a minimum) on the last Saturday of each month at the Geek Retreat Warrington at 11.30 am. And are open to adding different locations and different activities on top of this.
-        This group is for anyone aged 18 or over.`,
+    description: `Warrington Queer Coffee is a social group for, and run by, LGBTQ+ adults from Warrington and the surrounding area.<br />
+                  We are a group for anyone in the LGBTQ+ community, regardless of identity or expression. Fem, masc, both or neither, 
+                  however you present (whether you are out or not, passing or not) you are welcome.<br /><br />
+                  We run a regular social meetup at the Geek Retreat in Warrington, on the last Saturday of each month, at 11.30am. 
+                  We also run other events (both regular and one-offs), so check out our calendar for more details!<br /><br />
+                  We try to be as accessible and inclusive as possible, and are always open to feedback and suggestions for how we can improve.<br /><br />
+                  We can be contacted via warrqueercoffee@gmail.com.`,
     links: [
       {
         name: "",
