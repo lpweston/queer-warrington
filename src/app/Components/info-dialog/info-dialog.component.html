@@ -12,6 +12,7 @@
     <span> - {{ data.end | date : "longDate" }}</span>
     }
   </div>
+  @if(data.start.getHours() != 1) {
   <mat-icon>schedule</mat-icon>
   <div>
     <span>{{ data.start | date : "shortTime" }}</span>
@@ -19,7 +20,7 @@
     <span> - {{ data.end | date : "shortTime" }} </span>
     }
   </div>
-  } @if (data.location) {<mat-icon>location_on</mat-icon
+  } } @if (data.location) {<mat-icon>location_on</mat-icon
   ><span>{{ data.location }}</span
   >} @if (data.description) {<mat-icon>description</mat-icon
   ><span [innerHTML]="data.description"></span>}
