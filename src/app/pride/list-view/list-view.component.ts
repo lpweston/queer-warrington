@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PrideEvent, test, WarringtonLocation } from '../pride2024.constants';
+import { Component } from '@angular/core';
+import { PrideEvent, WarringtonLocation, pride2025 } from '../pride2025.constants';
 import { MatCardModule } from '@angular/material/card';
 import { TooltipComponent } from "../tooltip/tooltip.component";
 import { getEventsByLocation } from '../data.util';
@@ -16,6 +16,6 @@ export class ListViewComponent {
   locations: Map<WarringtonLocation, PrideEvent[]> | undefined;
 
   constructor() {
-    this.locations = getEventsByLocation(test);
+    this.locations = getEventsByLocation(pride2025);
   }
 }

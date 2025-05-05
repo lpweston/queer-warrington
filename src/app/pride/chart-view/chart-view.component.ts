@@ -1,32 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { TooltipComponent } from "../tooltip/tooltip.component";
 import * as d3 from 'd3';
-import { PrideEvent, WarringtonLocation, test } from '../pride2024.constants';
+import { PrideEvent, pride2025 } from '../pride2025.constants';
 import { getListOfLocations } from '../data.util';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-chart-view',
   standalone: true,
-  imports: [TooltipComponent],
+  imports: [TooltipComponent, MatButtonModule],
   templateUrl: './chart-view.component.html',
   styleUrl: './chart-view.component.scss'
 })
 export class ChartViewComponent implements OnInit {
+
 // Declare the chart dimensions and margins.
 selectedEvent: PrideEvent | undefined;
 
-private width = 1200;
+private width = 800;
 private height = 400;
-private marginTop = 20;
-private marginRight = 20;
-private marginBottom = 30;
+private marginTop = 30;
+private marginRight = 100;
+private marginBottom = 10;
 private marginLeft = 150;
 
 private colors = ["red", "orange", "gold", "green", "blue", "purple"]
 private colorIdx = 0;
 
-private startDate = new Date("2024-06-08T08:00");
-private endDate = new Date("2024-06-09T03:00");
+private startDate = new Date("2025-06-13T08:00");
+private endDate = new Date("2025-06-15T06:00");
 
 private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
 private xAxis!: d3.ScaleTime<number, number, never>;
@@ -40,6 +42,10 @@ ngOnInit() {
   this.addData();
   this.initTooltips();
 }
+
+setTime(range: string) {
+  // To do set start time and end time based on range week, saturday, sunday
+  }
 
 private initScales() {
   // Declare the x (horizontal position) scale.
@@ -64,10 +70,19 @@ private drawAxis() {
   if (this.chart){
     this.chart.append("g")
     .attr("transform", `translate(0,${this.height - this.marginBottom})`)
-    .call(d3.axisBottom(this.xAxis));
+    .call(d3.axisBottom(this.xAxis).tickSize(-this.height + this.marginBottom + this.marginTop));
     this.chart.append("g")
     .attr("transform", `translate(${this.marginLeft},0)`)
-    .call(d3.axisLeft(this.yAxis));
+    .attr("stroke-width", 0.5)
+    .call(d3.axisLeft(this.yAxis).tickSize(-this.width + this.marginLeft + this.marginRight));
+
+    this.chart.append("g")
+    .attr("transform", `translate(0,0)`)
+    .call(d3.axisTop(this.xAxis).tickSize(-this.height + this.marginBottom + this.marginTop));
+    this.chart.append("g")
+    .attr("transform", `translate(${this.width - this.marginRight},0)`)
+    .attr("stroke-width", 0.5)
+    .call(d3.axisRight(this.yAxis).tickSize(-this.width + this.marginLeft + this.marginRight));
   }
   }
 
@@ -76,7 +91,7 @@ private drawAxis() {
       this.bars = this.chart.append("g")
                 .attr("class", "bars")
                 .selectAll("rect")
-                .data(test)
+                .data(pride2025)
                 .join("rect")
                 .attr("x", d => this.xAxis(d.start))
                 .attr("y", d => this.yAxis(d.location) -10)
@@ -123,4 +138,5 @@ private initTooltips() {
     }
     return color;
   }
+
 }
