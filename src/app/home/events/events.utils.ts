@@ -3,6 +3,7 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import { MatDialog } from '@angular/material/dialog';
 import { EventData } from '../../types';
 import { InfoDialogComponent } from '../../Components/info-dialog/info-dialog.component';
+import { lgbtEvents } from './lgbt-holidays';
 
 export const setNavigateCalendarButton = (buttonSelector: string, calendar: Calendar, next: boolean): void => {
   if (next) {
@@ -26,8 +27,11 @@ export const getCalendar = ( calendarEl: HTMLElement, plugin: PluginDef, initial
     contentHeight: 'auto',
     googleCalendarApiKey: process.env["calendarAPI"],
     events: {
-      googleCalendarId: process.env["calendarAddress"]
+      googleCalendarId: process.env["calendarAddress"],
     },
+    eventSources: [
+      lgbtEvents
+    ],
     headerToolbar: customHeaderToolbar,
     titleFormat: titleFormat? customTitleFormat: undefined,
     eventTimeFormat: {
