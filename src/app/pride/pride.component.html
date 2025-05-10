@@ -1,12 +1,58 @@
 <header>
-  <h1>Pride 2024</h1>
+  <h1>Warrington Pride 2025</h1>
+  <h2>14th June 2025</h2>
   <p>
-    Pride is back for 2024! We have lots of events across the town for everyone
-    to enjoy. Pride will primarily be on the 8th of June, with other events
-    taking place in the week before and after.
+    During times when our rights are being challenged and taken away, it's more
+    important than ever that we should our pride visibly! Pride is a time when
+    we can come together in love, support, celebration and defiance.<br />
+    There are lots of events across the town for everyone to enjoy, which we
+    have collected here for you. If you know of any other events that should be
+    listed here please don't hesitate to reach out to us at
+    warrqueercoffee&#64;gmail.com
   </p>
+  <nav>
+    <a href="pride/#scheduled">
+      <button mat-stroked-button>
+        <mat-icon>schedule</mat-icon>Scheduled Events
+      </button>
+    </a>
+    <a href="pride/#allday">
+      <button mat-stroked-button href="#allday">
+        <mat-icon>today</mat-icon>All Day Activities
+      </button>
+    </a>
+    <a href="pride/#aroundpride">
+      <button mat-stroked-button href="aroundpride">
+        <mat-icon>date_range</mat-icon>What's on around Pride
+      </button>
+    </a>
+  </nav>
 </header>
-<section>
+<section id="scheduled">
+  <h2>Scheduled Events</h2>
+  <p>
+    View:
+    <mat-button-toggle-group
+      name="viewStyle"
+      aria-label="View Style"
+      [(value)]="viewStyle"
+    >
+      <mat-button-toggle value="chart" selected>Chart</mat-button-toggle>
+      <mat-button-toggle value="list">List</mat-button-toggle>
+    </mat-button-toggle-group>
+  </p>
+  @if (viewStyle == 'chart') {
   <app-chart-view></app-chart-view>
-  <app-list-view></app-list-view>
+  } @else {
+  <app-list-view [events]="scheduled"></app-list-view>
+  }
+  <div id="map"><img src="/assets/images/mapimage.jpeg" /></div>
+</section>
+<section id="allday">
+  <h2>All Day Activities</h2>
+  <app-list-view [events]="allday"></app-list-view>
+</section>
+<section id="aroundpride">
+  <h2>What's on around Pride</h2>
+  <app-list-view [events]="aroundPride"></app-list-view>
 </section>

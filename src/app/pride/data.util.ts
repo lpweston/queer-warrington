@@ -2,7 +2,7 @@ import { PrideEvent, WarringtonLocation } from "./pride2025.constants";
 
 export function getEventsByLocation(events: PrideEvent[]): Map<WarringtonLocation, PrideEvent[]> {
     const eventsByLocation = new Map<WarringtonLocation,PrideEvent[]>()
-    Object.values(WarringtonLocation).forEach(location=>{
+    getListOfLocations(events).forEach(location=>{
         eventsByLocation.set(location, [])
         })
 
@@ -13,6 +13,6 @@ export function getEventsByLocation(events: PrideEvent[]): Map<WarringtonLocatio
     return eventsByLocation;
 }
 
-export function getListOfLocations(): string[] {
-    return Object.values(WarringtonLocation).map(v => v.toString())
+export function getListOfLocations(events: PrideEvent[]): WarringtonLocation[] {
+    return [...new Set(events.map((e) => e.location))]
 }

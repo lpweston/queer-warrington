@@ -1,0 +1,14 @@
+:host{
+    mat-card{
+        width: 400px;
+        height: 100%;
+
+        .rainbow-bar-sm {
+            margin: 5px 0;
+        }
+
+        mat-card-content{
+            color: white
+        }
+    }
+  }

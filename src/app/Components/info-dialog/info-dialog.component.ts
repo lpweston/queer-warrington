@@ -34,4 +34,12 @@ export class InfoDialogComponent {
   onNoClick(): void {
     this.dialogRef.close();
   }
+
+  showTime(data: EventData): boolean {
+
+    if (data.start?.getHours() == 1) {
+      return false;
+    }
+    return true;
+  }
 }

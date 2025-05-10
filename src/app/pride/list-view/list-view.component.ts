@@ -1,21 +1,22 @@
-import { Component } from '@angular/core';
-import { PrideEvent, WarringtonLocation, pride2025 } from '../pride2025.constants';
+import { Component, Input, OnInit } from '@angular/core';
+import { PrideEvent, WarringtonLocation } from '../pride2025.constants';
 import { MatCardModule } from '@angular/material/card';
-import { TooltipComponent } from "../tooltip/tooltip.component";
 import { getEventsByLocation } from '../data.util';
 import { KeyValuePipe } from '@angular/common';
+import { EventCardComponent } from '../event-card/event-card.component';
 
 @Component({
   selector: 'app-list-view',
   standalone: true,
-  imports: [MatCardModule, TooltipComponent, KeyValuePipe],
+  imports: [MatCardModule, EventCardComponent, KeyValuePipe],
   templateUrl: './list-view.component.html',
   styleUrl: './list-view.component.scss'
 })
-export class ListViewComponent {
+export class ListViewComponent implements OnInit{
+  @Input() events!: PrideEvent[];
   locations: Map<WarringtonLocation, PrideEvent[]> | undefined;
 
-  constructor() {
-    this.locations = getEventsByLocation(pride2025);
+  ngOnInit(): void {
+    this.locations = getEventsByLocation(this.events);
   }
 }

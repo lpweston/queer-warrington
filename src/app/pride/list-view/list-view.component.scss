@@ -1,13 +1,8 @@
-:host{
-    .events{
+:host {
+    .events {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
         margin: 20px;
-    }
-    app-tooltip{
-        width: 300px;
-        max-height: 300px;
-        height: auto;
     }
 }
