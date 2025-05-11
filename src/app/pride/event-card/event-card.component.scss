@@ -1,14 +1,35 @@
 :host{
+    width: calc(33% - 20px);
+    min-width: 300px;
+
     mat-card{
-        width: 400px;
         height: 100%;
 
-        .rainbow-bar-sm {
-            margin: 5px 0;
+        mat-card-header{
+            height: 80px;
+            align-items: center;
+            margin-bottom:16px;
+
+            mat-card-title{
+                font-family: "Cal Sans", sans-serif;
+            }
         }
 
         mat-card-content{
-            color: white
+            padding-top: 5px;
+            height: 100%;
+            background-color: white;
+
+            div{
+                padding:2px;
+                display: flex;
+            }
         }
+
+        mat-card-actions{
+            height: 50px;
+            color:white;
+        }
+        
     }
   }

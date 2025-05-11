@@ -3,33 +3,61 @@
   <h2>14th June 2025</h2>
   <p>
     During times when our rights are being challenged and taken away, it's more
-    important than ever that we should our pride visibly! Pride is a time when
-    we can come together in love, support, celebration and defiance.<br />
+    important than ever that we should show our pride visibly! Pride is a time
+    when we can come together in love, support, celebration and defiance.<br />
     There are lots of events across the town for everyone to enjoy, which we
     have collected here for you. If you know of any other events that should be
     listed here please don't hesitate to reach out to us at
     warrqueercoffee&#64;gmail.com
   </p>
   <nav>
-    <a href="pride/#scheduled">
-      <button mat-stroked-button>
-        <mat-icon>schedule</mat-icon>Scheduled Events
+    <a href="pride/#location">
+      <button mat-stroked-button style="color: blue">
+        <mat-icon>today</mat-icon>Where is Warrington Pride?
       </button>
     </a>
     <a href="pride/#allday">
-      <button mat-stroked-button href="#allday">
-        <mat-icon>today</mat-icon>All Day Activities
+      <button mat-stroked-button style="color: green">
+        <mat-icon>today</mat-icon>What's On
+      </button>
+    </a>
+    <a href="pride/#scheduled">
+      <button mat-stroked-button style="color: orange">
+        <mat-icon>schedule</mat-icon>Schedule
       </button>
     </a>
     <a href="pride/#aroundpride">
-      <button mat-stroked-button href="aroundpride">
+      <button mat-stroked-button style="color: purple">
         <mat-icon>date_range</mat-icon>What's on around Pride
       </button>
     </a>
   </nav>
 </header>
+<div class="rainbow-bar"></div>
+<section id="location">
+  <div id="location-text">
+    <h2>Where is Warrington Pride?</h2>
+    <p>There are activities going on throughout the town!</p>
+    <ul>
+      <li>
+        There are two stages entertaining you all day: one at Time Square and
+        the other in Golden Square's Old Market Place
+      </li>
+      <li>Funfair, workshops and stalls at Golden Square</li>
+      <li>Talks, activities and crafts inside the University of Chester</li>
+      <li>Family fun at Warrington Youth Zone and the Library</li>
+      <li>And evening entertainment at the Geek Retreat and Parr Hall.</li>
+    </ul>
+    <p>Please see below for more information about these events.</p>
+  </div>
+  <div id="map"><img src="/assets/images/mapimage.jpeg" /></div>
+</section>
+<section id="allday">
+  <h2>What's On</h2>
+  <app-list-view [events]="allday"></app-list-view>
+</section>
 <section id="scheduled">
-  <h2>Scheduled Events</h2>
+  <h2>Schedule</h2>
   <p>
     View:
     <mat-button-toggle-group
@@ -46,13 +74,8 @@
   } @else {
   <app-list-view [events]="scheduled"></app-list-view>
   }
-  <div id="map"><img src="/assets/images/mapimage.jpeg" /></div>
-</section>
-<section id="allday">
-  <h2>All Day Activities</h2>
-  <app-list-view [events]="allday"></app-list-view>
 </section>
 <section id="aroundpride">
   <h2>What's on around Pride</h2>
-  <app-list-view [events]="aroundPride"></app-list-view>
+  <app-list-view [events]="aroundPride" [showDate]="true"></app-list-view>
 </section>

@@ -1,21 +1,44 @@
 :host {
+    width: 90%;
+
     header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 10px 10%;
-        text-align: center;
-        width: 60%;
+        
+        h1{
+            font-family: "Cal Sans", sans-serif;
+            font-size: 4rem;
+        }
+        
+        p{
+            max-width: 800px;
+            text-align: left;
+        }
         
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 20px;  
         }
     }
-    section {
-        margin: 20px 10%;
+    .rainbow-bar{
+        margin: 15px 0;
+        width: 100%;
     }
-    #map{
-        img {
-            width: 500px;
+    section {
+        margin: 40px 10%;
+    }
+
+    #location{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        #location-text{
+            max-width: 550px;
+            
         }
     }
 }

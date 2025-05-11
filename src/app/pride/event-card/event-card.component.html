@@ -7,17 +7,42 @@
   </mat-card-header>
   <div class="rainbow-bar-sm"></div>
   <mat-card-content>
-    <p>
-      {{ event.start.toLocaleTimeString().replace(regex, "") }} -
-      {{ event.end.toLocaleTimeString().replace(regex, "") }}
-      <br />
+    <div>
+      <mat-icon>schedule</mat-icon>
+      <span>
+        {{ event.start.toLocaleTimeString().replace(regex, "") }} -
+        {{ event.end.toLocaleTimeString().replace(regex, "") }}
+      </span>
+    </div>
+    @if (showDate) {
+    <div>
+      <mat-icon>event</mat-icon>
       {{ event.start.toLocaleDateString() }}
-      <br />
+    </div>
+    }
+    <div>
+      <mat-icon>pin_drop</mat-icon>
       {{ event.location }}
-    </p>
+    </div>
     @if (event.description){
-    <p [innerHTML]="event.description"></p>
+    <div>
+      <p [innerHTML]="event.description"></p>
+    </div>
     }
   </mat-card-content>
+  <div class="rainbow-bar-sm"></div>
+  <mat-card-actions>
+    @if(event.link){
+    <a [href]="event.link" target="_blank">
+      <button
+        mat-icon-button
+        [matTooltip]="event.link"
+        matTooltipClass="link-tooltip"
+      >
+        <mat-icon>link</mat-icon>
+      </button>
+    </a>
+    }
+  </mat-card-actions>
 </mat-card>
 }
