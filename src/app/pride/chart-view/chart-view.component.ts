@@ -13,22 +13,21 @@
     styleUrl: './chart-view.component.scss'
   })
   export class ChartViewComponent implements OnInit {
-
   // Declare the chart dimensions and margins.
   selectedEvent: PrideEvent | undefined;
 
-  private width = 1400;
+  private width = this.getChartWidth();
   private height = 400;
   private marginTop = 30;
-  private marginRight = 100;
+  private marginRight = 120;
   private marginBottom = 10;
-  private marginLeft = 150;
+  private marginLeft = 120;
 
   private colors = ["red", "orange", "gold", "green", "blue", "purple"]
   private colorIdx = 0;
 
-  private startDate = new Date("2025-06-14T08:30");
-  private endDate = new Date("2025-06-15T02:00");
+  private startDate = new Date("2025-06-14T10:00");
+  private endDate = new Date("2025-06-15T01:00");
 
   private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
   private xAxis!: d3.ScaleTime<number, number, never>;
@@ -139,4 +138,8 @@
       return color;
     }
 
+    private getChartWidth(): number {
+      const w = window.innerWidth
+      return w - (w*0.2) - 120;
+    }
   }

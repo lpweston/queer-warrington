@@ -1,6 +1,7 @@
 :host{
     width: calc(33% - 20px);
     min-width: 300px;
+    flex-grow: 1;
 
     mat-card{
         height: 100%;

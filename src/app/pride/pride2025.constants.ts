@@ -258,14 +258,14 @@
         name: "Warrington Youth Zone Pride After Party",
         start: new Date("2025-06-14T17:00"),
         end: new Date("2025-06-14T21:00"),
-        description: "Pride After Party for WYZ Seniors! (Age 12-19) This will be an after party for young people to celebrate Pride, from 5pm Warrington Youth Zone will be offering a range of exciting Pride themed activities.</br>No need to book in advance but young people will need to be members before attending - https://warringtonyouthzone.org/membership/join-today/ "
+        description: "Pride After Party for WYZ Seniors! (Age 12-19) This will be an after party for young people to celebrate Pride, from 5pm Warrington Youth Zone will be offering a range of exciting Pride themed activities.</br>No need to book in advance but young people will need to be members before attending."
     },
     {
         location: WarringtonLocation.youthZone,
         name: "Rainbow Family Day",
         start: new Date("2025-06-14T12:00"),
         end: new Date("2025-06-14T16:00"),
-        description: "Pride themed activities for junior members (age 7-12) and their families at Warrington Youth Zone. The family day will have something for all ages to enjoy & engage with celebrating Warrington Pride including performances from young people, live music, disco party, arts & crafts, sports, climbing and much more.</br>No need to book in advance but there must be a junior member present with each family. Juniors are able to attend on their own too. To become a member: https://warringtonyouthzone.org/membership/join-today/ "
+        description: "Pride themed activities for junior members (age 7-12) and their families at Warrington Youth Zone. The family day will have something for all ages to enjoy & engage with celebrating Warrington Pride including performances from young people, live music, disco party, arts & crafts, sports, climbing and much more.</br>No need to book in advance but there must be a junior member present with each family. Juniors are able to attend on their own too."
     },
     {
         location: WarringtonLocation.goldenSquare,
@@ -283,7 +283,7 @@
     },
     {
         location: WarringtonLocation.geekRetreat,
-        name: "Get Your Geek On! Warrington Pride's LGBT comedy Night for the Sophie Lancaster Foundation",
+        name: "Get Your Geek On! comedy Night",
         start: new Date("2025-06-14T20:00"),
         end: new Date("2025-06-14T22:00"),
         description: "LGBT comedy night featuring live music raising funds for the Sophie Lancaster Foundation. 18+ only",

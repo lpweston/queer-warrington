@@ -18,4 +18,10 @@ export class PrideComponent {
   aroundPride = eventsAroundPride;
   allday = allDayEvents;
   viewStyle = 'chart';
+
+  constructor(){
+    if (window.innerWidth < 790){
+      this.viewStyle = "list"
+    }
+  }
 }
