@@ -12,28 +12,28 @@
   </p>
   <nav>
     <a href="pride/#location">
-      <button mat-stroked-button style="color: blue">
-        <mat-icon>today</mat-icon>Where is Warrington Pride?
+      <button mat-stroked-button style="color: lightblue">
+        <mat-icon>location_on</mat-icon>Where is Warrington Pride?
       </button>
     </a>
     <a href="pride/#allday">
-      <button mat-stroked-button style="color: green">
+      <button mat-stroked-button style="color: lightgreen">
         <mat-icon>today</mat-icon>What's On
       </button>
     </a>
     <a href="pride/#scheduled">
-      <button mat-stroked-button style="color: orange">
+      <button mat-stroked-button style="color: lightsalmon">
         <mat-icon>schedule</mat-icon>Schedule
       </button>
     </a>
     <a href="pride/#aroundpride">
-      <button mat-stroked-button style="color: purple">
-        <mat-icon>date_range</mat-icon>What's on around Pride
+      <button mat-stroked-button style="color: pink">
+        <mat-icon>date_range</mat-icon>Pride Month
       </button>
     </a>
   </nav>
 </header>
-<div class="rainbow-bar"></div>
+<!-- <div class="rainbow-bar"></div> -->
 <section id="location">
   <div id="location-text">
     <h2>Where is Warrington Pride?</h2>
@@ -57,25 +57,27 @@
   <app-list-view [events]="allday"></app-list-view>
 </section>
 <section id="scheduled">
-  <h2>Schedule</h2>
-  <p>
-    View:
-    <mat-button-toggle-group
-      name="viewStyle"
-      aria-label="View Style"
-      [(value)]="viewStyle"
-    >
-      <mat-button-toggle value="chart" selected>Chart</mat-button-toggle>
-      <mat-button-toggle value="list">List</mat-button-toggle>
-    </mat-button-toggle-group>
-  </p>
-  @if (viewStyle == 'chart') {
-  <app-chart-view></app-chart-view>
-  } @else {
-  <app-list-view [events]="scheduled"></app-list-view>
-  }
+  <div>
+    <h2>Schedule</h2>
+    <p>
+      View:
+      <mat-button-toggle-group
+        name="viewStyle"
+        aria-label="View Style"
+        [(value)]="viewStyle"
+      >
+        <mat-button-toggle value="chart" selected>Chart</mat-button-toggle>
+        <mat-button-toggle value="list">List</mat-button-toggle>
+      </mat-button-toggle-group>
+    </p>
+    @if (viewStyle == 'chart') {
+    <app-chart-view></app-chart-view>
+    } @else {
+    <app-list-view [events]="scheduled"></app-list-view>
+    }
+  </div>
 </section>
 <section id="aroundpride">
-  <h2>What's on around Pride</h2>
+  <h2>Pride Month</h2>
   <app-list-view [events]="aroundPride" [showDate]="true"></app-list-view>
 </section>
