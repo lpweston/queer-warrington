@@ -33,14 +33,15 @@
   <div class="rainbow-bar-sm"></div>
   <mat-card-actions>
     @if(event.link){
-    <a [href]="event.link" target="_blank">
-      <button
-        mat-icon-button
-        [matTooltip]="event.link"
-        matTooltipClass="link-tooltip"
-      >
-        <mat-icon>link</mat-icon>
-      </button>
+    <a
+      [href]="event.link"
+      target="_blank"
+      mat-icon-button
+      [matTooltip]="event.link"
+      matTooltipClass="link-tooltip"
+      aria-label="event.link"
+    >
+      <mat-icon>link</mat-icon>
     </a>
     }
   </mat-card-actions>
