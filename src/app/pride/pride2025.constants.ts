@@ -137,7 +137,11 @@
         name: "Inclusive Smear Testing: Creating Affirming Care for the LGBTQ+ Community - Debz Butler",
         start: new Date("2025-06-14T13:30"),
         end: new Date("2025-06-14T14:15"),
-        description: "To celebrate Warrington Pride 2025, the University of Chester will be holding two excellent talks by staff and students from the University. Both are free to attend and will be fantastic opportunities to meet new people, listen to personal stories, and join important conversations.",
+        description: `Lecture Room A (upstairs)<br/>
+                      Debz Butler is a Senior Lecturer in Nursing at the University of Chester. She has over 10 years of clinical experience in oncology,
+                      including gynecology oncology. Her research interests include how we meet the needs of oncology patients from under-represented
+                      populations and how social media impacts oncology knowledge. Her talk will raise awareness around the importance of inclusive smear
+                      testing and will be of interest to those passionate about inclusive health care, not just health practitioners!`,
         link: "https://www.eventbrite.co.uk/e/1323652493239?aff=oddtdtcreator"
     },
     {
@@ -145,7 +149,10 @@
         name: "Breaking Down Societal Barriers: From Sexuality to Disability - Stephanie Taylor",
         start: new Date("2025-06-14T14:30"),
         end: new Date("2025-06-14T15:15"),
-        description: "To celebrate Warrington Pride 2025, the University of Chester will be holding two excellent talks by staff and students from the University. Both are free to attend and will be fantastic opportunities to meet new people, listen to personal stories, and join important conversations.",
+        description: `Lecture Room A (upstairs)<br/>
+                     Steph Taylor is a student at the University of Chester. She is also an athlete, performer and photographer. Come and hear her talk
+                     about her experience of disability, her ‘coming out’ journey, how this impacted her college years (including her experience of being 
+                     bullied and pulled out of school) and how she’s come to embrace her own value, identity and self-worth.`,
         link: "https://www.eventbrite.co.uk/e/1323652493239?aff=oddtdtcreator"
     },
     {
