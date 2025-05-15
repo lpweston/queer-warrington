@@ -4,17 +4,19 @@
   import { PrideEvent, scheduledEvents } from '../pride2025.constants';
   import { getListOfLocations } from '../data.util';
   import { MatButtonModule } from '@angular/material/button';
+import { EventCardComponent } from "../event-card/event-card.component";
 
   @Component({
     selector: 'app-chart-view',
     standalone: true,
-    imports: [TooltipComponent, MatButtonModule],
+    imports: [TooltipComponent, MatButtonModule, EventCardComponent],
     templateUrl: './chart-view.component.html',
     styleUrl: './chart-view.component.scss'
   })
   export class ChartViewComponent implements OnInit {
   // Declare the chart dimensions and margins.
   selectedEvent: PrideEvent | undefined;
+  clickedEvent: PrideEvent | undefined;
 
   private width = this.getChartWidth();
   private height = 400;
@@ -27,7 +29,7 @@
   private colorIdx = 0;
 
   private startDate = new Date("2025-06-14T10:00");
-  private endDate = new Date("2025-06-15T01:00");
+  private endDate = new Date("2025-06-15T02:00");
 
   private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
   private xAxis!: d3.ScaleTime<number, number, never>;
@@ -41,10 +43,6 @@
     this.addData();
     this.initTooltips();
   }
-
-  setTime(range: string) {
-    // To do set start time and end time based on range week, saturday, sunday
-    }
 
   private initScales() {
     // Declare the x (horizontal position) scale.
@@ -113,6 +111,10 @@
                   .style("top", event.pageY - 25 + "px")
                   this.selectedEvent = d;
               });  
+
+    this.bars.on("click", (event: MouseEvent, d: PrideEvent)=>{
+                  this.clickedEvent = d;
+              });  
   }
           
     private getLocationsRange(locationsCount: number): number[] {
@@ -140,6 +142,6 @@
 
     private getChartWidth(): number {
       const w = window.innerWidth
-      return w - (w*0.2) - 120;
+      return w - (w*0.2) - 120 -370;
     }
   }
