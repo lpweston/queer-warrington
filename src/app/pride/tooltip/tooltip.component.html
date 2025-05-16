@@ -11,13 +11,10 @@
       {{ event.start.toLocaleTimeString().replace(regex, "") }} -
       {{ event.end.toLocaleTimeString().replace(regex, "") }}
       <br />
-      {{ event.start.toLocaleDateString() }}
-      <br />
       {{ event.location }}
+      <br />
     </p>
-    @if (event.description){
-    <p [innerHTML]="event.description"></p>
-    }
+    <p class="small">Click to display more information in side bar.</p>
   </mat-card-content>
 </mat-card>
 }

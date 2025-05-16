@@ -19,7 +19,7 @@ import { EventCardComponent } from "../event-card/event-card.component";
   clickedEvent: PrideEvent | undefined;
 
   private width = this.getChartWidth();
-  private height = 400;
+  private height = 450;
   private marginTop = 30;
   private marginRight = 120;
   private marginBottom = 10;
@@ -142,6 +142,6 @@ import { EventCardComponent } from "../event-card/event-card.component";
 
     private getChartWidth(): number {
       const w = window.innerWidth
-      return w - (w*0.2) - 120 -370;
+      return w - (w*0.2) - 120 - 500;
     }
   }
