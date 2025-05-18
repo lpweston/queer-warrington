@@ -29,12 +29,11 @@
             align-items: center;
             justify-content: center;
             max-width: 90%;
-            background-color: #000000da;
 
             h1 {
-                width: min-content;
-                margin: 20px;
-                padding: 0;
+                    width: min-content;
+                    margin: 20px;
+                    padding: 0;
             }
             
             p {
@@ -44,4 +43,17 @@
             }
         }
     }
+        
+    #pride-text{
+        padding:30px;
+        color: lightyellow;
+        border-radius: 0;
+        background-color: green;
+        font-size: x-large;
+        strong{
+            font-family: "Cal Sans", sans-serif;
+            letter-spacing: 0.1rem;
+        }
+    }
+    
 }
