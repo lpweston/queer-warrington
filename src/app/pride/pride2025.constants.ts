@@ -76,8 +76,8 @@
     {
         location: WarringtonLocation.university,
         name: "University of Chester: Warrington Pride",
-        start: new Date("2025-06-14T10:00"),
-        end: new Date("2025-06-14T16:00"),
+        start: new Date("2025-06-14T09:30"),
+        end: new Date("2025-06-14T17:00"),
         description: "To celebrate Warrington Pride 2025, the University of Chester will be holding two excellent talks by staff and students from the University. Both are free to attend and will be fantastic opportunities to meet new people, listen to personal stories, and join important conversations.<br/><br/>There will also be a mixture of other events taking place during the day as we host and partner with a number of agencies and organisations, from arts and crafts to facilitated conversation spaces.<br/><br/>All are welcome!",
         link: "https://www.eventbrite.co.uk/e/1323652493239?aff=oddtdtcreator"
     },
@@ -99,7 +99,7 @@
         location: WarringtonLocation.university,
         name: "Queer Coffee Zine Making",
         start: new Date("2025-06-14T10:00"),
-        end: new Date("2025-06-14T05:00"),
+        end: new Date("2025-06-14T17:00"),
         description: "Join Warrington Queer Coffee at the University of Chester as we make zines exploring the spectrum of queer experiences in Warrington.<br/><br/>Paper, pens and other zine-making supplies are available, as well as idea prompts and help for those new to zine-making.<br/><br/>For anyone 18+ who wants to express themselves through crafts, art or writing (or all three)."
     },
     {
@@ -258,14 +258,7 @@
         name: "Kiki Inferno Disco",
         start: new Date("2025-06-14T19:15"),
         end: new Date("2025-06-14T20:00"),
-        description: "Bringing the tunes",
-    },
-    {
-        location: WarringtonLocation.youthZone,
-        name: "Warrington Youth Zone Pride After Party",
-        start: new Date("2025-06-14T17:00"),
-        end: new Date("2025-06-14T21:00"),
-        description: "Pride After Party for WYZ Seniors! (Age 12-19) This will be an after party for young people to celebrate Pride, from 5pm Warrington Youth Zone will be offering a range of exciting Pride themed activities.</br>No need to book in advance but young people will need to be members before attending."
+        description: "Kiki closes the day with a disco set to take us through to 8pm.",
     },
     {
         location: WarringtonLocation.youthZone,
@@ -275,8 +268,15 @@
         description: "Pride themed activities for junior members (age 7-12) and their families at Warrington Youth Zone. The family day will have something for all ages to enjoy & engage with celebrating Warrington Pride including performances from young people, live music, disco party, arts & crafts, sports, climbing and much more.</br>No need to book in advance but there must be a junior member present with each family. Juniors are able to attend on their own too."
     },
     {
+        location: WarringtonLocation.youthZone,
+        name: "Warrington Youth Zone Pride After Party",
+        start: new Date("2025-06-14T17:00"),
+        end: new Date("2025-06-14T21:00"),
+        description: "Pride After Party for WYZ Seniors! (Age 12-19) This will be an after party for young people to celebrate Pride, from 5pm Warrington Youth Zone will be offering a range of exciting Pride themed activities.</br>No need to book in advance but young people will need to be members before attending. 50p entry."
+    },
+    {
         location: WarringtonLocation.goldenSquare,
-        name: "BIG FATT DANCE PARTY",
+        name: "Big Fatt Dance Party",
         start: new Date("2025-06-14T12:30"),
         end: new Date("2025-06-14T13:30"),
         description: "Kicking off pride in style this year is Big Fatt Dance Party with Fatt Butcher, Blu Romantic & Alanna Boden. Expect powerhouse live vocals and wall to wall disco, dance, and queer club classics with some interactive dance routines to get audiences dancing and singing their hearts out before and after the pride march. (Commissioned by Culture Warrington)"
@@ -289,10 +289,24 @@
         description: "Warrington Youth Zone takes over the stage with a showcase of local young talent-including singers, dancers, rappers and choirs-celebrating Pride through performance."
     },
     {
+        location: WarringtonLocation.goldenSquare,
+        name: "A Place Where We Belong - TAGS",
+        start: new Date("2025-06-14T16:15"),
+        end: new Date("2025-06-14T16:00"),
+        description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
+    },
+    {
+        location: WarringtonLocation.goldenSquare,
+        name: "Silent Disco",
+        start: new Date("2025-06-14T16:00"),
+        end: new Date("2025-06-14T18:00"),
+        description: "Don’t miss the return of the ever-popular Silent Disco."
+    },
+    {
         location: WarringtonLocation.geekRetreat,
         name: "Get Your Geek On! comedy Night",
         start: new Date("2025-06-14T20:00"),
-        end: new Date("2025-06-14T22:00"),
+        end: new Date("2025-06-14T23:00"),
         description: "LGBT comedy night featuring live music raising funds for the Sophie Lancaster Foundation. 18+ only",
         link: "https://www.ticketsource.co.uk/whats-on/warrington/geek-retreat-warrington/get-your-geek-on/2025-06-14/20:00/t-dvdpeod"
     },
