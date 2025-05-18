@@ -43,6 +43,16 @@
     >
       <mat-icon>link</mat-icon>
     </a>
+    } @if(event.img){
+    <button
+      mat-icon-button
+      [matTooltip]="event.img"
+      matTooltipClass="img-tooltip"
+      aria-label="event.img"
+      (click)="openDialog(event)"
+    >
+      <mat-icon>image</mat-icon>
+    </button>
     }
   </mat-card-actions>
 </mat-card>

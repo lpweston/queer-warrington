@@ -4,7 +4,8 @@
     start: Date,
     end: Date,
     description?: string,
-    link?: string
+    link?: string,
+    img?: string,
   }
 
   export enum WarringtonLocation {
@@ -107,6 +108,7 @@
         name: "The Tender Heart Conversation Space",
         start: new Date("2025-06-14T10:00"),
         end: new Date("2025-06-14T15:30"),
+        img: 'The-Tender-Heart-Conversation-Space.webp',
         description: "Come to Story Stitchers’s creative space to chat and connect, chill and reflect.<br/><br/>Leave messages of motivation on our Lemon Aid Line, create your own postcard poem  through collage that celebrates the spaces where you feel like you belong.<br/><br/>Whether you're 8 or 88, everybody is welcome to join us in celebrating Warrington Pride.  We'll provide good company, creative activities, a space to chill out and of course biscuits! (Commissioned by Culture Warrington)"
     },
         {
@@ -310,7 +312,8 @@
         start: new Date("2025-06-14T20:00"),
         end: new Date("2025-06-14T23:00"),
         description: "LGBT comedy night featuring live music raising funds for the Sophie Lancaster Foundation. 18+ only",
-        link: "https://www.ticketsource.co.uk/whats-on/warrington/geek-retreat-warrington/get-your-geek-on/2025-06-14/20:00/t-dvdpeod"
+        link: "https://www.ticketsource.co.uk/whats-on/warrington/geek-retreat-warrington/get-your-geek-on/2025-06-14/20:00/t-dvdpeod",
+        img: "get-your-geek-on.webp"
     },
     {
         location: WarringtonLocation.parrHall,
