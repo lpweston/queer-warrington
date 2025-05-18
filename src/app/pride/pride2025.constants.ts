@@ -265,6 +265,7 @@
         name: "Rainbow Family Day",
         start: new Date("2025-06-14T12:00"),
         end: new Date("2025-06-14T16:00"),
+        link: "https://warringtonyouthzone.org/membership/join-today/",
         description: "Pride themed activities for junior members (age 7-12) and their families at Warrington Youth Zone. The family day will have something for all ages to enjoy & engage with celebrating Warrington Pride including performances from young people, live music, disco party, arts & crafts, sports, climbing and much more.</br>No need to book in advance but there must be a junior member present with each family. Juniors are able to attend on their own too."
     },
     {
@@ -272,6 +273,7 @@
         name: "Warrington Youth Zone Pride After Party",
         start: new Date("2025-06-14T17:00"),
         end: new Date("2025-06-14T21:00"),
+        link: "https://warringtonyouthzone.org/membership/join-today/",
         description: "Pride After Party for WYZ Seniors! (Age 12-19) This will be an after party for young people to celebrate Pride, from 5pm Warrington Youth Zone will be offering a range of exciting Pride themed activities.</br>No need to book in advance but young people will need to be members before attending. 50p entry."
     },
     {
@@ -291,7 +293,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "A Place Where We Belong - TAGS",
-        start: new Date("2025-06-14T16:15"),
+        start: new Date("2025-06-14T14:15"),
         end: new Date("2025-06-14T16:00"),
         description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
     },
@@ -315,6 +317,7 @@
         name: "PRIDE After Party",
         start: new Date("2025-06-14T20:30"),
         end: new Date("2025-06-15T00:00"),
+        link: "https://culturewarrington.org/whats-on/pride-after-party/",
         description:"Put on your dancing shoes and get ready to go out-out for the official Warrington Pride After Party. Join your host cabaret superstar and legend in their own mind Fatt Butcher (The Voice UK) with a stellar line-up of some of the UK’s best independent queer talent from the worlds of cabaret, drag, burlesque, dance, club culture and DJs. So let’s come together, celebrate, and stand united under the disco ball for a Pride night to remember. (Commissioned by Culture Warrington)"
     },
 ];
