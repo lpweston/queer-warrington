@@ -14,6 +14,14 @@ describe('InfoCardComponent', () => {
 
     fixture = TestBed.createComponent(InfoCardComponent);
     component = fixture.componentInstance;
+    component.group = {
+      name: "",
+      subtitle: "",
+      icon: "",
+      imagePath: "",
+      description: "",
+      links: []
+    }
     fixture.detectChanges();
   });
 
