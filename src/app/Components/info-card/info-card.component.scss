@@ -3,7 +3,7 @@
 :host {        
     article {
         flex: 1 1;
-        min-width: 300px;
+        min-width: 400px;
         height: 100%;
 
         mat-card {         
@@ -72,6 +72,12 @@
 
         #jacqueline-icon{
             background-image: url('/assets/icons/jacqueline.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #momentum-icon{
+            background-image: url('/assets/icons/Momenutum+Collective+logo.png');
             background-size: cover;
             background-position: center;
         }

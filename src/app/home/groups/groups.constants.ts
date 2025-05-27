@@ -55,7 +55,7 @@ export const groups: GroupInfo[] = [
         iconAlt: 'TAGS homepage',
       },
     ]
-  }
+  },
 ]
 
 export const supportServices: GroupInfo[] = [
@@ -199,7 +199,45 @@ export const companies: GroupInfo[] = [
         iconAlt: 'Jacqueline Fontaine Facebook'
       }
     ]
-  }
+  },
+   {
+    name: 'Momentum Collective',
+    description: `Momentum Collective is a functional fitness gym in the centre of Warrington,
+                  owned by queer couple Amanda Wah and Nat Earl. They offer a welcoming, inclusive
+                  gym where everyone—regardless of background or ability—can feel safe and supported.
+                  With coach-led functional fitness classes for all levels, the focus is on community,
+                  positivity, and empowerment, making it a place where every member can work on their
+                  physical and mental health amongst friends and allies. Free trial available, and Not
+                  A Phase Misfits sessions run fortnightly - EVERYONE is welcome!<br/><br/>
+                  Momentum Collective together with  Not A Phase, are launching a free fitness class in Warrington,
+                  designed specifically for the local Trans+ community. The sessions will be led by owner and head
+                  coach Amanda Wah, and offer a safe, inclusive, and welcoming space for Trans+ individuals to move
+                  their bodies, connect with others, and support their wellbeing (see link below).
+                  `,
+    icon: 'momentum-icon',
+    subtitle: "Gym",
+    imagePath: "/assets/images/IMG_7883.jpg",
+    links: [
+      {
+      link: 'https://www.momentumcollective.co.uk/',
+      name: "",
+      icon: "home",
+      iconAlt: "Momentum Collective Homepage"
+      },
+      {
+        link: "https://www.instagram.com/momentumcollectiveco",
+        name: "",
+        icon: '/assets/icons/Instagram_Glyph_White.svg',
+        iconAlt: "Momentum Collective Instagram"
+      },
+      {
+        link: "https://notaphase.org/class/misfits-hybrid-club-warrington/",
+        name: "",
+        icon: "/assets/icons/not-a-phase.svg",
+        iconAlt: "Not A Phase Website"
+      }
+    ],
+  },
 ]
 
 export const friendly: SocialInfo[] = [
