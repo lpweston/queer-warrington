@@ -8,16 +8,15 @@ import { InfoDialogComponent } from '../info-dialog/info-dialog.component';
 import { SocialInfo } from '../../types';
 
 @Component({
-  selector: 'app-info-card-list',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    MatButtonModule,
-    MatListModule,
-    MatIconModule,
-  ],
-  templateUrl: './info-card-list.component.html',
-  styleUrl: './info-card-list.component.scss'
+    selector: 'app-info-card-list',
+    imports: [
+        MatCardModule,
+        MatButtonModule,
+        MatListModule,
+        MatIconModule,
+    ],
+    templateUrl: './info-card-list.component.html',
+    styleUrl: './info-card-list.component.scss'
 })
 export class InfoCardListComponent {
   @Input() items!: SocialInfo[];

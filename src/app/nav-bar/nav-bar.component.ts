@@ -7,19 +7,18 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-  selector: 'app-nav-bar',
-  standalone: true,
-  imports: [
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatTooltipModule,
-    RouterLink,
-    RouterLinkActive,
-  ],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+    selector: 'app-nav-bar',
+    imports: [
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatMenuModule,
+        MatTooltipModule,
+        RouterLink,
+        RouterLinkActive,
+    ],
+    templateUrl: './nav-bar.component.html',
+    styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
 //   switchTheme(theme: 'light' | 'dark') {

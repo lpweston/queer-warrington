@@ -4,11 +4,10 @@ import { MatCardModule } from '@angular/material/card';
 import { EventCardComponent } from '../event-card/event-card.component';
 
 @Component({
-  selector: 'app-list-view',
-  standalone: true,
-  imports: [MatCardModule, EventCardComponent],
-  templateUrl: './list-view.component.html',
-  styleUrl: './list-view.component.scss'
+    selector: 'app-list-view',
+    imports: [MatCardModule, EventCardComponent],
+    templateUrl: './list-view.component.html',
+    styleUrl: './list-view.component.scss'
 })
 export class ListViewComponent implements OnInit{
   @Input() events!: PrideEvent[];

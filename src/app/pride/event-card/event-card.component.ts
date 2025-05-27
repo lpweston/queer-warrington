@@ -8,11 +8,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { ImageDialogComponent } from '../../Components/image-dialog/image-dialog.component';
 
 @Component({
-  selector: 'app-event-card',
-  standalone: true,
-  imports: [MatCardModule, MatIconModule, MatButtonModule, MatTooltipModule],
-  templateUrl: './event-card.component.html',
-  styleUrl: './event-card.component.scss'
+    selector: 'app-event-card',
+    imports: [MatCardModule, MatIconModule, MatButtonModule, MatTooltipModule],
+    templateUrl: './event-card.component.html',
+    styleUrl: './event-card.component.scss'
 })
 export class EventCardComponent {
   readonly dialog = inject(MatDialog);

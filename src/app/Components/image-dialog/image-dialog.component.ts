@@ -6,11 +6,10 @@ import {
 import { PrideEvent } from '../../pride/pride2025.constants';
 
 @Component({
-  selector: 'app-image-dialog',
-  standalone: true,
-  imports: [],
-  templateUrl: './image-dialog.component.html',
-  styleUrl: './image-dialog.component.scss'
+    selector: 'app-image-dialog',
+    imports: [],
+    templateUrl: './image-dialog.component.html',
+    styleUrl: './image-dialog.component.scss'
 })
 export class ImageDialogComponent {
   readonly dialogRef = inject(MatDialogRef<ImageDialogComponent>);

@@ -7,11 +7,10 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle'
 import { allDayEvents, eventsAroundPride, scheduledEvents } from './pride2025.constants';
 
 @Component({
-  selector: 'app-pride',
-  standalone: true,
-  imports: [ChartViewComponent, ListViewComponent, MatIconModule, MatButtonModule, MatButtonToggleModule],
-  templateUrl: './pride.component.html',
-  styleUrl: './pride.component.scss'
+    selector: 'app-pride',
+    imports: [ChartViewComponent, ListViewComponent, MatIconModule, MatButtonModule, MatButtonToggleModule],
+    templateUrl: './pride.component.html',
+    styleUrl: './pride.component.scss'
 })
 export class PrideComponent {
   scheduled = scheduledEvents;

@@ -11,20 +11,19 @@ import { InfoCardListComponent } from '../../Components/info-card-list/info-card
 import { GroupInfo, SocialInfo } from '../../types';
 
 @Component({
-  selector: 'app-groups',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    MatButtonModule,
-    MatListModule,
-    MatIconModule,
-    RouterLink,
-    RouterLinkActive,
-    InfoCardComponent,
-    InfoCardListComponent
-  ],
-  templateUrl: './groups.component.html',
-  styleUrl: './groups.component.scss'
+    selector: 'app-groups',
+    imports: [
+        MatCardModule,
+        MatButtonModule,
+        MatListModule,
+        MatIconModule,
+        RouterLink,
+        RouterLinkActive,
+        InfoCardComponent,
+        InfoCardListComponent
+    ],
+    templateUrl: './groups.component.html',
+    styleUrl: './groups.component.scss'
 })
 export class GroupsComponent {
   groups: GroupInfo[] = groups;

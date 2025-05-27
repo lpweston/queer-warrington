@@ -3,11 +3,10 @@ import { PrideEvent } from '../pride2025.constants';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'app-tooltip',
-  standalone: true,
-  imports: [MatCardModule],
-  templateUrl: './tooltip.component.html',
-  styleUrl: './tooltip.component.scss'
+    selector: 'app-tooltip',
+    imports: [MatCardModule],
+    templateUrl: './tooltip.component.html',
+    styleUrl: './tooltip.component.scss'
 })
 export class TooltipComponent {
   @Input() event:PrideEvent | undefined;

@@ -7,11 +7,10 @@ import { getCalendar, setNavigateCalendarButton } from './events.utils';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-events',
-  standalone: true,
-  imports: [MatCardModule],
-  templateUrl: './events.component.html',
-  styleUrl: './events.component.scss'
+    selector: 'app-events',
+    imports: [MatCardModule],
+    templateUrl: './events.component.html',
+    styleUrl: './events.component.scss'
 })
 export class EventsComponent implements OnInit {
   readonly dialog = inject(MatDialog);

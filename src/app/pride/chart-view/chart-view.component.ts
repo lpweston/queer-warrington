@@ -8,11 +8,10 @@ import { EventCardComponent } from "../event-card/event-card.component";
 
   @Component({
     selector: 'app-chart-view',
-    standalone: true,
     imports: [TooltipComponent, MatButtonModule, EventCardComponent],
     templateUrl: './chart-view.component.html',
     styleUrl: './chart-view.component.scss'
-  })
+})
   export class ChartViewComponent implements OnInit {
   // Declare the chart dimensions and margins.
   selectedEvent: PrideEvent | undefined;

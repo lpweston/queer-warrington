@@ -13,19 +13,18 @@ import { EventData } from '../../types';
 import { ConvertToLinkPipe } from "../../convert-to-link.pipe";
 
 @Component({
-  selector: 'app-info-dialog',
-  standalone: true,
-  imports: [
-    MatButtonModule,
-    MatDialogTitle,
-    MatDialogContent,
-    MatDialogClose,
-    MatIcon,
-    DatePipe,
-    ConvertToLinkPipe
-],
-  templateUrl: './info-dialog.component.html',
-  styleUrl: './info-dialog.component.scss'
+    selector: 'app-info-dialog',
+    imports: [
+        MatButtonModule,
+        MatDialogTitle,
+        MatDialogContent,
+        MatDialogClose,
+        MatIcon,
+        DatePipe,
+        ConvertToLinkPipe
+    ],
+    templateUrl: './info-dialog.component.html',
+    styleUrl: './info-dialog.component.scss'
 })
 export class InfoDialogComponent {
   readonly dialogRef = inject(MatDialogRef<InfoDialogComponent>);
