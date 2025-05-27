@@ -5,7 +5,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { groups, socials, companies, supportServices, charities, friendly } from './groups.constants';
 import { MatDialog } from '@angular/material/dialog';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 import { InfoCardComponent } from '../../Components/info-card/info-card.component';
 import { InfoCardListComponent } from '../../Components/info-card-list/info-card-list.component';
 import { GroupInfo, SocialInfo } from '../../types';
@@ -17,8 +16,6 @@ import { GroupInfo, SocialInfo } from '../../types';
         MatButtonModule,
         MatListModule,
         MatIconModule,
-        RouterLink,
-        RouterLinkActive,
         InfoCardComponent,
         InfoCardListComponent
     ],
