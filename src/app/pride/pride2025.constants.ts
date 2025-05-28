@@ -263,6 +263,15 @@
         description: "Kiki closes the day with a disco set to take us through to 8pm.",
     },
     {
+        location: WarringtonLocation.timeSquare,
+        name: "Saturday Night Pride at Gravity Social",
+        start: new Date("2025-06-14T19:30"),
+        end: new Date("2025-06-14T24:00"),
+        img: "grav.jpg",
+        link: "https://www.instagram.com/p/DJ8tjiXKAvC/?igsh=MTJudHkwMjR5OTY2cA%3D%3D",
+        description: "Saturday Night Pride at Gravity Social. Tallulah Guard with Rain McMey. All your favorites to soundtrack your Saturday night. Live muse, pool, shuffl, AR darts and more. Free entry.",
+    },
+    {
         location: WarringtonLocation.youthZone,
         name: "Rainbow Family Day",
         start: new Date("2025-06-14T12:00"),
@@ -282,8 +291,15 @@
         location: WarringtonLocation.goldenSquare,
         name: "Big Fatt Dance Party",
         start: new Date("2025-06-14T12:30"),
-        end: new Date("2025-06-14T13:30"),
+        end: new Date("2025-06-14T13:00"),
         description: "Kicking off pride in style this year is Big Fatt Dance Party with Fatt Butcher, Blu Romantic & Alanna Boden. Expect powerhouse live vocals and wall to wall disco, dance, and queer club classics with some interactive dance routines to get audiences dancing and singing their hearts out before and after the pride march. (Commissioned by Culture Warrington)"
+    },
+    {
+        location: WarringtonLocation.goldenSquare,
+        name: "A Place Where We Belong - TAGS",
+        start: new Date("2025-06-14T13:00"),
+        end: new Date("2025-06-14T13:30"),
+        description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
     },
     {
         location: WarringtonLocation.goldenSquare,
@@ -295,8 +311,8 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "A Place Where We Belong - TAGS",
-        start: new Date("2025-06-14T14:15"),
-        end: new Date("2025-06-14T16:00"),
+        start: new Date("2025-06-14T14:30"),
+        end: new Date("2025-06-14T15:45"),
         description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
     },
     {
