@@ -82,9 +82,11 @@
         <mat-button-toggle value="list">List</mat-button-toggle>
       </mat-button-toggle-group>
     </p>
-    @if (viewStyle == 'chart') {
-    <app-chart-view></app-chart-view>
+    @if (viewStyle == 'chart') { @if (screenSmall) {
+    <app-chart-view-long></app-chart-view-long>
     } @else {
+    <app-chart-view></app-chart-view>
+    } } @else {
     <app-list-view [events]="scheduled"></app-list-view>
     }
   </div>
