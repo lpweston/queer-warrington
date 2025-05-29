@@ -17,7 +17,12 @@
     <div class="rainbow-bar-sm"></div>
     <mat-card-actions>
       @for (link of group.links; track link) {
-      <a [href]="link.link" target="_blank">
+      <a
+        [href]="link.link"
+        target="_blank"
+        [matTooltip]="getTooltip(link)"
+        matTooltipClass="link-tooltip"
+      >
         @if(link.icon.includes('/assets')){
         <img matListItemIcon [src]="link.icon" [alt]="link.iconAlt" />
         } @else {
