@@ -67,7 +67,8 @@
         name: "Golden Square Pride Carnival",
         start: new Date("2025-06-14T10:00"),
         end: new Date("2025-06-14T19:00"),
-        link: "https://gswarrington.com/events/",
+        link: "https://gswarrington.com/golden-square-pride-carnival/",
+        img: "gs2.jpg",
         description: `
         Golden Square is hosting a big Pride Carnival encouraging families to join in our celebration!<br/><br/>
         The Old Market Place Stage will play host to local community groups to provide live music performances and entertainment throughout the day.<br/><br/>
@@ -129,7 +130,8 @@
         start: new Date("2025-06-14T09:00"),
         end: new Date("2025-06-14T23:00"),
         description: "Open all day for all things fun! Soft play centre, Bowling, Golf, Pool, Arcades.<br/><br/>Face Painting 12-4pm DJ From 7pm. We'll have giveaways and prizes to be won all day, with our DJ taking all requests from 7pm.",
-        link: "www.discobowl.co.uk/warrington"
+        link: "www.discobowl.co.uk/warrington",
+        img: "Warrington-Pride-SQ-2.webp"
     },
   ]
 
@@ -296,6 +298,13 @@
     },
     {
         location: WarringtonLocation.goldenSquare,
+        name: "Silent Disco",
+        start: new Date("2025-06-14T13:00"),
+        end: new Date("2025-06-14T17:00"),
+        description: "Don’t miss the return of the ever-popular Silent Disco."
+    },
+    {
+        location: WarringtonLocation.goldenSquare,
         name: "A Place Where We Belong - TAGS",
         start: new Date("2025-06-14T13:00"),
         end: new Date("2025-06-14T13:30"),
@@ -317,10 +326,17 @@
     },
     {
         location: WarringtonLocation.goldenSquare,
-        name: "Silent Disco",
-        start: new Date("2025-06-14T16:00"),
-        end: new Date("2025-06-14T18:00"),
-        description: "Don’t miss the return of the ever-popular Silent Disco."
+        name: "Drew's Dirty Disco",
+        start: new Date("2025-06-14T17:00"),
+        end: new Date("2025-06-14T19:00"),
+        description: "Drew's Dirty Disco is a two-hour set of disco, camp, and queer-themed music. The playlist promises to be a seamless mix of old-school classics and modern hits, all masterfully remixed into disco tunes. Big camp bangers with lots of space to dance whilst having access to a number of bars, coffee shops & amazing eateries!Be awesome to see you there."
+    },
+    {
+        location: WarringtonLocation.goldenSquare,
+        name: "After Party at Disco Bowl",
+        start: new Date("2025-06-14T19:00"),
+        end: new Date("2025-06-14T24:00"),
+        description: "The after-party continues at Disco Bowl with an evening DJ set and unlimited disco bowling* from 6.00pm."
     },
     {
         location: WarringtonLocation.geekRetreat,
