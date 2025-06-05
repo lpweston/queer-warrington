@@ -1,6 +1,13 @@
 @if (event) {
 <mat-card>
   <mat-card-header>
+    @if (event.icon){
+    <img
+      mat-card-image
+      [src]="'/assets/icons/' + event.icon"
+      class="icon-img"
+    />
+    }
     <mat-card-title>
       {{ event.name }}
     </mat-card-title>

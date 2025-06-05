@@ -6,6 +6,7 @@
     description?: string,
     link?: string,
     img?: string,
+    icon?: string
   }
 
   export enum WarringtonLocation {
@@ -25,6 +26,7 @@
         name: "Pride Scratch Night",
         start: new Date("2025-06-12T19:00"),
         end: new Date("2025-06-12T11:59"),
+        icon: "CW.jpg",
         link: "https://culturewarrington.org/whats-on/pride-scratch-night/",
         description: "Part of the Warrington Pride celebrations our latest Scratch Night will showcase the talents of creatives from the LGBTQ+ community.</br>Our Scratch Night gives performing artists and companies the opportunity to showcase their newly developed work to receive peer review and audience feedback to help develop their pieces and their practice.Full line up to be announced."
     },
@@ -33,6 +35,7 @@
         name: "'Making it Madonna', a tribute to the queen of pop",
         start: new Date("2025-06-13T18:00"),
         end: new Date("2025-06-13T21:15"),
+        icon: "Logos-markets.png",
         description: "Warrington Market presents 'Making it Madonna', a tribute to the queen of pop, with support from the amazing Charlie Cooper.<br/>Join us at 6pm for a mesmerising performance from singer and pianist, Charlie Cooper, before the UK's most 'IMMACULATE' tribute to the Queen of Pop hits the stage at 8.15pm to celebrate Madonna in all her glory!</br>Performing all the hits from over 40 years in pop, this is the ultimate tribute night and it's completely free.</br>No age limit, but parental discretion is advised during the Madonna show."
     },
     {
@@ -40,6 +43,7 @@
         name: "The House, The Boys & The Trial",
         start: new Date("2025-06-27T19:00"),
         end: new Date("2025-06-27T21:00"),
+        icon: "CW.jpg",
         link: "https://culturewarrington.org/whats-on/the-house-the-boys-the-trial/",
         description: "In May 1806, a public tavern in Warrington – known in the press as Sodomite House – was raided and all the men involved faced trial for the acts involved. This dramatised production tells the story of 5 men who were arrested on that fateful day and the trials that followed. After the success of 2024’s “Chicken”, Soup Productions returns with a new, heart wrenching drama based on true events.</br></br>This production is for ages16+ only. This show includes adult themes, discriminatory language and behaviours, violence and sexual abuse. "
     },
@@ -48,6 +52,7 @@
         name: "The House, The Boys & The Trial",
         start: new Date("2025-06-28T19:00"),
         end: new Date("2025-06-28T21:00"),
+        icon: "CW.jpg",
         link: "https://culturewarrington.org/whats-on/the-house-the-boys-the-trial/",
         description: "In May 1806, a public tavern in Warrington – known in the press as Sodomite House – was raided and all the men involved faced trial for the acts involved. This dramatised production tells the story of 5 men who were arrested on that fateful day and the trials that followed. After the success of 2024’s “Chicken”, Soup Productions returns with a new, heart wrenching drama based on true events.</br></br>This production is for ages16+ only. This show includes adult themes, discriminatory language and behaviours, violence and sexual abuse. "
     },
@@ -60,6 +65,7 @@
         start: new Date("2025-06-14T12:30"),
         end: new Date("2025-06-14T20:00"),
         link: "https://timesquarewarrington.co.uk/events/warrington-pride-2025/",
+        icon: "TimeSquare_Logo.svg",
         description: "A Lively programme of performances and games for all the family, hosted by drag sensation Kiki Inferno. The Time Square stage will deliver high-energy performances, party games, and live music all day long.<br/><br/>See schedule below for more information."
     },
     {
@@ -69,6 +75,7 @@
         end: new Date("2025-06-14T19:00"),
         link: "https://gswarrington.com/golden-square-pride-carnival/",
         img: "gs2.jpg",
+        icon: "Golden-Square-Shopping-Centre.webp",
         description: `
         Golden Square is hosting a big Pride Carnival encouraging families to join in our celebration!<br/><br/>
         The Old Market Place Stage will play host to local community groups to provide live music performances and entertainment throughout the day.<br/><br/>
@@ -80,6 +87,7 @@
         name: "University of Chester: Warrington Pride",
         start: new Date("2025-06-14T09:30"),
         end: new Date("2025-06-14T17:00"),
+        icon: "uoc.png",
         description: "To celebrate Warrington Pride 2025, the University of Chester will be holding two excellent talks by staff and students from the University. Both are free to attend and will be fantastic opportunities to meet new people, listen to personal stories, and join important conversations.<br/><br/>There will also be a mixture of other events taking place during the day as we host and partner with a number of agencies and organisations, from arts and crafts to facilitated conversation spaces.<br/><br/>All are welcome!",
         link: "https://www.eventbrite.co.uk/e/1323652493239?aff=oddtdtcreator"
     },
@@ -88,6 +96,7 @@
         name: "Pride in Your Library",
         start: new Date("2025-06-14T11:00"),
         end: new Date("2025-06-14T14:00"),
+        icon: "Livewire_Warrington_Alt.png",
         description: "Warrington Library is offering a range of crafts, including mindful colouring, badge making, 3D printed rainbows, marshmallow decorating, and a library trail for children from infant through to YA."
     },
     {
@@ -95,6 +104,7 @@
         name: "Queer Coffee Changing Space",
         start: new Date("2025-06-14T09:30"),
         end: new Date("2025-06-14T16:00"),
+        icon: "queerCoffeeLogo.webp",
         description: "Local community group Queer Coffee is hosting a safe space to change into your preferred clothes for Pride. Please feel welcome to can come along to our private changing space at the University of Chester.<br/><br/>There is also a small selection of donated clothes if you want to try out new styles, and lockers are available to store items if needed.<br/><br/>Please note this space is available for adults (18+) only."
     },
     {
@@ -102,6 +112,7 @@
         name: "Queer Coffee Zine Making",
         start: new Date("2025-06-14T10:00"),
         end: new Date("2025-06-14T17:00"),
+        icon: "queerCoffeeLogo.webp",
         description: "Join Warrington Queer Coffee at the University of Chester as we make zines exploring the spectrum of queer experiences in Warrington.<br/><br/>Paper, pens and other zine-making supplies are available, as well as idea prompts and help for those new to zine-making.<br/><br/>For anyone 18+ who wants to express themselves through crafts, art or writing (or all three)."
     },
     {
@@ -110,6 +121,7 @@
         start: new Date("2025-06-14T10:00"),
         end: new Date("2025-06-14T15:30"),
         img: 'The-Tender-Heart-Conversation-Space.webp',
+        icon: "StoryStitchers.png",
         description: "Come to Story Stitchers’s creative space to chat and connect, chill and reflect.<br/><br/>Leave messages of motivation on our Lemon Aid Line, create your own postcard poem  through collage that celebrates the spaces where you feel like you belong.<br/><br/>Whether you're 8 or 88, everybody is welcome to join us in celebrating Warrington Pride.  We'll provide good company, creative activities, a space to chill out and of course biscuits! (Commissioned by Culture Warrington)"
     },
         {
@@ -117,6 +129,7 @@
         name: "Warrington Youth Zone: Rainbow Family Day",
         start: new Date("2025-06-14T12:00"),
         end: new Date("2025-06-14T21:00"),
+        icon: "WYZ.png",
         link: "https://warringtonyouthzone.org/membership/join-today/",
         description: `Pride themed activities for junior members (age 7-12) and their families at Warrington Youth Zone.
         Live music, disco party, arts & crafts, sports, climbing and much more.</br></br>No need to book in advance but there must be a junior member present with each family.
@@ -131,7 +144,8 @@
         end: new Date("2025-06-14T23:00"),
         description: "Open all day for all things fun! Soft play centre, Bowling, Golf, Pool, Arcades.<br/><br/>Face Painting 12-4pm DJ From 7pm. We'll have giveaways and prizes to be won all day, with our DJ taking all requests from 7pm.",
         link: "www.discobowl.co.uk/warrington",
-        img: "Warrington-Pride-SQ-2.webp"
+        img: "Warrington-Pride-SQ-2.webp",
+        icon: "thumb_DM-LOGO-WB-War_1.png"
     },
   ]
 
