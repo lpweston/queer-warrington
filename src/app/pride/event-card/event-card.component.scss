@@ -10,9 +10,16 @@
             height: 80px;
             align-items: center;
             margin-bottom:16px;
-
+            justify-content: space-between;
+            
             mat-card-title{
                 font-family: "Cal Sans", sans-serif;
+            }
+
+            .icon-img{
+                height: 56px;
+                background-color: white;
+                border-radius: 5px;
             }
         }
 

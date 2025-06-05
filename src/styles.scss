@@ -83,3 +83,10 @@ mat-card.mat-mdc-card{
 .link-tooltip .mdc-tooltip__surface{
   max-width: unset !important;
 }
+
+#calendar-list .fc-view-harness{
+    max-height: 80vh;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: visible;
+}
