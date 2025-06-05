@@ -153,6 +153,7 @@
     {
         location: WarringtonLocation.university,
         name: "Inclusive Smear Testing: Creating Affirming Care for the LGBTQ+ Community - Debz Butler",
+        icon: "uoc.png",
         start: new Date("2025-06-14T13:30"),
         end: new Date("2025-06-14T14:15"),
         description: `Lecture Room A (upstairs)<br/>
@@ -164,6 +165,7 @@
     },
     {
         location: WarringtonLocation.university,
+        icon: "uoc.png",
         name: "Breaking Down Societal Barriers: From Sexuality to Disability - Stephanie Taylor",
         start: new Date("2025-06-14T14:30"),
         end: new Date("2025-06-14T15:15"),
@@ -176,6 +178,7 @@
     {
         location: WarringtonLocation.university,
         name: "Warrington Youth Zone Pride Arts Activity",
+        icon: "WYZ.png",
         start: new Date("2025-06-14T10:15"),
         end: new Date("2025-06-14T11:45"),
         description: "Arts activity before the Pride Parade starts to make banners, flags, badges etc. The activity will finish at 11.45 to tie in with the parade starting at 12pm. Any age is welcome, it is targeted at families & young people who are celebrating Pride and taking part in the parade."
@@ -183,6 +186,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "BIG FATT DANCE PARTY",
+        icon: "CW.jpg",
         start: new Date("2025-06-14T11:00"),
         end: new Date("2025-06-14T12:00"),
         description: "Kicking off pride in style this year is Big Fatt Dance Party with Fatt Butcher, Blu Romantic & Alanna Boden. Expect powerhouse live vocals and wall to wall disco, dance, and queer club classics with some interactive dance routines to get audiences dancing and singing their hearts out before and after the pride march. (Commissioned by Culture Warrington)"
@@ -190,6 +194,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Pre-Parade Speeches",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T11:30"),
         end: new Date("2025-06-14T12:00"),
         description: "Gather in Time Square ahead of the pride parade to hear a series of short speeches."
@@ -197,6 +202,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Pride Parade",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T12:00"),
         end: new Date("2025-06-14T12:30"),
         description: "Join the march from Time Square to Old Market Square."
@@ -204,6 +210,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "The Strayhorns",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T12:30"),
         end: new Date("2025-06-14T13:15"),
         description: "Brassy bangers, sassy grooves and roaming joy, this ensemble brings the party to the people!",
@@ -211,6 +218,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "A welcome from Kiki Inferno",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T13:15"),
         end: new Date("2025-06-14T13:30"),
         description: "Due to popular demand, the return of Kiki, a global drag sensation known for her powerhouse vocals, dazzling stage presence and show-stopping numbers.",
@@ -218,6 +226,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Warrington Pride’s Ultimate Party Bingo",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T13:30"),
         end: new Date("2025-06-14T14:15"),
         description: "Hosted by Kiki Inferno, this isn't your nan's bingo night. Expect glittering prizes, wild competitions, classic dancefloor anthems, and enough sass to fill the bingo hall twice over.",
@@ -225,6 +234,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "PopVox Choir",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T14:15"),
         end: new Date("2025-06-14T14:45"),
         description: "This inclusive choir brings the feel-good factor to the square.",
@@ -232,6 +242,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "The Strayhorns",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T14:45"),
         end: new Date("2025-06-14T15:30"),
         description: "Brassy bangers, sassy grooves and roaming joy, this ensemble brings the party to the people!",
@@ -239,6 +250,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Warrington Pride’s Ultimate Party Bingo",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T15:30"),
         end: new Date("2025-06-14T16:15"),
         description: "Hosted by Kiki Inferno, this isn't your nan's bingo night. Expect glittering prizes, wild competitions, classic dancefloor anthems, and enough sass to fill the bingo hall twice over.",
@@ -246,6 +258,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Jack Buckley",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T16:15"),
         end: new Date("2025-06-14T17:00"),
         description: "Manchester singer/songwriter Jack brings a different take of covers including songs by Lana Del Rey, Chappell Roan & Billie Eilish, alongside some of his own original songs.",
@@ -253,6 +266,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Kiki Inferno and special guests",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T17:00"),
         end: new Date("2025-06-14T18:00"),
         description: "Get ready to turn up the heat with Warrington’s biggest drag queen, Kiki Inferno, as she storms the Pride stage with a show-stopping set full of powerhouse vocals, high-energy dance anthems, and party bangers that'll have you living your best life from start to finish! Joining Kiki on stage are the rising stars of tomorrow — talented Performing Arts students from Warrington’s Royal Vale College. These fierce young dancers have choreographed much of the show themselves, bringing fresh, dynamic energy and creativity that’s not to be missed.",
@@ -260,6 +274,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Roaming performers",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T18:00"),
         end: new Date("2025-06-14T18:30"),
         description: "Be mesmerised by Las Vegas-style acts involving Magic Spheres and Juggling. ",
@@ -267,6 +282,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Sweet Like Sabrina",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T18:30"),
         end: new Date("2025-06-14T19:15"),
         description: "this stunning tribute to upcoming pop princess, Sabrina Carpenter pays tribute to one of the world’s biggest stars by perfectly embodying her incredible vocals, sassy energy and stage presence. She delivers a show that is fun & vibrant, whilst capturing some of Sabrina’s most iconic moments & choreography from her ‘Short & Sweet’ tour.",
@@ -274,6 +290,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Kiki Inferno Disco",
+        icon: "TimeSquare_Logo.svg",
         start: new Date("2025-06-14T19:15"),
         end: new Date("2025-06-14T20:00"),
         description: "Kiki closes the day with a disco set to take us through to 8pm.",
@@ -281,6 +298,7 @@
     {
         location: WarringtonLocation.timeSquare,
         name: "Saturday Night Pride at Gravity Social",
+        icon:"grav.svg",
         start: new Date("2025-06-14T19:30"),
         end: new Date("2025-06-14T24:00"),
         img: "grav.jpg",
@@ -290,6 +308,7 @@
     {
         location: WarringtonLocation.youthZone,
         name: "Rainbow Family Day",
+        icon: "WYZ.png",
         start: new Date("2025-06-14T12:00"),
         end: new Date("2025-06-14T16:00"),
         link: "https://warringtonyouthzone.org/membership/join-today/",
@@ -298,6 +317,7 @@
     {
         location: WarringtonLocation.youthZone,
         name: "Warrington Youth Zone Pride After Party",
+        icon: "WYZ.png",
         start: new Date("2025-06-14T17:00"),
         end: new Date("2025-06-14T21:00"),
         link: "https://warringtonyouthzone.org/membership/join-today/",
@@ -306,6 +326,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "Big Fatt Dance Party",
+        icon: "CW.jpg",
         start: new Date("2025-06-14T12:30"),
         end: new Date("2025-06-14T13:00"),
         description: "Kicking off pride in style this year is Big Fatt Dance Party with Fatt Butcher, Blu Romantic & Alanna Boden. Expect powerhouse live vocals and wall to wall disco, dance, and queer club classics with some interactive dance routines to get audiences dancing and singing their hearts out before and after the pride march. (Commissioned by Culture Warrington)"
@@ -313,6 +334,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "Silent Disco",
+        icon: "Golden-Square-Shopping-Centre.webp",
         start: new Date("2025-06-14T13:00"),
         end: new Date("2025-06-14T17:00"),
         description: "Don’t miss the return of the ever-popular Silent Disco."
@@ -320,6 +342,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "A Place Where We Belong - TAGS",
+        icon: "tagsIcon.webp",
         start: new Date("2025-06-14T13:00"),
         end: new Date("2025-06-14T13:30"),
         description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
@@ -327,6 +350,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "Warrington Youth Zone Takes the Stage",
+        icon: "WYZ.png",
         start: new Date("2025-06-14T13:30"),
         end: new Date("2025-06-14T14:15"),
         description: "Warrington Youth Zone takes over the stage with a showcase of local young talent-including singers, dancers, rappers and choirs-celebrating Pride through performance."
@@ -334,6 +358,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "A Place Where We Belong - TAGS",
+        icon: "tagsIcon.webp",
         start: new Date("2025-06-14T14:30"),
         end: new Date("2025-06-14T15:45"),
         description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
@@ -341,6 +366,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "Drew's Dirty Disco",
+        icon: "Golden-Square-Shopping-Centre.webp",
         start: new Date("2025-06-14T17:00"),
         end: new Date("2025-06-14T19:00"),
         description: "Drew's Dirty Disco is a two-hour set of disco, camp, and queer-themed music. The playlist promises to be a seamless mix of old-school classics and modern hits, all masterfully remixed into disco tunes. Big camp bangers with lots of space to dance whilst having access to a number of bars, coffee shops & amazing eateries!Be awesome to see you there."
@@ -348,6 +374,7 @@
     {
         location: WarringtonLocation.goldenSquare,
         name: "After Party at Disco Bowl",
+        icon: "thumb_DM-LOGO-WB-War_1.png",
         start: new Date("2025-06-14T19:00"),
         end: new Date("2025-06-14T24:00"),
         description: "The after-party continues at Disco Bowl with an evening DJ set and unlimited disco bowling* from 6.00pm."
@@ -355,6 +382,7 @@
     {
         location: WarringtonLocation.geekRetreat,
         name: "Get Your Geek On! comedy Night",
+        icon: "geekretreat.png",
         start: new Date("2025-06-14T20:00"),
         end: new Date("2025-06-14T23:00"),
         description: "LGBT comedy night featuring live music raising funds for the Sophie Lancaster Foundation. 18+ only",
@@ -363,6 +391,7 @@
     },
     {
         location: WarringtonLocation.parrHall,
+        icon: "CW.jpg",
         name: "PRIDE After Party",
         start: new Date("2025-06-14T20:30"),
         end: new Date("2025-06-15T00:00"),
