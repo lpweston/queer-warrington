@@ -26,6 +26,13 @@
       <mat-icon>today</mat-icon>What's On
     </a>
     <a
+      href="pride/#parade"
+      mat-stroked-button
+      style="color: lightyellow !important"
+    >
+      <mat-icon>directions_walk</mat-icon>Parade
+    </a>
+    <a
       href="pride/#scheduled"
       mat-stroked-button
       style="color: lightsalmon !important"
@@ -42,7 +49,7 @@
   </nav>
 </header>
 <section id="location">
-  <div id="location-text">
+  <div class="next-to-image">
     <h2>Where is Warrington Pride?</h2>
     <p>There are activities going on throughout the town!</p>
     <ul>
@@ -67,6 +74,42 @@
 <section id="allday">
   <h2>What's On Throughout the Day</h2>
   <app-list-view [events]="allday"></app-list-view>
+</section>
+<section id="parade">
+  <div class="next-to-image">
+    <h2>The Parade</h2>
+    <p>
+      Pre-parade speeches start at Time Square at 11:30am, with the parade
+      starting at 12:00pm, and will wind it's away over the Skittles, down
+      Sankey street, into and around the Golden Square, ending in Old Market
+      Square.<br /><br />
+      For those who might have difficulty navigating through the Golden Square
+      an alterative route is available moving directly from the Skittles to Old
+      Market Square.<br />
+      <br />
+      Groups and individuals can sign up to join the parade using the links
+      below.
+    </p>
+    <a
+      href="https://wearewarringtonbid.co.uk/wp-content/uploads/2025/06/PRIDE-PARADE-CODE-OF-CONDUCT-2025.pdf"
+      target="_blank"
+      mat-stroked-button
+      style="color: #8961a5 !important"
+      >Pride parade code of conduct</a
+    ><br /><br />
+    <a
+      href="https://forms.office.com/pages/responsepage.aspx?id=zd8g6wAtIEG3ftMq4e9wMwj5vVI9LV5OpZNktgFwNrJUQ0ZQU1ZXTTBaSUtLT0ExWUpUTzZSUlFYTi4u"
+      target="_blank"
+      mat-stroked-button
+      style="color: #8961a5 !important"
+      >Sign up to join the parade</a
+    >
+  </div>
+  <img
+    mat-card-image
+    src="/assets/images/parade_route.png"
+    alt="Map of parade route"
+  /><img />
 </section>
 <section id="scheduled">
   <div>
