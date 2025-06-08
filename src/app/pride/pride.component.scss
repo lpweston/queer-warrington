@@ -95,5 +95,10 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+
+        img{
+            border-radius: 30px;
+            max-width: 100%;
+        }
     }
 }
