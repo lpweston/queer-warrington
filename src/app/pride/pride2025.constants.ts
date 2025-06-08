@@ -105,7 +105,7 @@
         start: new Date("2025-06-14T09:30"),
         end: new Date("2025-06-14T16:00"),
         icon: "queerCoffeeLogo.webp",
-        description: "Local community group Queer Coffee is hosting a safe space to change into your preferred clothes for Pride. Please feel welcome to can come along to our private changing space at the University of Chester.<br/><br/>There is also a small selection of donated clothes if you want to try out new styles, and lockers are available to store items if needed.<br/><br/>Please note this space is available for adults (18+) only."
+        description: "Local community group Queer Coffee is hosting a safe space to change into your preferred clothes for Pride. Please feel welcome to come along to our private changing space at the University of Chester.<br/><br/>There is also a small selection of donated clothes if you want to try out new styles, and lockers are available to store items if needed.<br/><br/>Please note this space is available for adults (18+) only."
     },
     {
         location: WarringtonLocation.university,
