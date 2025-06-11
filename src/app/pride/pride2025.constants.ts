@@ -11,6 +11,7 @@
 
   export enum WarringtonLocation {
       goldenSquare = "Golden Square",
+      oldMarketPlace = "Old Market Place",
       university = "University of Chester",
       library = "Library",
       timeSquare = "Time Square",
@@ -324,7 +325,7 @@
         description: "Pride After Party for WYZ Seniors! (Age 12-19) This will be an after party for young people to celebrate Pride, from 5pm Warrington Youth Zone will be offering a range of exciting Pride themed activities.</br>No need to book in advance but young people will need to be members before attending. 50p entry."
     },
     {
-        location: WarringtonLocation.goldenSquare,
+        location: WarringtonLocation.oldMarketPlace,
         name: "Big Fatt Dance Party",
         icon: "CW.jpg",
         start: new Date("2025-06-14T12:30"),
@@ -332,6 +333,39 @@
         description: "Kicking off pride in style this year is Big Fatt Dance Party with Fatt Butcher, Blu Romantic & Alanna Boden. Expect powerhouse live vocals and wall to wall disco, dance, and queer club classics with some interactive dance routines to get audiences dancing and singing their hearts out before and after the pride march. (Commissioned by Culture Warrington)"
     },
     {
+        location: WarringtonLocation.oldMarketPlace,
+        name: "A Place Where We Belong - TAGS",
+        icon: "tagsIcon.webp",
+        start: new Date("2025-06-14T13:00"),
+        end: new Date("2025-06-14T13:30"),
+        description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
+    },
+    {
+        location: WarringtonLocation.oldMarketPlace,
+        name: "Warrington Youth Zone Takes the Stage",
+        icon: "WYZ.png",
+        start: new Date("2025-06-14T13:30"),
+        end: new Date("2025-06-14T14:15"),
+        description: "Warrington Youth Zone takes over the stage with a showcase of local young talent-including singers, dancers, rappers and choirs-celebrating Pride through performance."
+    },
+    {
+        location: WarringtonLocation.oldMarketPlace,
+        name: "A Place Where We Belong - TAGS",
+        icon: "tagsIcon.webp",
+        start: new Date("2025-06-14T14:30"),
+        end: new Date("2025-06-14T16:30"),
+        description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
+    },
+    {
+        location: WarringtonLocation.oldMarketPlace,
+        name: "Drew's Dirty Disco",
+        icon: "Golden-Square-Shopping-Centre.webp",
+        start: new Date("2025-06-14T17:00"),
+        end: new Date("2025-06-14T19:00"),
+        img: "drews.jpg",
+        description: "Drew's Dirty Disco is a two-hour set of disco, camp, and queer-themed music. The playlist promises to be a seamless mix of old-school classics and modern hits, all masterfully remixed into disco tunes. Big camp bangers with lots of space to dance whilst having access to a number of bars, coffee shops & amazing eateries!Be awesome to see you there."
+    },
+        {
         location: WarringtonLocation.goldenSquare,
         name: "Silent Disco",
         icon: "Golden-Square-Shopping-Centre.webp",
@@ -341,35 +375,15 @@
     },
     {
         location: WarringtonLocation.goldenSquare,
-        name: "A Place Where We Belong - TAGS",
-        icon: "tagsIcon.webp",
+        name: "Lush - Bath Bomb Workshop",
+        icon: "lush.png",
         start: new Date("2025-06-14T13:00"),
-        end: new Date("2025-06-14T13:30"),
-        description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
-    },
-    {
-        location: WarringtonLocation.goldenSquare,
-        name: "Warrington Youth Zone Takes the Stage",
-        icon: "WYZ.png",
-        start: new Date("2025-06-14T13:30"),
-        end: new Date("2025-06-14T14:15"),
-        description: "Warrington Youth Zone takes over the stage with a showcase of local young talent-including singers, dancers, rappers and choirs-celebrating Pride through performance."
-    },
-    {
-        location: WarringtonLocation.goldenSquare,
-        name: "A Place Where We Belong - TAGS",
-        icon: "tagsIcon.webp",
-        start: new Date("2025-06-14T14:30"),
-        end: new Date("2025-06-14T15:45"),
-        description: "Get ready for an unforgettable afternoon on the Golden Square Stage as TAGS Youth Services proudly presents A Place Where We Belong - a powerful showcase of dance, acting, and singing performances by their talented service users, celebrating what it means to be from Warrington. "
-    },
-    {
-        location: WarringtonLocation.goldenSquare,
-        name: "Drew's Dirty Disco",
-        icon: "Golden-Square-Shopping-Centre.webp",
-        start: new Date("2025-06-14T17:00"),
-        end: new Date("2025-06-14T19:00"),
-        description: "Drew's Dirty Disco is a two-hour set of disco, camp, and queer-themed music. The playlist promises to be a seamless mix of old-school classics and modern hits, all masterfully remixed into disco tunes. Big camp bangers with lots of space to dance whilst having access to a number of bars, coffee shops & amazing eateries!Be awesome to see you there."
+        end: new Date("2025-06-14T14:00"),
+        description: `Join us for our Warrington Pride Workshop at LUSH Warrington! Get ready to dive into a world of fizz and 
+        fragrance as we teach you how to create your very own bath bomb. <br/><br/>
+        This in-person event will take place on Saturday, 14th June and Sunday, 15th June at 1pm. Make your way to our store 
+        located at Golden Square Shopping Centre, Warrington, WA1 1QB and immerse yourself in the art of bath bomb making.`,
+        link: "https://www.eventbrite.co.uk/e/warrington-pride-workshop-tickets-1360767776049"
     },
     {
         location: WarringtonLocation.goldenSquare,
