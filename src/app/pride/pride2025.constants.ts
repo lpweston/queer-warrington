@@ -420,8 +420,8 @@
         end: new Date("2025-06-14T20:30"),
         link: "https://www.facebook.com/newpostern.gate/photos/join-us-at-postern-gate-to-celebrate-warrington-pride-%EF%B8%8F%EF%B8%8F%EF%B8%8Fin-honour-of-this-very-/1300453578747217/",
         img: "pamsandwich.jpeg",
-        description: `Join us in celebration of Pride! A night of feel good, sing a long anthems with drinking, dancing and booze (or no booze, whatever way you sway).<br/><br/>
+        description: `Join us in celebration of Pride! A night of feel good, sing along anthems with drinking, dancing and booze (or no booze, whatever way you sway).<br/><br/>
         Followed by a DJ playing feel good, cheesy dance hits till 3am.<br/><br/>
-        have also created a cocktail called "Pink Pony Club" which is a delicious cocktail with £1 from each one sold being given to TAGS.`
+        We have also created a cocktail called "Pink Pony Club" which is a delicious cocktail with £1 from each one sold being given to TAGS.`
     },
 ];
