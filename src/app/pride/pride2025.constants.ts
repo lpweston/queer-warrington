@@ -19,6 +19,7 @@
       youthZone = "Warrington Youth Zone",
       parrHall = "Parr Hall",
       market = "Warrington Market",
+      posternGate = "Postern Gate"
   };
 
   export const eventsAroundPride: PrideEvent[] = [
@@ -411,5 +412,16 @@
         end: new Date("2025-06-15T00:00"),
         link: "https://culturewarrington.org/whats-on/pride-after-party/",
         description:"Put on your dancing shoes and get ready to go out-out for the official Warrington Pride After Party. Join your host cabaret superstar and legend in their own mind Fatt Butcher (The Voice UK) with a stellar line-up of some of the UK’s best independent queer talent from the worlds of cabaret, drag, burlesque, dance, club culture and DJs. So let’s come together, celebrate, and stand united under the disco ball for a Pride night to remember. (Commissioned by Culture Warrington)"
+    },
+    {
+        location: WarringtonLocation.posternGate,
+        name: "Pride Celebration with Pam Sandwich",
+        start: new Date("2025-06-14T18:30"),
+        end: new Date("2025-06-14T20:30"),
+        link: "https://www.facebook.com/newpostern.gate/photos/join-us-at-postern-gate-to-celebrate-warrington-pride-%EF%B8%8F%EF%B8%8F%EF%B8%8Fin-honour-of-this-very-/1300453578747217/",
+        img: "pamsandwich.jpeg",
+        description: `Join us in celebration of Pride! A night of feel good, sing a long anthems with drinking, dancing and booze (or no booze, whatever way you sway).<br/><br/>
+        Followed by a DJ playing feel good, cheesy dance hits till 3am.<br/><br/>
+        have also created a cocktail called "Pink Pony Club" which is a delicious cocktail with £1 from each one sold being given to TAGS.`
     },
 ];
