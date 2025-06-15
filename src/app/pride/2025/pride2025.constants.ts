@@ -76,7 +76,7 @@
         start: new Date("2025-06-14T10:00"),
         end: new Date("2025-06-14T19:00"),
         link: "https://gswarrington.com/golden-square-pride-carnival/",
-        img: "gs2.jpg",
+        img: "2025/gs2.jpg",
         icon: "Golden-Square-Shopping-Centre.webp",
         description: `
         Golden Square is hosting a big Pride Carnival encouraging families to join in our celebration!<br/><br/>
@@ -122,7 +122,7 @@
         name: "The Tender Heart Conversation Space",
         start: new Date("2025-06-14T10:00"),
         end: new Date("2025-06-14T15:30"),
-        img: 'The-Tender-Heart-Conversation-Space.webp',
+        img: '2025/The-Tender-Heart-Conversation-Space.webp',
         icon: "StoryStitchers.png",
         description: "Come to Story Stitchers’s creative space to chat and connect, chill and reflect.<br/><br/>Leave messages of motivation on our Lemon Aid Line, create your own postcard poem  through collage that celebrates the spaces where you feel like you belong.<br/><br/>Whether you're 8 or 88, everybody is welcome to join us in celebrating Warrington Pride.  We'll provide good company, creative activities, a space to chill out and of course biscuits! (Commissioned by Culture Warrington)"
     },
@@ -146,7 +146,7 @@
         end: new Date("2025-06-14T23:00"),
         description: "Open all day for all things fun! Soft play centre, Bowling, Golf, Pool, Arcades.<br/><br/>Face Painting 12-4pm DJ From 7pm. We'll have giveaways and prizes to be won all day, with our DJ taking all requests from 7pm.",
         link: "www.discobowl.co.uk/warrington",
-        img: "Warrington-Pride-SQ-2.webp",
+        img: "2025/Warrington-Pride-SQ-2.webp",
         icon: "thumb_DM-LOGO-WB-War_1.png"
     },
   ]
@@ -303,7 +303,7 @@
         icon:"grav.svg",
         start: new Date("2025-06-14T19:30"),
         end: new Date("2025-06-14T24:00"),
-        img: "grav.jpg",
+        img: "2025/grav.jpg",
         link: "https://www.instagram.com/p/DJ8tjiXKAvC/?igsh=MTJudHkwMjR5OTY2cA%3D%3D",
         description: "Saturday Night Pride at Gravity Social. Tallulah Guard with Rain McMey. All your favorites to soundtrack your Saturday night. Live muse, pool, shuffl, AR darts and more. Free entry.",
     },
@@ -363,7 +363,7 @@
         icon: "Golden-Square-Shopping-Centre.webp",
         start: new Date("2025-06-14T17:00"),
         end: new Date("2025-06-14T19:00"),
-        img: "drews.jpg",
+        img: "2025/drews.jpg",
         description: "Drew's Dirty Disco is a two-hour set of disco, camp, and queer-themed music. The playlist promises to be a seamless mix of old-school classics and modern hits, all masterfully remixed into disco tunes. Big camp bangers with lots of space to dance whilst having access to a number of bars, coffee shops & amazing eateries!Be awesome to see you there."
     },
         {
@@ -402,7 +402,7 @@
         end: new Date("2025-06-14T23:00"),
         description: "LGBT comedy night featuring live music raising funds for the Sophie Lancaster Foundation. 18+ only",
         link: "https://www.ticketsource.co.uk/whats-on/warrington/geek-retreat-warrington/get-your-geek-on/2025-06-14/20:00/t-dvdpeod",
-        img: "get-your-geek-on.webp"
+        img: "2025/get-your-geek-on.webp"
     },
     {
         location: WarringtonLocation.parrHall,
@@ -419,7 +419,7 @@
         start: new Date("2025-06-14T18:30"),
         end: new Date("2025-06-14T20:30"),
         link: "https://www.facebook.com/newpostern.gate/photos/join-us-at-postern-gate-to-celebrate-warrington-pride-%EF%B8%8F%EF%B8%8F%EF%B8%8Fin-honour-of-this-very-/1300453578747217/",
-        img: "pamsandwich.jpeg",
+        img: "2024/pamsandwich.jpeg",
         description: `Join us in celebration of Pride! A night of feel good, sing along anthems with drinking, dancing and booze (or no booze, whatever way you sway).<br/><br/>
         Followed by a DJ playing feel good, cheesy dance hits till 3am.<br/><br/>
         We have also created a cocktail called "Pink Pony Club" which is a delicious cocktail with £1 from each one sold being given to TAGS.`

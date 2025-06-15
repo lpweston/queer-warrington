@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PrideEvent, WarringtonLocation } from '../pride2025.constants';
+import { PrideEvent, WarringtonLocation } from '../2025/pride2025.constants';
 import { MatCardModule } from '@angular/material/card';
 import { EventCardComponent } from '../event-card/event-card.component';
 

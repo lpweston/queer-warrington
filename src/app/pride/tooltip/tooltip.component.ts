@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PrideEvent } from '../pride2025.constants';
+import { PrideEvent } from '../2025/pride2025.constants';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({

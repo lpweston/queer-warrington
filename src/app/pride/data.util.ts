@@ -1,4 +1,4 @@
-import { PrideEvent, WarringtonLocation } from "./pride2025.constants";
+import { PrideEvent, WarringtonLocation } from "./2025/pride2025.constants";
 
 export function getEventsByLocation(events: PrideEvent[]): Map<WarringtonLocation, PrideEvent[]> {
     const eventsByLocation = new Map<WarringtonLocation,PrideEvent[]>()

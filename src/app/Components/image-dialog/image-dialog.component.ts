@@ -3,7 +3,7 @@ import {
   MAT_DIALOG_DATA,
   MatDialogRef,
 } from '@angular/material/dialog';
-import { PrideEvent } from '../../pride/pride2025.constants';
+import { PrideEvent } from '../../pride/2025/pride2025.constants';
 
 @Component({
     selector: 'app-image-dialog',

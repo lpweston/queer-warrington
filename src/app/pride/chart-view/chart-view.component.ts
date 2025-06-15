@@ -1,7 +1,7 @@
   import { Component, OnInit } from '@angular/core';
   import { TooltipComponent } from "../tooltip/tooltip.component";
   import * as d3 from 'd3';
-  import { PrideEvent, scheduledEvents } from '../pride2025.constants';
+  import { PrideEvent, scheduledEvents } from '../2025/pride2025.constants';
   import { getListOfLocations } from '../data.util';
   import { MatButtonModule } from '@angular/material/button';
 import { EventCardComponent } from "../event-card/event-card.component";

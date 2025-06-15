@@ -4,7 +4,7 @@ import { ListViewComponent } from "./list-view/list-view.component";
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle'
-import { allDayEvents, eventsAroundPride, scheduledEvents } from './pride2025.constants';
+import { allDayEvents, eventsAroundPride, scheduledEvents } from './2025/pride2025.constants';
 
 @Component({
     selector: 'app-pride',
