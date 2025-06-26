@@ -1,0 +1,13 @@
+:host {
+    #zine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+        pdf-viewer{
+            width: 700px;
+            height: 1000px;
+        }
+    }
+}
