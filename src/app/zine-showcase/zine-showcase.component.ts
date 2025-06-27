@@ -35,6 +35,7 @@ export class ZineShowcaseComponent {
   selectedPdf = 0;
   form: FormGroup;
   pdfControl = new FormControl();
+  zoom = 1;
 
   constructor() {
     this.form = new FormGroup({
@@ -49,5 +50,13 @@ export class ZineShowcaseComponent {
     } else if (this.selectedPdf < 0) {
       this.selectedPdf = this.pdfSrc.length - 1;
     }
+  }
+
+  onZoomChange(number: number) {
+      const newZoom = this.zoom +(0.25 *number);
+
+      if (newZoom < 5 && newZoom > 0) {
+        this.zoom = newZoom;
+      }
   }
 }
