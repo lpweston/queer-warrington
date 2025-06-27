@@ -6,8 +6,10 @@
 
         
         pdf-viewer{
-            width: 700px;
-            height: 1000px;
+            width: 840px;
+            height: 1150px;
+            max-width: 95vw;
+            max-height: calc(95vw * 1.37);
         }
     }
 }
