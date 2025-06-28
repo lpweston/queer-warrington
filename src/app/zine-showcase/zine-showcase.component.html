@@ -2,32 +2,76 @@
   <h1>Warrington Pride Zine 2025</h1>
 </header>
 <section id="zine">
-  <nav>
-    <button mat-button (click)="onSelectionChange(-1)">
+  <mat-toolbar>
+    <button aria-label="Open Menu" mat-icon-button (click)="sideNav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button
+      aria-label="Previous"
+      mat-icon-button
+      (click)="onSelectionChange(-1)"
+    >
       <mat-icon>chevron_left</mat-icon>
     </button>
-    <button mat-button (click)="onSelectionChange(1)">
+    <button aria-label="Next" mat-icon-button (click)="onSelectionChange(1)">
       <mat-icon>chevron_right</mat-icon>
     </button>
-    <button mat-button (click)="onZoomChange(-1)">
+    <button aria-label="Zoom Out" mat-icon-button (click)="onZoomChange(-1)">
       <mat-icon>zoom_out</mat-icon>
     </button>
-    <button mat-button (click)="onZoomChange(1)">
+    <button aria-label="Zoom In" mat-icon-button (click)="onZoomChange(1)">
       <mat-icon>zoom_in</mat-icon>
     </button>
-  </nav>
-  <pdf-viewer
-    [src]="'/assets/PrideZine/pride2025_' + this.pdfSrc[selectedPdf] + '.pdf'"
-    [render-text]="true"
-    [original-size]="false"
-    [zoom]="zoom"
-  ></pdf-viewer>
-  <nav>
-    <button mat-button>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav
+      #sideNav
+      [mode]="isMobile() ? 'over' : 'side'"
+      [fixedInViewport]="isMobile()"
+    >
+      <mat-nav-list>
+        <div mat-subheader>
+          Index
+          <button
+            id="close-index"
+            aria-label="Close Index Menu"
+            mat-icon-button
+            (click)="sideNav.toggle()"
+          >
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+        </div>
+        @for (nav of pdfSrc; track nav; let idx = $index) {
+        <button
+          mat-list-item
+          (click)="onSelection(idx)"
+          [ngStyle]="{
+            'background-color': idx == selectedPdf ? '#535353' : '#000'
+          }"
+        >
+          {{ nav }}
+        </button>
+        }
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <pdf-viewer
+        [src]="
+          '/assets/PrideZine/pride2025_' + this.pdfSrc[selectedPdf] + '.pdf'
+        "
+        [render-text]="true"
+        [original-size]="false"
+        [zoom]="zoom"
+      ></pdf-viewer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <mat-toolbar>
+    <button aria-label="Previous" mat-icon-button>
       <mat-icon (click)="onSelectionChange(-1)">chevron_left</mat-icon>
     </button>
-    <button mat-button>
+    <button aria-label="Next" mat-icon-button>
       <mat-icon (click)="onSelectionChange(1)">chevron_right</mat-icon>
     </button>
-  </nav>
+  </mat-toolbar>
 </section>
