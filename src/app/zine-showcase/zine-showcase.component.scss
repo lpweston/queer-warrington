@@ -1,0 +1,62 @@
+:host {
+    #zine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(92, 122, 205);
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: fit-content;
+        padding: 0 40px;
+
+        mat-sidenav {
+            width: fit-content;
+        }
+
+        .mat-mdc-subheader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 800px) {
+            padding: 0 5px;
+            margin: 0px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 0px;
+
+            mat-sidenav {
+                left: 0px;
+            }
+        }
+
+        mat-toolbar{
+            justify-content: center;
+            background-color: rgb(92, 122, 205);
+            border-radius: 10px;
+            
+            mat-icon{
+                color: black !important;
+            }
+        }
+
+        mat-nav-list{
+            button{
+                border-radius: 0;
+            }
+        }
+
+        mat-sidenav-content{
+            background-color: rgb(92, 122, 205);
+        }
+        
+        pdf-viewer{
+            width: 900px;
+            height: 1250px;
+            max-width: 90vw;
+            max-height: calc(95vw * 1.37);
+        }
+    }
+}
