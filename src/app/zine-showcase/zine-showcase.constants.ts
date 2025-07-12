@@ -95,7 +95,9 @@ export const pdfSrc: pdfInfo[]= [
     {
       file: "ShannonC",
       name: "Shannon C",
-      altText: ``
+      altText: `Four figures are shown, three in grey with their arms down, one is coloured with the rainbow flag and has their arms to the sky. Out of the colourful
+      figures arms rainbow colours flow into the sky and various pride flags are scattered around: pansexual (pink, yellow and blue), asexual (black, grey, white and purple),
+      non-binary (yellow, white, purple and black), bisexual (pink, purple and blue), lesbian (dark orange, light orange, white, light pink and dark pink).`
     },
     {
       file: "Steph_and_Charlotte",

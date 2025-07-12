@@ -1,4 +1,10 @@
 :host {
+        header>p{
+            width: 50%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
     #zine {
         display: flex;
         flex-direction: column;
