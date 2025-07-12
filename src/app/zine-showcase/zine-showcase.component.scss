@@ -1,4 +1,10 @@
 :host {
+        header>p{
+            width: 50%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
     #zine {
         display: flex;
         flex-direction: column;
@@ -50,13 +56,22 @@
 
         mat-sidenav-content{
             background-color: rgb(92, 122, 205);
-        }
-        
-        pdf-viewer{
-            width: 900px;
-            height: 1250px;
-            max-width: 90vw;
-            max-height: calc(95vw * 1.37);
+
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                width: 900px;
+                height: 1250px;
+            }
+
+            pdf-viewer{
+                width: 900px;
+                height: 1250px;
+                max-width: 90vw;
+                max-height: calc(95vw * 1.37);
+            }
         }
     }
 }

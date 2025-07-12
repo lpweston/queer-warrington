@@ -1,5 +1,12 @@
 <header>
   <h1>Warrington Pride Zine 2025</h1>
+  <p>
+    During Warrington Pride 2025, Queer Coffee hosted a zine making workshop at
+    the University of Chester's University Centre Warrington. Attendees we're
+    asked to make zines exploring the spectrum of queer experiences in
+    Warrington.<br /><br />We present the zines created with permission from the
+    creators.
+  </p>
 </header>
 <section id="zine">
   <mat-toolbar>
@@ -41,7 +48,7 @@
             <mat-icon>chevron_left</mat-icon>
           </button>
         </div>
-        @for (nav of pdfSrc; track nav; let idx = $index) {
+        @for (pdf of pdfSrc; track pdf; let idx = $index) {
         <button
           mat-list-item
           (click)="onSelection(idx)"
@@ -49,7 +56,7 @@
             'background-color': idx == selectedPdf ? '#535353' : '#000'
           }"
         >
-          {{ nav }}
+          {{ pdf.name }}
         </button>
         }
       </mat-nav-list>
@@ -58,12 +65,13 @@
     <mat-sidenav-content>
       <pdf-viewer
         [src]="
-          '/assets/PrideZine/pride2025_' + this.pdfSrc[selectedPdf] + '.pdf'
+          '/assets/PrideZine/pride2025_' + pdfSrc[selectedPdf].file + '.pdf'
         "
         [render-text]="true"
         [original-size]="false"
         [zoom]="zoom"
       ></pdf-viewer>
+      <img [alt]="pdfSrc[selectedPdf].altText" />
     </mat-sidenav-content>
   </mat-sidenav-container>
   <mat-toolbar>

@@ -8,40 +8,21 @@ import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
+import { pdfSrc } from './zine-showcase.constants';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-zine-showcase',
-  imports: [CommonModule, MatListModule, MatSidenavModule, PdfViewerModule, MatIconModule, MatToolbarModule, MatButtonModule],
+  imports: [CommonModule, MatListModule, MatSidenavModule, PdfViewerModule, MatIconModule, MatToolbarModule, MatButtonModule, MatTooltipModule],
   templateUrl: './zine-showcase.component.html',
   styleUrl: './zine-showcase.component.scss'
 })
 export class ZineShowcaseComponent implements AfterViewInit, OnDestroy {
-  pdfSrc = [
-    "LydiaFaye",
-    "CameronG",
-    "Evie",
-    "James",
-    "KatelynIball",
-    "Luce",
-    "penwing",
-    "PHachet",
-    "PipDunbar",
-    "Boobs",
-    "SamSmall",
-    "ShannonC",
-    "Steph_and_Charlotte",
-    "Stevie",
-    "TheVeryQueerCaterpillar",
-    "VICKY",
-    "Anonymous_01",
-    "Anonymous_02",
-    "Anonymous_03",
-    "Anonymous_04",
-  ]
   selectedPdf = 0;
   form: FormGroup;
   pdfControl = new FormControl();
   zoom = 1;
+  pdfSrc = pdfSrc;
   @ViewChild('sideNav') sideNav: MatSidenav | undefined;
 
   protected readonly isMobile = signal(true);
