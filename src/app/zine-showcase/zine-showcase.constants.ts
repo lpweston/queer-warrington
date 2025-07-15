@@ -102,22 +102,48 @@ export const pdfSrc: pdfInfo[]= [
     {
       file: "Steph_and_Charlotte",
       name: "Steph and Charlotte",
-      altText: ``
+      altText: `1: Two simplified portraits. The first of a person with long ginger hair, framed in green. The second of a person with chin length brown hair, framed in orange.<br/>
+                2: "Our pride got cancelled" each letter penned in a different rainbow colour. "(but we'd have come anyway)" penned in blue. "(Love from Liverpool!)" penned in red.
+                Below are drawn landmarks from Liverpool: Wheel Of Liverpool, Cunard Building, St John’s Beacon, Liverpool Metropolitan Cathedral and Super Lambanana.<br/>
+                3: "Warrington Queer Coffee" and logo; a cup, with a Q and rainbow colours inside.<br/>
+                4: The Liver Bird symbol, and The Warrington Skittles (Guardians) connected by rail tracks. `
     },
     {
       file: "Stevie",
       name: "Stevie",
-      altText: ``
+      altText: `1: "When I was in primary school I found myself being jealous of the girls". A sign reads "The Park Primary School".<br/>
+                2:"When I was in year 9 in secondary school I took part in a play and I was cast as a female vampire and when I put on the dress I felt like myself."
+                A sign reads "Ashley School". A picture of a long sleeved dress.<br/>
+                3:"In 2018 I came out to my family and I'd be lying if I said I wasn't scared." A wardrobe labelled "My Closet" inside is the trans (blue, pink and white)
+                and bi (blue, pink and purple) flags.<br/>
+                4:"In 2022 I attended my first ever pride event in Liverpool and I was nervous but I ended up making friends and had an amazing time" A stage with a 
+                large sign reading "Liverpool Pride 2022".<br/>`
     },
     {
       file: "TheVeryQueerCaterpillar",
       name: "The Very Queer Caterpillar",
-      altText: ``
+      altText: `1: A purple dotted egg on a leaf.<br/>
+                2: Zoomed in view of the egg thinking "I think I'm ready."<br/>
+                3: Even more zoomed in view of the egg, with cracks across it.<br/>
+                4: A caterpillar surrounded by cracked egg. Caterpillar has question marks around it.<br/>
+                5: In centre the head of the caterpillar with its mouth open, "Munch" and "Nom" written above it. Surrounding it are colourful leaves each with 
+                different words on them: study, sporty, girl, dumb, geek, masculine, funny, punk, cute, older, sexy, as well as others partly hidden.<br/>
+                6: Caterpillar has heart shaped eye and a smile, looking a a black leaf with a question mark on it.<br/>
+                7:  A butterfly with wings displaying the progressive pride flag and the words "Proud to be who I am"`
     },
     {
       file: "VICKY",
       name: "Vicky",
-      altText: ``
+      altText: `1: "I grew up in fantasy, magical fantasy worlds where good prevails." Panda reading a book piled up on other books.<br/>
+                2: "Felt like a creature from another world" large panda sat amongst lots of stick figures.<br/>
+                3: "A hunter saw and captured me" A large stick figure with arms crossed, next to the panda in a cage, with hands over its eyes.
+                The words "Silenced" and "Controlled".<br/>
+                4: A Form titled "Sexuality" with tick box options "Straight, Gay, Lesbian, Bisexual" Bisexual has a dash in the box.
+                "Too scared to even check a box" Panda looking sad, surrounded by lightning bolts.<br/>
+                5: "Escape" and "rebirth" written above a lotus flower.<br/>
+                6: Panda wearing a helmet, with a sword and shield "He's behind you!!!". "Now I'm not alone". "Now I believe in Magic"<br/>
+                7: "New Beginnings" trail leading to an X.<br/>
+                8: "New friends" Queer Coffee logo; a cup with a Q inside.<br/>`
     },
     {
       file: "Anonymous_01",
