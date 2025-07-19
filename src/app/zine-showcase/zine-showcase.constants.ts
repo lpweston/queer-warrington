@@ -148,17 +148,27 @@ export const pdfSrc: pdfInfo[]= [
     {
       file: "Anonymous_01",
       name: "Anonymous",
-      altText: ``
+      altText: `Page is split into two halves, on the left "Kandy Kane" a feminine figure with long hair, where the left is pastle blue, and the right is pastle pink.
+                She has brown eyes and blue eye shadow, pink lipstick. She wears a blue and white pearl necklace, and black love heart locket. She wears a dress,
+                white with pink stripes, with puffy shoulders with pink spirals on them.
+                On the right hand side of the page is "Obsidian Black", a masculine figure with long black hair, a stubbly moustache and beard. He wears a locket with an
+                upside-down love heart. He wears a black jacket open over a bare chest and purple trousers.`
     },
     {
       file: "Anonymous_02",
       name: "Anonymous",
-      altText: ``
+      altText: `1: "I'm not from Warrington - but it seems nice" map of Warrington postcodes.
+                2: Three swords labelled "The Symbol Essex". "I come from a new town in Essex. I hated it." A row of terrace houses and a tower block, labelled
+                "It's famous for having the first residential tower block in the UK. - Boring!". 
+                3: "Now I live in Stole. I moved there to do a Philosophy degree."
+                4: "I now work for an LGBTQ+ & HIV charity. Called Project 93. It's something I never thought I would do. It's brilliant!". Project 93 logo and a
+                Bottle Oven; a symbol of the Stoke potteries.`
     },
     {
       file: "Anonymous_03",
       name: "Anonymous",
-      altText: ``
+      altText: `"Princess Nevaeh of Ardenia" A princess with long brown hair and green eyes. She wears a blue floor-length dress with a pink cross which runs down
+                the length of it. She is wearing gold jewellery with inlaid rubies; a tiara, necklace and bracelets.`
     },
     {
       file: "Anonymous_04",
