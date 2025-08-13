@@ -29,6 +29,7 @@ import { ConvertToLinkPipe } from "../../convert-to-link.pipe";
 export class InfoDialogComponent {
   readonly dialogRef = inject(MatDialogRef<InfoDialogComponent>);
   readonly data = inject<EventData>(MAT_DIALOG_DATA);
+  offset:number = (new Date().getTimezoneOffset());
 
   onNoClick(): void {
     this.dialogRef.close();
