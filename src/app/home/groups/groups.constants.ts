@@ -136,6 +136,12 @@ export const socials: SocialInfo[] = [
     link: 'https://www.facebook.com/groups/1265007937483904',
     icon: '/assets/icons/fb.webp',
     iconAlt: "Facebook"
+  },
+  {
+    name: 'LGBT families Warrington',
+    link: 'https://www.facebook.com/groups/1046874010600341/',
+    icon: '/assets/icons/fb.webp',
+    iconAlt: "Facebook"
   }
 ]
 
