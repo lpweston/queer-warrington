@@ -15,9 +15,9 @@
   @if(data.start.getHours() != 1) {
   <mat-icon>schedule</mat-icon>
   <div>
-    <span>{{ data.start | date : "shortTime" }}</span>
+    <span>{{ data.start | date : "shortTime" : "UTC" + offset}}</span>
     @if(data.end && data.end != data.start){
-    <span> - {{ data.end | date : "shortTime" }} </span>
+    <span> - {{ data.end | date : "shortTime": "UTC" + offset }} </span>
     }
   </div>
   } } @if (data.location) {<mat-icon>location_on</mat-icon
