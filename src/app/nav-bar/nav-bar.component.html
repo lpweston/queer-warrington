@@ -37,15 +37,6 @@
       </button>
     </a>
     <a
-      routerLink="/pride"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      <button mat-icon-button matTooltip="Pride" aria-label="Pride button">
-        <mat-icon>looks</mat-icon>
-      </button>
-    </a>
-    <a
       routerLink="/zines"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
@@ -58,6 +49,22 @@
         <mat-icon>book_ribbon</mat-icon>
       </button>
     </a>
+    <button matIconButton [matMenuTriggerFor]="menu" aria-label="Menu Button">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <a
+        mat-menu-item
+        routerLink="/pride2025"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        <button mat-icon-button matTooltip="Pride 2025" aria-label="Pride 2025 button">
+          <mat-icon>looks</mat-icon>
+          <span>Pride 2025</span>
+        </button>
+      </a>
+    </mat-menu>
     <!-- <div>
       <button mat-icon-button (click)="switchTheme('light')">L</button>
       <button mat-icon-button (click)="switchTheme('dark')">D</button>
