@@ -5,7 +5,7 @@ import { ZineShowcaseComponent } from './zine-showcase/zine-showcase.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'pride', component: PrideComponent},
+    { path: 'pride2025', component: PrideComponent},
     { path: 'zines', component: ZineShowcaseComponent},
     { path: '**', component: HomeComponent }
   ];

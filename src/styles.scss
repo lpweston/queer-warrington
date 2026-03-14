@@ -90,3 +90,9 @@ mat-card.mat-mdc-card{
     overflow-y: auto;
     overflow-x: visible;
 }
+
+.mat-mdc-menu-item {
+    span{
+        font-size: small;
+    }
+}
