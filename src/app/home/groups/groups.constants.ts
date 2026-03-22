@@ -56,6 +56,24 @@ export const groups: GroupInfo[] = [
       },
     ]
   },
+  {
+    name: "Rainbow connection",
+    subtitle: 'LBGTQ Choir',
+    icon: 'rainbow-connection-icon',
+    imagePath: '/assets/icons/rainbow-connection.png',
+    description: `LGBTQ+ Choir based in the Warrington community<br/><br/>
+                  Rehersals on Thursdays fortnightly at friends meeting house
+                  Refreshments provided.<br/><br/>
+                  We are a community run group. donations welcome`,
+    links: [
+      { 
+        name: "",
+        link: 'https://www.facebook.com/groups/307195896655352',
+        icon: '/assets/icons/fb-wh.webp',
+        iconAlt: 'Rainbow Connection Facebook'
+      }
+    ]
+  },
 ]
 
 export const supportServices: GroupInfo[] = [
@@ -120,28 +138,34 @@ export const supportServices: GroupInfo[] = [
 
 export const socials: SocialInfo[] = [
   {
+    name: 'Warrington Queer Network',
+    link: 'https://www.facebook.com/groups/1807879859883895',
+    icon: '/assets/icons/fb.webp',
+    iconAlt: 'Facebook'
+  },
+  {
     name: 'Warrington LGBTQ+ Social network',
     link: 'https://www.facebook.com/groups/875204472503810',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "Facebook"
+    iconAlt: 'Facebook'
   },
   {
     name: 'LGBT Warrington',
     link: 'https://www.facebook.com/groups/lgbtwarrington',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "Facebook"
+    iconAlt: 'Facebook'
   },
   {
     name: 'North-West Lesbians (Over 35) UK',
     link: 'https://www.facebook.com/groups/1265007937483904',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "Facebook"
+    iconAlt: 'Facebook'
   },
   {
     name: 'LGBT families Warrington',
     link: 'https://www.facebook.com/groups/1046874010600341/',
     icon: '/assets/icons/fb.webp',
-    iconAlt: "Facebook"
+    iconAlt: 'Facebook'
   }
 ]
 
