@@ -8,18 +8,15 @@ export const groups: GroupInfo[] = [
     imagePath: '/assets/images/queerCoffeePhoto.webp',
     description: `Warrington Queer Coffee is a social group for, and run by, LGBTQ+ adults from Warrington and the surrounding area.<br />
                   We are a group for anyone in the LGBTQ+ community, regardless of identity or expression. Fem, masc, both or neither, 
-                  however you present (whether you are out or not, passing or not) you are welcome.<br /><br />
-                  We run a regular social meetup at the Geek Retreat in Warrington, on the last Saturday of each month, at 11.30am. 
-                  We also run other events (both regular and one-offs), so check out our calendar for more details!<br /><br />
-                  We try to be as accessible and inclusive as possible, and are always open to feedback and suggestions for how we can improve.<br /><br />
-                  We can be contacted via warrqueercoffee@gmail.com.`,
+                  however you present (whether you are out or not, passing or not) you are welcome.<br />
+                  <ul><li>We run a regular social meetup at the Geek Retreat in Warrington, on the last Saturday of each month, at 11.30am.</li>
+                  <li>A craft evening, on the 2nd Friday of each month, at The Old School, at 6.00pm.</li>
+                  <li>A online discord chat on the 3rd Monday of the month, at 7pm.</li>
+                  <li>And a semi-regular gaming group, at Making Space, on a Thursday at 6.00pm.</li></ul>
+                  So check out the above calendar for more details!<br /><br />`,
+                  //We try to be as accessible and inclusive as possible, and are always open to feedback and suggestions for how we can improve.<br /><br />
+                  //We can be contacted via warrqueercoffee@gmail.com.
     links: [
-      {
-        name: "",
-        link: 'https://linktr.ee/queercoffee',
-        icon: '/assets/icons/linktree.webp',
-        iconAlt: 'Queer Coffee Linktree',
-      },
       { 
         name: "",
         link: 'https://www.facebook.com/groups/warringtonqueercoffee',
