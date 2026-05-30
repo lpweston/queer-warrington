@@ -12,13 +12,6 @@
   </p>
   <nav>
     <a
-      href="pride/#location"
-      mat-stroked-button
-      style="color: lightblue !important"
-    >
-      <mat-icon>location_on</mat-icon>Where is Warrington Pride?
-    </a>
-    <a
       href="pride/#friday"
       mat-stroked-button
       style="color: pink !important"
@@ -41,33 +34,16 @@
     </a>
   </nav>
 </header>
-<section id="location">
-  <div class="next-to-image">
-    <h2>Where is Warrington Pride?</h2>
-    <p>There are activities going on throughout the town!</p>
-    <ul>
-      <li>Golden Square has a stage entertaining people all afternoon</li>
-      <li>Talks, activities and crafts inside the University of Chester</li>
-      <li>Family fun at the Library</li>
-      <li>And evening entertainment at the Geek Retreat and Parr Hall.</li>
-    </ul>
-    <p>Please see below for more information about these events.</p>
-  </div>
-  <div id="map">
-    <img
-      src="/assets/images/mapimage.webp"
-      alt="Map of Warrington highlighting: Warrington Youth Zone, Geek Retreat, Golden Square, Warrington Market, University of Chester, Time Square, Parr Hall, Library and Museum."
-    />
-  </div>
-</section>
 <section id="friday">
-  <h2>Friday</h2>
+  <div style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+    <h2>Friday</h2>
+  </div>
   <app-list-view [events]="aroundPride" [showDate]="true"></app-list-view>
 </section>
-<div style="flex: 0 0 100%; margin-left: 10%; padding-left: 30px;">
-  <h2>Saturday</h2>
-</div>
-<section id="parade">
+<section id="saturday">
+  <div style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+    <h2>Saturday</h2>
+  </div>
   <div class="next-to-image">
     <h3>The Parade</h3>
     <p>
@@ -102,15 +78,15 @@
     src="/assets/images/parade_route.png"
     alt="Map of parade route"
   /><img />
-</section>
-<section id="scheduled">
-  <div>
+  <div style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
     <h2>Schedule</h2>
-    @if (viewStyle == 'chart') { @if (screenSmall) {
-    <app-chart-view-long></app-chart-view-long>
-    } @else {
-    <app-chart-view></app-chart-view>
-    } }
-    <app-list-view [events]="scheduled"></app-list-view>
   </div>
+  <div id="schedule">
+    @if (viewStyle == 'chart') { @if (screenSmall) {
+      <app-chart-view-long></app-chart-view-long>
+    } @else {
+      <app-chart-view></app-chart-view>
+    } }
+  </div>
+  <app-list-view [events]="scheduled"></app-list-view>
 </section>
