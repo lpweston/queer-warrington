@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrideComponent } from './pride.component';
+import { ListViewComponent } from './list-view.component';
 
-describe('PrideComponent', () => {
-  let component: PrideComponent;
-  let fixture: ComponentFixture<PrideComponent>;
+describe('ListViewComponent', () => {
+  let component: ListViewComponent;
+  let fixture: ComponentFixture<ListViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrideComponent]
+      imports: [ListViewComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PrideComponent);
+    fixture = TestBed.createComponent(ListViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

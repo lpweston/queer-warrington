@@ -1,0 +1,116 @@
+<header>
+  <h1>Warrington Pride 2026</h1>
+  <h2>13th June 2026</h2>
+  <p>
+    During times when our rights are being challenged and taken away, it's more
+    important than ever that we should show our pride visibly! Pride is a time
+    when we can come together in love, support, celebration and defiance.<br />
+    There are lots of events across the town for everyone to enjoy, which we
+    have collected here for you. If you know of any other events that should be
+    listed here please don't hesitate to reach out to us at
+    warrqueercoffee&#64;gmail.com
+  </p>
+  <nav>
+    <a
+      href="pride/#location"
+      mat-stroked-button
+      style="color: lightblue !important"
+    >
+      <mat-icon>location_on</mat-icon>Where is Warrington Pride?
+    </a>
+    <a
+      href="pride/#friday"
+      mat-stroked-button
+      style="color: pink !important"
+    >
+      <mat-icon>date_range</mat-icon>Pride Month
+    </a>
+    <a
+      href="pride/#saturday"
+      mat-stroked-button
+      style="color: lightgreen !important"
+    >
+      <mat-icon>today</mat-icon>Saturday
+    </a>
+    <a
+      href="pride/#scheduled"
+      mat-stroked-button
+      style="color: lightsalmon !important"
+    >
+      <mat-icon>schedule</mat-icon>Schedule
+    </a>
+  </nav>
+</header>
+<section id="location">
+  <div class="next-to-image">
+    <h2>Where is Warrington Pride?</h2>
+    <p>There are activities going on throughout the town!</p>
+    <ul>
+      <li>Golden Square has a stage entertaining people all afternoon</li>
+      <li>Talks, activities and crafts inside the University of Chester</li>
+      <li>Family fun at the Library</li>
+      <li>And evening entertainment at the Geek Retreat and Parr Hall.</li>
+    </ul>
+    <p>Please see below for more information about these events.</p>
+  </div>
+  <div id="map">
+    <img
+      src="/assets/images/mapimage.webp"
+      alt="Map of Warrington highlighting: Warrington Youth Zone, Geek Retreat, Golden Square, Warrington Market, University of Chester, Time Square, Parr Hall, Library and Museum."
+    />
+  </div>
+</section>
+<section id="friday">
+  <h2>Friday</h2>
+  <app-list-view [events]="aroundPride" [showDate]="true"></app-list-view>
+</section>
+<div style="flex: 0 0 100%; margin-left: 10%; padding-left: 30px;">
+  <h2>Saturday</h2>
+</div>
+<section id="parade">
+  <div class="next-to-image">
+    <h3>The Parade</h3>
+    <p>
+      Pre-parade speeches start at Time Square at 11:30am, with the parade
+      starting at 12:00pm, and will wind it's away over the Skittles, down
+      Sankey street, into and around the Golden Square, ending in Old Market
+      Square.<br /><br />
+      For those who might have difficulty navigating through the Golden Square
+      an alterative route is available moving directly from the Skittles to Old
+      Market Square.<br />
+      <br />
+      Groups and individuals can sign up to join the parade using the links
+      below.
+    </p>
+    <a
+      href="https://wearewarringtonbid.co.uk/wp-content/uploads/2026/05/PRIDE-PARADE-CODE-OF-CONDUCT-2026-2.pdf"
+      target="_blank"
+      mat-stroked-button
+      style="color: #8961a5 !important"
+      >Pride parade code of conduct</a
+    ><br /><br />
+    <a
+      href="https://forms.office.com/pages/responsepage.aspx?id=zd8g6wAtIEG3ftMq4e9wMwj5vVI9LV5OpZNktgFwNrJUNTNMSlpGN1UzNkNaOFM4NjhaRkJHTVA2NC4u&route=shorturl"
+      target="_blank"
+      mat-stroked-button
+      style="color: #8961a5 !important"
+      >Sign up to join the parade</a
+    >
+  </div>
+  <img
+    mat-card-image
+    src="/assets/images/parade_route.png"
+    alt="Map of parade route"
+  /><img />
+</section>
+<section id="scheduled">
+  <div>
+    <h2>Schedule</h2>
+    @if (viewStyle == 'chart') { @if (screenSmall) {
+    <app-chart-view-long></app-chart-view-long>
+    } @else {
+    <app-chart-view></app-chart-view>
+    } }
+    <app-list-view [events]="scheduled"></app-list-view>
+  </div>
+</section>

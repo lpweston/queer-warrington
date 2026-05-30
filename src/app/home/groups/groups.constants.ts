@@ -9,13 +9,8 @@ export const groups: GroupInfo[] = [
     description: `Warrington Queer Coffee is a social group for, and run by, LGBTQ+ adults from Warrington and the surrounding area.<br />
                   We are a group for anyone in the LGBTQ+ community, regardless of identity or expression. Fem, masc, both or neither, 
                   however you present (whether you are out or not, passing or not) you are welcome.<br />
-                  <ul><li>We run a regular social meetup at the Geek Retreat in Warrington, on the last Saturday of each month, at 11.30am.</li>
-                  <li>A craft evening, on the 2nd Friday of each month, at The Old School, at 6.00pm.</li>
-                  <li>A online discord chat on the 3rd Monday of the month, at 7pm.</li>
-                  <li>And a semi-regular gaming group, at Making Space, on a Thursday at 6.00pm.</li></ul>
+                  We run a regular social meetup at the Geek Retreat in Warrington, on the last Saturday of each month, at 11.30am.
                   So check out the above calendar for more details!<br /><br />`,
-                  //We try to be as accessible and inclusive as possible, and are always open to feedback and suggestions for how we can improve.<br /><br />
-                  //We can be contacted via warrqueercoffee@gmail.com.
     links: [
       { 
         name: "",
@@ -69,6 +64,44 @@ export const groups: GroupInfo[] = [
         icon: '/assets/icons/fb-wh.webp',
         iconAlt: 'Rainbow Connection Facebook'
       }
+    ]
+  },
+  {
+    name: "Queer Crafting",
+    subtitle: 'Adult Craft Group',
+    icon: 'queer-coffee-icon',
+    imagePath: '/assets/images/queerCoffeePhoto.webp',
+    description: `Join Queer Crafts for a fun evening of crafting, art, and socialising with other members of Warrington’s adult LGBTQ+ community!
+                  Bring your own craft projects, or feel free to use our donated supplies and equipment.</br>
+                  The room is upstairs, accessible via a lift.</br>
+                  6pm-9pm</br>
+                  The Old School</br>
+                  Fairfield Street, Warrington, WA13AJ`,
+    links: [
+      { 
+        name: "",
+        link: 'https://discord.com/invite/4xFx7KuGH5',
+        icon: '/assets/icons/discord-mark-white.svg',
+        iconAlt: 'Queer Coffee Discord'
+      },
+    ]
+  },
+  {
+    name: "Queer Gaming",
+    subtitle: 'Adult Gaming Group',
+    icon: 'queer-coffee-icon',
+    imagePath: '/assets/images/queerCoffeePhoto.webp',
+    description: `LGBTQ Games Evening!
+                  Queer Gaming is running a bi weekly games evening at making space Warrington, Allen street. 
+                  This will start at 6pm and will go til 9pm.  Consoles, screens and board games will be provided. 
+                  This I hope will be a space where all LGBT geeks will feel safe and can have fun. I look forward to seeing people there 🙂`,
+    links: [
+      { 
+        name: "",
+        link: 'https://discord.com/invite/4xFx7KuGH5',
+        icon: '/assets/icons/discord-mark-white.svg',
+        iconAlt: 'Queer Coffee Discord'
+      },
     ]
   },
 ]
