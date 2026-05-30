@@ -4,11 +4,10 @@
   import { PrideEvent, scheduledEvents } from '../pride2026.constants';
   import { getListOfLocations } from '../data.util';
   import { MatButtonModule } from '@angular/material/button';
-import { EventCardComponent } from "../event-card/event-card.component";
 
   @Component({
     selector: 'app-chart-view',
-    imports: [TooltipComponent, MatButtonModule, EventCardComponent],
+    imports: [TooltipComponent, MatButtonModule],
     templateUrl: './chart-view.component.html',
     styleUrl: './chart-view.component.scss'
 })
