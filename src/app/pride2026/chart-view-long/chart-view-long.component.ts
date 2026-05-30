@@ -24,7 +24,7 @@ import { InfoDialogComponent } from '../../Components/info-dialog/info-dialog.co
   private marginInnerLeft = 30;
   private marginBottom = 10;
 
-  private colors = ["red", "orange", "gold", "green", "blue", "purple"]
+  private colors = ["orange", "gold", "green", "blue", "purple", "red"]
   private colorIdx = 0;
 
   private startDate = new Date("2026-06-13T10:00");

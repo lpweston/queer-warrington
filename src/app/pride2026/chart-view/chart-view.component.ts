@@ -23,10 +23,10 @@
   private marginBottom = 10;
   private marginLeft = 120;
 
-  private colors = ["red", "orange", "gold", "green", "blue", "purple"]
+  private colors = ["orange", "gold", "green", "blue", "purple", "red"]
   private colorIdx = 0;
 
-  private startDate = new Date("2026-06-13T09:00");
+  private startDate = new Date("2026-06-13T10:00");
   private endDate = new Date("2026-06-14T02:00");
 
   private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
@@ -65,7 +65,7 @@
     if (this.chart){
       this.chart.append("g")
       .attr("transform", `translate(0,${this.height - this.marginBottom})`)
-      .call(d3.axisBottom(this.xAxis).tickSize(-this.height + this.marginBottom + this.marginTop).ticks(20));
+      .call(d3.axisBottom(this.xAxis).tickSize(-this.height + this.marginBottom + this.marginTop).ticks(10));
       this.chart.append("g")
       .attr("transform", `translate(${this.marginLeft},0)`)
       .attr("stroke-width", 0.5)
@@ -73,7 +73,7 @@
 
       this.chart.append("g")
       .attr("transform", `translate(0,0)`)
-      .call(d3.axisTop(this.xAxis).tickSize(-this.height + this.marginBottom + this.marginTop).ticks(20));
+      .call(d3.axisTop(this.xAxis).tickSize(-this.height + this.marginBottom + this.marginTop).ticks(10));
       this.chart.append("g")
       .attr("transform", `translate(${this.width - this.marginRight},0)`)
       .attr("stroke-width", 0.5)
@@ -88,7 +88,7 @@
                   .selectAll("rect")
                   .data(scheduledEvents)
                   .join("rect")
-                  .attr("x", d => this.xAxis(d.start))
+                  .attr("x", d => this.xAxis(d.start) + 70)
                   .attr("y", d => this.yAxis(d.location) -10)
                   .attr("width", d => this.getWidthOfBar(d.start, d.end))
                   .attr("height", 20)
@@ -126,7 +126,7 @@
     }
 
     private getWidthOfBar(start: Date, end: Date): number {
-      const widthOfMS = this.width / (this.endDate.valueOf() - this.startDate.valueOf());
+      const widthOfMS = (this.width - this.marginLeft - this.marginRight) / (this.endDate.valueOf() - this.startDate.valueOf());
       return (end.valueOf() - start.valueOf()) * widthOfMS;
     }
 
