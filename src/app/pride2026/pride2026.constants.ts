@@ -65,7 +65,7 @@
     },
     {
         location: WarringtonLocation.university,
-        name: "Speaker's Corner: Exploring Queer History with Jasmine Lawrence",
+        name: "Speaker's Corner: Exploring Queer History with Jasmine Lawrie",
         start: new Date("2026-06-13T13:00"),
         end: new Date("2026-06-13T13:30"),
         icon: "uoc.png",
