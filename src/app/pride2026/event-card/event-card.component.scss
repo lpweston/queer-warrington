@@ -1,0 +1,47 @@
+:host{
+    width: calc(33% - 20px);
+    min-width: 300px;
+    flex-grow: 1;
+
+    mat-card{
+        height: 100%;
+
+        mat-card-header{
+            height: 80px;
+            align-items: center;
+            margin-bottom:16px;
+            justify-content: space-between;
+            
+            mat-card-title{
+                font-family: "Cal Sans", sans-serif;
+            }
+
+            .icon-img{
+                height: 56px;
+                background-color: white;
+                border-radius: 5px;
+            }
+        }
+
+        mat-card-content{
+            padding-top: 5px;
+            height: 100%;
+            background-color: white;
+
+            div{
+                padding:2px;
+                display: flex;
+            }
+
+            p{
+                line-height: 1.1;
+            }
+        }
+
+        mat-card-actions{
+            height: 50px;
+            color:white;
+        }
+        
+    }
+  }

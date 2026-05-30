@@ -1,0 +1,78 @@
+@if (event) {
+<mat-card>
+  <mat-card-header>
+    @if (event.icon){
+    <img
+      mat-card-image
+      [src]="'/assets/icons/' + event.icon"
+      class="icon-img"
+    />
+    }
+    <mat-card-title>
+      {{ event.name }}
+    </mat-card-title>
+  </mat-card-header>
+  <div class="rainbow-bar-sm"></div>
+  <mat-card-content>
+    <div>
+      <mat-icon>schedule</mat-icon>
+      <span>
+        {{ event.start.toLocaleTimeString().replace(regex, "") }} -
+        {{ event.end.toLocaleTimeString().replace(regex, "") }}
+      </span>
+    </div>
+    @if (showDate) {
+    <div>
+      <mat-icon>event</mat-icon>
+      {{ event.start.toLocaleDateString() }}
+    </div>
+    }
+    <div>
+      <mat-icon>pin_drop</mat-icon>
+      {{ event.location }}
+    </div>
+    @if (event.description){
+    <div>
+      <p [innerHTML]="event.description"></p>
+    </div>
+    }
+  </mat-card-content>
+  <div class="rainbow-bar-sm"></div>
+  <mat-card-actions>
+    @if(event.link){
+    <a
+      [href]="event.link"
+      target="_blank"
+      mat-icon-button
+      [matTooltip]="event.link"
+      matTooltipClass="link-tooltip"
+      aria-label="event.link"
+    >
+      <mat-icon>link</mat-icon>
+    </a>
+    } @if(event.img){
+    <button
+      mat-icon-button
+      [matTooltip]="event.img"
+      matTooltipClass="img-tooltip"
+      aria-label="event.img"
+      (click)="openDialog(event)"
+    >
+      <mat-icon>image</mat-icon>
+    </button>
+    }
+  </mat-card-actions>
+</mat-card>
+} @else {
+<mat-card
+  ><mat-card-header>
+    <mat-card-title> Select an Event </mat-card-title>
+  </mat-card-header>
+  <div class="rainbow-bar-sm"></div>
+  <mat-card-content
+    >For more information, please select and event.</mat-card-content
+  >
+  <div class="rainbow-bar-sm"></div>
+  <mat-card-actions></mat-card-actions>
+</mat-card>
+}

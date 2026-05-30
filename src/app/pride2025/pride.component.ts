@@ -13,7 +13,7 @@ import { ChartViewLongComponent } from './chart-view-long/chart-view-long.compon
     templateUrl: './pride.component.html',
     styleUrl: './pride.component.scss'
 })
-export class PrideComponent {
+export class Pride2025Component {
   scheduled = scheduledEvents;
   aroundPride = eventsAroundPride;
   allday = allDayEvents;
