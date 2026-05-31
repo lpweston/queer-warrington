@@ -22,17 +22,17 @@
       posternGate = "Postern Gate"
   };
 
-  export const eventsAroundPride: PrideEvent[] = [
-    {
-        location: WarringtonLocation.parrHall,
-        name: "Pride Scratch Night",
-        start: new Date("2026-06-11T19:30"),
-        end: new Date("2026-06-11T23:59"),
-        icon: "CW.jpg",
-        link: "",
-        description: "Parr Hall relaunches Culture Warrington's Scratch Night as part of Pride week, featuring four short work-in-progress performances from up-and-coming LGBTQ+ artists.<br/> 7.30pm (16+) £5, Parr Hall."
-    },
-  ];
+//   export const eventsAroundPride: PrideEvent[] = [
+//     {
+//         location: WarringtonLocation.parrHall,
+//         name: "Pride Scratch Night",
+//         start: new Date("2026-06-11T19:30"),
+//         end: new Date("2026-06-11T23:59"),
+//         icon: "CW.jpg",
+//         link: "",
+//         description: "Parr Hall relaunches Culture Warrington's Scratch Night as part of Pride week, featuring four short work-in-progress performances from up-and-coming LGBTQ+ artists.<br/> 7.30pm (16+) £5, Parr Hall."
+//     },
+//   ];
 
   export const scheduledEvents: PrideEvent[] = [
     {
@@ -102,19 +102,19 @@
         description: `Entertainment in Golden Square between 12-7pm. Includes the Drag Superstar contest final (family friendly, of course) and Drew's Dirty Disco.<br/>
         You can also catch the Warrington Youth Zone and TAGS present a Musical Medley on the Golden Square stage from 12.45pm – 1.45pm, featuring singers, dancers and much more performed by local young people.`
     },
-    {
-        location: WarringtonLocation.parrHall,
-        name: "Pride After Party",
-        start: new Date("2026-06-13T20:00"),
-        end: new Date("2026-06-13T23:59"),
-        icon: "CW.jpg",
-        description: `A flamboyant, vibrant, joyous, big energy after party where everyone is welcome to come as they are. Various acts including:
-        <br/>FATT BUTCHER: Introducing your host! @fattbutcher is an award-winning cabaret artist, vocalist and professional hot mess. They received the coveted four-chair turn on ITV’s The Voice and are the 2022 Winner of Drag Idol UK!
-        <br/>BLU ROMANTIC: Born in Grimsby and adopted by the Midlands, @bluromantic is the The daddy of Birmingham drag. A celebrated host, comedy-king and vocalist, Blü was a national finalist in Drag Idol 2023.
-        <br/>ALANNA BODEN:@alannaboden is a Birmingham-based powerhouse vocalist whose sound is steeped in the rich traditions of disco, Motown and gospel.
-        <br/>Tickets are from £9.`,
-        link: ""
-    },
+    // {
+    //     location: WarringtonLocation.parrHall,
+    //     name: "Pride After Party",
+    //     start: new Date("2026-06-13T20:00"),
+    //     end: new Date("2026-06-13T23:59"),
+    //     icon: "CW.jpg",
+    //     description: `A flamboyant, vibrant, joyous, big energy after party where everyone is welcome to come as they are. Various acts including:
+    //     <br/>FATT BUTCHER: Introducing your host! @fattbutcher is an award-winning cabaret artist, vocalist and professional hot mess. They received the coveted four-chair turn on ITV’s The Voice and are the 2022 Winner of Drag Idol UK!
+    //     <br/>BLU ROMANTIC: Born in Grimsby and adopted by the Midlands, @bluromantic is the The daddy of Birmingham drag. A celebrated host, comedy-king and vocalist, Blü was a national finalist in Drag Idol 2023.
+    //     <br/>ALANNA BODEN:@alannaboden is a Birmingham-based powerhouse vocalist whose sound is steeped in the rich traditions of disco, Motown and gospel.
+    //     <br/>Tickets are from £9.`,
+    //     link: ""
+    // },
     {
         location: WarringtonLocation.geekRetreat,
         name: "Get Your Geek On!",
