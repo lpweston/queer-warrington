@@ -67,16 +67,17 @@ export const groups: GroupInfo[] = [
     ]
   },
   {
-    name: "Queer Crafting",
+    name: "Queer Crafts",
     subtitle: 'Adult Craft Group',
-    icon: 'queer-coffee-icon',
-    imagePath: '/assets/images/queerCoffeePhoto.webp',
+    icon: 'queer-crafts-icon',
+    imagePath: '/assets/icons/Queer_Crafts_Logo.png',
     description: `Join Queer Crafts for a fun evening of crafting, art, and socialising with other members of Warrington’s adult LGBTQ+ community!
                   Bring your own craft projects, or feel free to use our donated supplies and equipment.</br>
                   The room is upstairs, accessible via a lift.</br>
                   6pm-9pm</br>
                   The Old School</br>
-                  Fairfield Street, Warrington, WA13AJ`,
+                  Fairfield Street, Warrington, WA13AJ
+                  Contact: queercrafts.warrington@gmail.com`,
     links: [
       { 
         name: "",
