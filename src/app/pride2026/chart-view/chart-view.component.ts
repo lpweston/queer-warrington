@@ -26,8 +26,8 @@
   private colors = ["orange", "gold", "green", "blue", "purple", "red"]
   private colorIdx = 0;
 
-  private startDate = new Date("2026-06-13T10:00");
-  private endDate = new Date("2026-06-14T02:00");
+  private startDate = new Date("2026-06-13T09:00");
+  private endDate = new Date("2026-06-14T01:00");
 
   private chart: d3.Selection<d3.BaseType, unknown, HTMLElement, any> | undefined;
   private xAxis!: d3.ScaleTime<number, number, never>;
@@ -44,7 +44,7 @@
 
   private initScales() {
     // Declare the x (horizontal position) scale.
-    this.xAxis = d3.scaleUtc()
+    this.xAxis = d3.scaleTime()
     .domain([this.startDate , this.endDate])
     .range([this.marginLeft, this.width - this.marginRight]);
 
@@ -88,7 +88,7 @@
                   .selectAll("rect")
                   .data(scheduledEvents)
                   .join("rect")
-                  .attr("x", d => this.xAxis(d.start) + 70)
+                  .attr("x", d => this.xAxis(d.start))
                   .attr("y", d => this.yAxis(d.location) -10)
                   .attr("width", d => this.getWidthOfBar(d.start, d.end))
                   .attr("height", 20)
@@ -126,8 +126,7 @@
     }
 
     private getWidthOfBar(start: Date, end: Date): number {
-      const widthOfMS = (this.width - this.marginLeft - this.marginRight) / (this.endDate.valueOf() - this.startDate.valueOf());
-      return (end.valueOf() - start.valueOf()) * widthOfMS;
+      return this.xAxis(end) - this.xAxis(start);
     }
 
     private getNextColor() {

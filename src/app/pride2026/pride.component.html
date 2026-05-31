@@ -81,7 +81,7 @@
   <div style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
     <h2>Schedule</h2>
   </div>
-  <div id="schedule">
+  <div id="schedule" aria-hidden="true">
     @if (viewStyle == 'chart') { @if (screenSmall) {
       <app-chart-view-long></app-chart-view-long>
     } @else {
