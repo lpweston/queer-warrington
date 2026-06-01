@@ -19,20 +19,24 @@
       youthZone = "Warrington Youth Zone",
       parrHall = "Parr Hall",
       market = "Warrington Market",
-      posternGate = "Postern Gate"
+      popinns = "Pop-Inns Musical Theatre Bar",
+      friendsMeetingHouse = "Friends Meeting House",
   };
 
-//   export const eventsAroundPride: PrideEvent[] = [
-//     {
-//         location: WarringtonLocation.parrHall,
-//         name: "Pride Scratch Night",
-//         start: new Date("2026-06-11T19:30"),
-//         end: new Date("2026-06-11T23:59"),
-//         icon: "CW.jpg",
-//         link: "",
-//         description: "Parr Hall relaunches Culture Warrington's Scratch Night as part of Pride week, featuring four short work-in-progress performances from up-and-coming LGBTQ+ artists.<br/> 7.30pm (16+) £5, Parr Hall."
-//     },
-//   ];
+  export const eventsAroundPride: PrideEvent[] = [
+    {
+        location: WarringtonLocation.friendsMeetingHouse,
+        name: "Rainbow Connections Pride",
+        start: new Date("2026-06-11T19:00"),
+        end: new Date("2026-06-11T22:00"),
+        icon: "rainbow-connection.png",
+        link: "https://www.facebook.com/events/1393074139272010/",
+        description: `Ahead of Warrington Pride, We are hosting a social evening.
+                    Think cakes, brews and the odd bit of spontanious singing.
+                    This wont be a formal rehersal but a chance to come along and find out more about our choir.
+                    We are unfunded so we would ask for a small donation`
+    },
+  ];
 
   export const scheduledEvents: PrideEvent[] = [
     {
@@ -102,19 +106,15 @@
         description: `Entertainment in Golden Square between 12-7pm. Includes the Drag Superstar contest final (family friendly, of course) and Drew's Dirty Disco.<br/>
         You can also catch the Warrington Youth Zone and TAGS present a Musical Medley on the Golden Square stage from 12.45pm – 1.45pm, featuring singers, dancers and much more performed by local young people.`
     },
-    // {
-    //     location: WarringtonLocation.parrHall,
-    //     name: "Pride After Party",
-    //     start: new Date("2026-06-13T20:00"),
-    //     end: new Date("2026-06-13T23:59"),
-    //     icon: "CW.jpg",
-    //     description: `A flamboyant, vibrant, joyous, big energy after party where everyone is welcome to come as they are. Various acts including:
-    //     <br/>FATT BUTCHER: Introducing your host! @fattbutcher is an award-winning cabaret artist, vocalist and professional hot mess. They received the coveted four-chair turn on ITV’s The Voice and are the 2022 Winner of Drag Idol UK!
-    //     <br/>BLU ROMANTIC: Born in Grimsby and adopted by the Midlands, @bluromantic is the The daddy of Birmingham drag. A celebrated host, comedy-king and vocalist, Blü was a national finalist in Drag Idol 2023.
-    //     <br/>ALANNA BODEN:@alannaboden is a Birmingham-based powerhouse vocalist whose sound is steeped in the rich traditions of disco, Motown and gospel.
-    //     <br/>Tickets are from £9.`,
-    //     link: ""
-    // },
+    {
+        location: WarringtonLocation.popinns,
+        name: "Karaoke",
+        start: new Date("2026-06-13T14:30"),
+        end: new Date("2026-06-13T18:00"),
+        link: "https://www.facebook.com/groups/635886610834758/user/61575925427914/",
+        icon: "popins.webp",
+        description: "Pop-Inns Musical Theatre Bar will be hosting karaoke from  2.30pm until 6pm."
+    },
     {
         location: WarringtonLocation.geekRetreat,
         name: "Get Your Geek On!",
