@@ -28,7 +28,7 @@
         location: WarringtonLocation.friendsMeetingHouse,
         name: "Rainbow Connections Pride",
         start: new Date("2026-06-11T19:00"),
-        end: new Date("2026-06-11T22:00"),
+        end: new Date("2026-06-11T21:00"),
         icon: "rainbow-connection.png",
         link: "https://www.facebook.com/events/1393074139272010/",
         description: `Ahead of Warrington Pride, We are hosting a social evening.
