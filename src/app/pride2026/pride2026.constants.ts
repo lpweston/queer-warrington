@@ -1,6 +1,7 @@
   export type PrideEvent = {
     name: string,
     location: WarringtonLocation,
+    address: string,
     start: Date,
     end: Date,
     description?: string,
@@ -11,21 +12,34 @@
 
   export enum WarringtonLocation {
       goldenSquare = "Golden Square",
-      oldMarketPlace = "Old Market Place",
       university = "University of Chester",
       library = "Library",
       timeSquare = "Time Square",
       geekRetreat = "Geek Retreat",
-      youthZone = "Warrington Youth Zone",
-      parrHall = "Parr Hall",
       market = "Warrington Market",
       popinns = "Pop-Inns Musical Theatre Bar",
       friendsMeetingHouse = "Friends Meeting House",
+      theOldSchool = "The Old School",
+      discobowl = "Discobowl",
+  };
+
+  export enum WarringtonLocationAddress {
+      goldenSquare = "Golden Square, Old Market Place, Warrington WA1 1QB",
+      university = "University of Chester, 2 Time Square, Warrington WA1 2NT",
+      library = "Library, Museum St, Warrington WA1 1HU",
+      timeSquare = "Time Square, Warrington WA1 2NT",
+      geekRetreat = "Geek Retreat, 4 Crown Parade, Warrington WA1 2AE",
+      market = "Warrington Market, 2 Time Square, Warrington WA1 2NT",
+      popinns = "Pop-Inns Musical Theatre Bar, 2a Cairo St, Warrington WA1 1EE",
+      friendsMeetingHouse = "Friends Meeting House, 1 Academy St, Warrington WA1 2NR",
+      theOldSchool = "The Old School, 17 Fairfield St, Warrington WA1 3AJ",
+      discobowl = "Discobowl, 77 The Mall, Golden Square Shopping Centre, Warrington WA1 1QE",
   };
 
   export const eventsAroundPride: PrideEvent[] = [
     {
         location: WarringtonLocation.friendsMeetingHouse,
+        address: WarringtonLocationAddress.friendsMeetingHouse,
         name: "Rainbow Connections Pride",
         start: new Date("2026-06-11T19:00"),
         end: new Date("2026-06-11T21:00"),
@@ -36,11 +50,24 @@
                     This wont be a formal rehersal but a chance to come along and find out more about our choir.
                     We are unfunded so we would ask for a small donation`
     },
+    {
+        location: WarringtonLocation.theOldSchool,
+        address: WarringtonLocationAddress.theOldSchool,
+        name: "Queer Crafts",
+        start: new Date("2026-06-12T18:00"),
+        end: new Date("2026-06-12T21:00"),
+        icon: "Queer_Crafts_Logo.png",
+        description: `Queer crafts will be meeting as usual on Friday at The Old School.
+                    We will be bringing cardboard and sharpies for anyone who wants to make signs for the parade.
+                    Or feel free to bring your own craft project to work on.<br/>
+                    If you have been thinking of coming along to our events, this is a great opportunity to join us for the first time!`
+    },
   ];
 
   export const scheduledEvents: PrideEvent[] = [
     {
         location: WarringtonLocation.library,
+        address: WarringtonLocationAddress.library,
         name: "Central Library Pride",
         start: new Date("2026-06-13T10:00"),
         end: new Date("2026-06-13T12:00"),
@@ -50,6 +77,7 @@
     },
     {
         location: WarringtonLocation.university,
+        address: WarringtonLocationAddress.university,
         name: "Craft Pride with Warrington Youth Zone",
         start: new Date("2026-06-13T10:00"),
         end: new Date("2026-06-13T14:00"),
@@ -60,6 +88,7 @@
     },
     {
         location: WarringtonLocation.university,
+        address: WarringtonLocationAddress.university,
         name: "Queer Coffee Lounge",
         start: new Date("2026-06-13T11:00"),
         end: new Date("2026-06-13T16:00"),
@@ -69,6 +98,7 @@
     },
     {
         location: WarringtonLocation.university,
+        address: WarringtonLocationAddress.university,
         name: "Speaker's Corner: Exploring Queer History with Jasmine Lawrie",
         start: new Date("2026-06-13T13:00"),
         end: new Date("2026-06-13T13:30"),
@@ -78,6 +108,7 @@
     },
     {
         location: WarringtonLocation.university,
+        address: WarringtonLocationAddress.university,
         name: "Speaker's Corner: Q&A with Amanda Hilton",
         start: new Date("2026-06-13T14:20"),
         end: new Date("2026-06-13T15:00"),
@@ -87,6 +118,7 @@
     },
     {
         location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
         name: "Pride Parade",
         start: new Date("2026-06-13T11:30"),
         end: new Date("2026-06-13T12:30"),
@@ -97,6 +129,7 @@
     },
     {
         location: WarringtonLocation.goldenSquare,
+        address: WarringtonLocationAddress.goldenSquare,
         name: "Golden Square Pride",
         start: new Date("2026-06-13T12:00"),
         end: new Date("2026-06-13T19:00"),
@@ -108,6 +141,7 @@
     },
     {
         location: WarringtonLocation.popinns,
+        address: WarringtonLocationAddress.popinns,
         name: "Karaoke",
         start: new Date("2026-06-13T14:30"),
         end: new Date("2026-06-13T18:00"),
@@ -116,7 +150,19 @@
         description: "Pop-Inns Musical Theatre Bar will be hosting karaoke from  2.30pm until 6pm."
     },
     {
+        location: WarringtonLocation.discobowl,
+        address: WarringtonLocationAddress.discobowl,
+        name: "Strike with Pride",
+        start: new Date("2026-06-13T19:00"),
+        end: new Date("2026-06-13T23:00"),
+        icon: "discobowl.jpg",
+        img: "discobowl2026.jpg",
+        description: `Once the party finishes outside, we'll be ready with Unlimited Bowling, 90s/00s/10s Anthems, Competitions & Giveaways from 7pm.`,
+        link: "https://www.discobowl.co.uk/warrington"
+    },
+    {
         location: WarringtonLocation.geekRetreat,
+        address: WarringtonLocationAddress.geekRetreat,
         name: "Get Your Geek On!",
         start: new Date("2026-06-13T20:00"),
         end: new Date("2026-06-13T23:00"),
