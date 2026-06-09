@@ -119,13 +119,42 @@
     {
         location: WarringtonLocation.timeSquare,
         address: WarringtonLocationAddress.timeSquare,
+        name: "Pre-Parade Gathering",
+        start: new Date("2026-06-13T11:15"),
+        end: new Date("2026-06-13T12:00"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
         name: "Pride Parade",
-        start: new Date("2026-06-13T11:30"),
+        start: new Date("2026-06-13T12:00"),
         end: new Date("2026-06-13T12:30"),
         icon: "",
         description: `Hundreds of people are expected to take part in this year’s Pride parade, including local charities, businesses, community groups, and allies. You may be walking as a group, representing a business, or showing your support as an individual. Everyone is invited to be part of this welcoming and inclusive celebration.
         People gather from 11.30, it will begin at 12 noon at Time Square and will make its way through the town to Golden Square, arriving there at approximately 12.30pm.`,
         link: "https://wearewarringtonbid.co.uk/warrington-pride-2026/"
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Pride at Time Square",
+        start: new Date("2026-06-13T11:15"),
+        end: new Date("2026-06-13T12:00"),
+        icon: "",
+        description: `Warrington Pride is coming to the Market! Join us on Saturday 13th June from 11am for the biggest, brightest celebration of the year — right here at Time Square Warrington and Warrington Market!</br>
+            We’ve got an incredible line-up all day long:</br>
+            Live music to get you moving</br>
+            Fabulous drag queens bringing all the sparkle and sass</br>
+            Colourful, joyful parades</br>
+            So much more entertainment and fun for everyone!</br>
+            And the party definitely doesn’t stop when the main events finish…</br>
+            Stick around for our official AFTER PARTY, hosted by the amazing Kiki Inferno</br>
+            It’s going to be an unforgettable day of music, dancing and pure pride vibes.</br>
+            Bring your friends, bring your colours, and come celebrate love, equality and community with us!`,
+        link: ""
     },
     {
         location: WarringtonLocation.goldenSquare,
@@ -242,13 +271,42 @@
     {
         location: WarringtonLocation.timeSquare,
         address: WarringtonLocationAddress.timeSquare,
+        name: "Pre-Parade Gathering",
+        start: new Date("2026-06-13T11:15"),
+        end: new Date("2026-06-13T12:00"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
         name: "Pride Parade",
-        start: new Date("2026-06-13T11:30"),
+        start: new Date("2026-06-13T12:00"),
         end: new Date("2026-06-13T12:30"),
         icon: "",
         description: `Hundreds of people are expected to take part in this year’s Pride parade, including local charities, businesses, community groups, and allies. You may be walking as a group, representing a business, or showing your support as an individual. Everyone is invited to be part of this welcoming and inclusive celebration.
         People gather from 11.30, it will begin at 12 noon at Time Square and will make its way through the town to Golden Square, arriving there at approximately 12.30pm.`,
         link: "https://wearewarringtonbid.co.uk/warrington-pride-2026/"
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Pride at Time Square",
+        start: new Date("2026-06-13T12:30"),
+        end: new Date("2026-06-13T20:00"),
+        icon: "",
+        description: `Warrington Pride is coming to the Market! Join us on Saturday 13th June from 11am for the biggest, brightest celebration of the year — right here at Time Square Warrington and Warrington Market!</br>
+            We’ve got an incredible line-up all day long:</br>
+            Live music to get you moving</br>
+            Fabulous drag queens bringing all the sparkle and sass</br>
+            Colourful, joyful parades</br>
+            So much more entertainment and fun for everyone!</br>
+            And the party definitely doesn’t stop when the main events finish…</br>
+            Stick around for our official AFTER PARTY, hosted by the amazing Kiki Inferno</br>
+            It’s going to be an unforgettable day of music, dancing and pure pride vibes.</br>
+            Bring your friends, bring your colours, and come celebrate love, equality and community with us!`,
+        link: ""
     },
     {
         location: WarringtonLocation.goldenSquare,
