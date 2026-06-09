@@ -4,7 +4,7 @@ import { ListViewComponent } from "./list-view/list-view.component";
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle'
-import { eventsAroundPride, scheduledEvents } from './pride2026.constants';
+import { eventsAroundPride, scheduledEvents, scheduledList } from './pride2026.constants';
 import { ChartViewLongComponent } from './chart-view-long/chart-view-long.component';
 
 @Component({
@@ -15,6 +15,7 @@ import { ChartViewLongComponent } from './chart-view-long/chart-view-long.compon
 })
 export class Pride2026Component {
   scheduled = scheduledEvents;
+  scheduledList = scheduledList;
   aroundPride = eventsAroundPride;
   viewStyle = 'chart';
   screenSmall = window.innerWidth < 790;
