@@ -21,6 +21,7 @@
       friendsMeetingHouse = "Friends Meeting House",
       theOldSchool = "The Old School",
       discobowl = "Discobowl",
+      stRoccos = "St Rocco's",
   };
 
   export enum WarringtonLocationAddress {
@@ -34,6 +35,7 @@
       friendsMeetingHouse = "Friends Meeting House, 1 Academy St, Warrington WA1 2NR",
       theOldSchool = "The Old School, 17 Fairfield St, Warrington WA1 3AJ",
       discobowl = "Discobowl, 77 The Mall, Golden Square Shopping Centre, Warrington WA1 1QE",
+      stRoccos = "St Rocco's, Vitality Centre, St Rocco's, Lockton Lane, Brewsey, Warrington WA5 0BW",
   };
 
   export const eventsAroundPride: PrideEvent[] = [
@@ -49,6 +51,17 @@
                     Think cakes, brews and the odd bit of spontanious singing.
                     This wont be a formal rehersal but a chance to come along and find out more about our choir.
                     We are unfunded so we would ask for a small donation`
+    },
+    {
+        location: WarringtonLocation.stRoccos,
+        address: WarringtonLocationAddress.stRoccos,
+        name: "St Rocco's Hospice Pride",
+        start: new Date("2026-06-12T11:00"),
+        end: new Date("2026-06-12T13:00"),
+        description: `St Rocco’s Hospice invites you to drop in and celebrate Pride with us. Why not join us for light refreshments, a tour of the Hospice,
+                    and the opportunity to meet some of our team? Everyone is welcome here.`,
+        img: "stroccoPride.png",
+        icon: "st-rocco.webp"
     },
     {
         location: WarringtonLocation.theOldSchool,
