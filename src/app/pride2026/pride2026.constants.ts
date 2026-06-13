@@ -11,6 +11,7 @@
   }
 
   export enum WarringtonLocation {
+      parade = "Parade",
       goldenSquare = "Golden Square",
       university = "University of Chester",
       library = "Library",
@@ -159,15 +160,28 @@
         icon: "",
         description: `Warrington Pride is coming to the Market! Join us on Saturday 13th June from 11am for the biggest, brightest celebration of the year — right here at Time Square Warrington and Warrington Market!</br>
             We’ve got an incredible line-up all day long:</br>
-            Live music to get you moving</br>
-            Fabulous drag queens bringing all the sparkle and sass</br>
-            Colourful, joyful parades</br>
-            So much more entertainment and fun for everyone!</br>
-            And the party definitely doesn’t stop when the main events finish…</br>
-            Stick around for our official AFTER PARTY, hosted by the amazing Kiki Inferno</br>
-            It’s going to be an unforgettable day of music, dancing and pure pride vibes.</br>
-            Bring your friends, bring your colours, and come celebrate love, equality and community with us!`,
-        link: ""
+            11am – Beautiful Noise Choir – a local favourite, this inclusive community choir run by the local disability charity Creating Adventures bring joy to every event they attend.</br>
+            11.30am – Welcome and speeches</br>
+            11.45am – Warrington & Vale Royal College – Joseph Megamix</br>
+            11.55am – Kiki Inferno with Jake Liken and Toto – Come Alive</br>
+            12 noon – Pride March leaves Time Square</br>
+            12.05pm – Rock Choir – Bringing upbeat, well-known contemporary and classic pop/rock hits toTime Square</br>
+            12.35pm – Jack Buckley – Manchester singer/songwriter Jack brings a different take on covers alongside some of his own original songs.</br>
+            1pm – Warrington & Vale Royal College Performing Arts Department</br>
+            1.20pm –– Kiki Inferno</br>
+            2.10pm – Captain Andy</br>
+            2.30pm – Amy Linton</br>
+            2.45pm – Rox – Find Me</br>
+            2.50pm – Jess Drummond joined by Meredith</br>
+            3pm – Kiki Inferno and Toto – Get ready to turn up the heat with Warrington’s biggest drag queen, Kiki Inferno, as she storms the Pride stage with a show-stopping set full of powerhouse vocals, high-energy dance anthems, and party bangers that’ll have you living your best life from start to finish! Joining Kiki on stage are the rising stars of tomorrow  -Musical Theatre students, Toto.</br>
+            3.30pm – Step into Elton – a fabulous tribute to Elton John (Part 1)</br>
+            4.15pm – The young people from TAGS Musical Medley (Part 2)</br>
+            5.05pm – Jay Ashbury-Luck</br>
+            5.20pm – The young people from TAGS Musical Medley (Part 3)</br>
+            6.15pm – Warrington Pride’s Ultimate Party Bingo, hosted by Kiki Inferno. Expect glittering prizes, wild competitions, classic dancefloor anthems, and enough sass to fill the bingo hall twice over.</br>
+            6.45pm – Jake Liken</br>
+            7.15pm – Step into Elton – a fabulous tribute to Elton John (Part 2)`,
+        link: "https://wearewarringtonbid.co.uk/events/pride-at-time-square-and-warrington-market/"
     },
     {
         location: WarringtonLocation.goldenSquare,
@@ -284,15 +298,27 @@
     {
         location: WarringtonLocation.timeSquare,
         address: WarringtonLocationAddress.timeSquare,
-        name: "Pre-Parade Gathering",
-        start: new Date("2026-06-13T11:15"),
-        end: new Date("2026-06-13T12:00"),
+        name: "Beautiful Noise Choir",
+        start: new Date("2026-06-13T11:00"),
+        end: new Date("2026-06-13T11:30"),
         icon: "",
-        description: ``,
+        description: `Beautiful Noise Choir – a local favourite, this inclusive community choir run by the local disability charity Creating Adventures bring joy to every event they attend.`,
         link: ""
     },
     {
         location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Welcome and speeches",
+        start: new Date("2026-06-13T11:30"),
+        end: new Date("2026-06-13T12:00"),
+        icon: "",
+        description: `11.30am – Welcome and speeches</br>
+                    11.45am – Warrington & Vale Royal College – Joseph Megamix</br>
+                    11.55am – Kiki Inferno with Jake Liken and Toto – Come Alive`,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.parade,
         address: WarringtonLocationAddress.timeSquare,
         name: "Pride Parade",
         start: new Date("2026-06-13T12:00"),
@@ -305,20 +331,161 @@
     {
         location: WarringtonLocation.timeSquare,
         address: WarringtonLocationAddress.timeSquare,
-        name: "Pride at Time Square",
-        start: new Date("2026-06-13T12:30"),
+        name: "Rock Choir",
+        start: new Date("2026-06-13T12:05"),
+        end: new Date("2026-06-13T12:35"),
+        icon: "Bringing upbeat, well-known contemporary and classic pop/rock hits toTime Square",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Jack Buckley",
+        start: new Date("2026-06-13T12:35"),
+        end: new Date("2026-06-13T13:00"),
+        icon: "",
+        description: `Manchester singer/songwriter Jack brings a different take on covers alongside some of his own original songs.`,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Warrington & Vale Royal College Performing Arts Department",
+        start: new Date("2026-06-13T13:00"),
+        end: new Date("2026-06-13T13:20"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Kiki Inferno",
+        start: new Date("2026-06-13T13:20"),
+        end: new Date("2026-06-13T14:10"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Captain Andy",
+        start: new Date("2026-06-13T14:10"),
+        end: new Date("2026-06-13T14:30"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: " Amy Linton",
+        start: new Date("2026-06-13T14:30"),
+        end: new Date("2026-06-13T14:45"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Rox – Find Me",
+        start: new Date("2026-06-13T14:45"),
+        end: new Date("2026-06-13T14:50"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Jess Drummond joined by Meredith",
+        start: new Date("2026-06-13T14:50"),
+        end: new Date("2026-06-13T15:00"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Kiki Inferno and Toto",
+        start: new Date("2026-06-13T15:00"),
+        end: new Date("2026-06-13T15:30"),
+        icon: "",
+        description: `Get ready to turn up the heat with Warrington’s biggest drag queen, Kiki Inferno, as she storms the Pride stage with a show-stopping set full of powerhouse vocals, high-energy dance anthems, and party bangers that’ll have you living your best life from start to finish! Joining Kiki on stage are the rising stars of tomorrow  -Musical Theatre students, Toto.`,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Step into Elton",
+        start: new Date("2026-06-13T15:30"),
+        end: new Date("2026-06-13T16:15"),
+        icon: "",
+        description: `a fabulous tribute to Elton John (Part 1)`,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "TAGS Musical Medley",
+        start: new Date("2026-06-13T16:15"),
+        end: new Date("2026-06-13T17:05"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Jay Ashbury-Luck",
+        start: new Date("2026-06-13T17:05"),
+        end: new Date("2026-06-13T17:20"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "TAGS Musical Medley",
+        start: new Date("2026-06-13T17:20"),
+        end: new Date("2026-06-13T18:15"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Ultimate Party Bingo",
+        start: new Date("2026-06-13T18:15"),
+        end: new Date("2026-06-13T18:45"),
+        icon: "",
+        description: `Warrington Pride’s Ultimate Party Bingo, hosted by Kiki Inferno. Expect glittering prizes, wild competitions, classic dancefloor anthems, and enough sass to fill the bingo hall twice over.`,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Jake Liken",
+        start: new Date("2026-06-13T18:45"),
+        end: new Date("2026-06-13T19:15"),
+        icon: "",
+        description: ``,
+        link: ""
+    },
+    {
+        location: WarringtonLocation.timeSquare,
+        address: WarringtonLocationAddress.timeSquare,
+        name: "Step into Elton",
+        start: new Date("2026-06-13T19:15"),
         end: new Date("2026-06-13T20:00"),
         icon: "",
-        description: `Warrington Pride is coming to the Market! Join us on Saturday 13th June from 11am for the biggest, brightest celebration of the year — right here at Time Square Warrington and Warrington Market!</br>
-            We’ve got an incredible line-up all day long:</br>
-            Live music to get you moving</br>
-            Fabulous drag queens bringing all the sparkle and sass</br>
-            Colourful, joyful parades</br>
-            So much more entertainment and fun for everyone!</br>
-            And the party definitely doesn’t stop when the main events finish…</br>
-            Stick around for our official AFTER PARTY, hosted by the amazing Kiki Inferno</br>
-            It’s going to be an unforgettable day of music, dancing and pure pride vibes.</br>
-            Bring your friends, bring your colours, and come celebrate love, equality and community with us!`,
+        description: ``,
         link: ""
     },
     {
