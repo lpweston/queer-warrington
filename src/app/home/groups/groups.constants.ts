@@ -164,6 +164,47 @@ export const supportServices: GroupInfo[] = [
         iconAlt: 'Trans without abuse Website',
       },
     ]
+  },
+  {
+    name: "BodyPositive",
+    subtitle: 'Support Services',
+    icon: 'body-positive',
+    imagePath: '/assets/icons/body-positive.png',
+    description: `Body Positive was formally established in 1992 with the aim of providing support, information and advice to people living with or affected by HIV across
+    Cheshire and North Wales. In 1998 Body Positive began managing the CASH service for gay and bisexual men living in the East Cheshire area. Over the years Body Positive
+    has developed its services and now provides comprehensive service supporting people who identify as being lesbian, gay, bisexual or trans+.<br/><br/>
+    We have three key service streams:<br/>Technicolour: LGBTQ+ services for all ages.<br/>Silver Rainbows: for older LGBTQ+ people.<br/>TransPositive: services for trans people.<br/><br/>
+    Call: 01270 653150<br/>
+    Email: health@bpcnw.co.uk`,
+    links: [
+      {
+        name: "",
+        link: 'https://www.bpcnw.co.uk',
+        icon: 'home',
+        iconAlt: 'BodyPositive Website',
+      },
+    ]
+  },
+  {
+    name: "Sahir",
+    subtitle: 'Support Services',
+    icon: 'sahir-logo',
+    imagePath: '/assets/icons/sahir-logo.svg',
+    description: `We are the Liverpool City Region’s largest and oldest LGBTQ+ charity – engaged in creating a brighter healthier future for our communities.
+    We’re there for people when they need us most. We provide practical and emotional support, camaraderie and connection to: LGBTQ+ people, People living with
+    and affected by HIV. We do not shy away from tackling injustice, fighting discrimination and addressing inequalities. We campaign locally, regionally and
+    nationally with the aim of creating a fairer and more equitable society for our community.<br/><br/>
+    We collaborate with others to increase our reach and impact. Our work is insight and data-driven and our programmes are co-developed with those we serve.<br/><br/>
+    Call: 0151 673 1972<br/>
+    Email: info@sahir.org.uk`,
+    links: [
+      {
+        name: "",
+        link: 'https://www.sahir.org.uk',
+        icon: 'home',
+        iconAlt: 'Sahir Website',
+      },
+    ]
   }
 ]
 
