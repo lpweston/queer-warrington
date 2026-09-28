@@ -23,6 +23,7 @@
 
         .mat-mdc-card-image{
             width: 100%;
+            background-color: white;
         }
         
         .flex-grow-content {
@@ -72,6 +73,18 @@
 
         #cwa-icon{
             background-image: url('/assets/images/TWAlogo.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #sahir-logo{
+            background-image: url('/assets/icons/sahir-logo-2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #body-positive{
+            background-image: url('/assets/icons/body-positive-2.png');
             background-size: cover;
             background-position: center;
         }
