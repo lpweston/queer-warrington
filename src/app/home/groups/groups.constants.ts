@@ -72,11 +72,10 @@ export const groups: GroupInfo[] = [
     icon: 'queer-crafts-icon',
     imagePath: '/assets/icons/Queer_Crafts_Logo.png',
     description: `Join Queer Crafts for a fun evening of crafting, art, and socialising with other members of Warrington’s adult LGBTQ+ community!
-                  Bring your own craft projects, or feel free to use our donated supplies and equipment.</br>
-                  The room is upstairs, accessible via a lift.</br>
+                  Bring your own craft projects, or feel free to use our donated supplies and equipment.</br></br>
+                  2nd Thrusdays of the month</br>
                   6pm-9pm</br>
-                  The Old School</br>
-                  Fairfield Street, Warrington, WA13AJ
+                  Making Space, Allen Street, Warrington, WA2 7JB</br>
                   Contact: queercrafts.warrington@gmail.com`,
     links: [
       { 
@@ -93,9 +92,12 @@ export const groups: GroupInfo[] = [
     icon: 'queer-coffee-icon',
     imagePath: '/assets/images/queerCoffeePhoto.webp',
     description: `LGBTQ Games Evening!
-                  Queer Gaming is running a bi weekly games evening at making space Warrington, Allen street. 
-                  This will start at 6pm and will go til 9pm.  Consoles, screens and board games will be provided. 
-                  This I hope will be a space where all LGBT geeks will feel safe and can have fun. I look forward to seeing people there 🙂`,
+                  Queer Gaming is running a monthly weekly games evening at making space Warrington, Allen street. 
+                  Consoles, screens and board games will be provided. 
+                  This I hope will be a space where all LGBT geeks will feel safe and can have fun. I look forward to seeing people there 🙂</br></br>
+                  3rd Thrusdays of the month,
+                  6pm-9pm</br>
+                  Making Space, Allen Street, Warrington, WA2 7JB</br>`,
     links: [
       { 
         name: "",
@@ -242,6 +244,43 @@ export const socials: SocialInfo[] = [
 ]
 
 export const companies: GroupInfo[] = [
+    {
+    name: 'Pop-Inns',
+    description: `At Pop-Inns, we bring the magic of musical theatre to life in a vibrant, one-of-a-kind setting. From the moment you walk through our doors,
+    you're stepping into a world where show tunes fill the air, Broadway meets the bar, and every cocktail is served with a touch of drama.<br/><br/>
+      Whether you're belting out your favourite numbers during our themed nights or sipping drinks under the glow of stage lights, Pop-Inns offers an immersive
+      experience like no other. Our walls echo with iconic lyrics, our décor pays homage to theatre legends, and our staff are just as passionate about musicals as you are.<br/><br/>
+      It’s more than just a night out — it’s a standing ovation waiting to happen.`,
+    icon: 'pop-inns-icon',
+    subtitle: "Musicals Bar",
+    imagePath: "/assets/images/popinns.webp",
+    links: [
+      {
+      link: 'https://popinnswarrington.co.uk/',
+      name: "",
+      icon: "home",
+      iconAlt: "Pop-Inns Homepage"
+      },
+      {
+        link: "https://www.instagram.com/popinnswarrington",
+        name: "",
+        icon: '/assets/icons/Instagram_Glyph_White.svg',
+        iconAlt: "Pop-Inns Instagram"
+      },
+      {
+        link:"https://www.facebook.com/profile.php?id=61575925427914",
+        name: '',
+        icon: '/assets/icons/fb-wh.webp',
+        iconAlt: 'Pop-Inns Facebook'
+      },
+      {
+        link:"https://www.tiktok.com/@popinnswarrington",
+        name: '',
+        icon: '/assets/icons/tiktok.webp',
+        iconAlt: 'Pop-Inns TikTok'
+      }
+    ],
+  },
   {
     name: 'Sam Small Ink',
     description: `Hey, I'm Sam and welcome to Sam Small Ink! Our ink-slinging haven where we create stories on skin.<br />
