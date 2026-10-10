@@ -53,10 +53,11 @@ export const groups: GroupInfo[] = [
     subtitle: 'LBGTQ Choir',
     icon: 'rainbow-connection-icon',
     imagePath: '/assets/icons/rainbow-connection.png',
-    description: `LGBTQ+ Choir based in the Warrington community<br/><br/>
-                  Rehersals on Thursdays fortnightly at friends meeting house
-                  Refreshments provided.<br/><br/>
-                  We are a community run group. donations welcome`,
+    description: `We are a friendly, inclusive group that welcomes singers of all abilities. 
+                  No experience needed, just your enthusiasm :)</br></br>
+                  We meet on the second and last Thursday of the month, at Cairo Street Unitarian Chapel, 15 Cairo Street, Warrington, WA5 1EE</br></br>
+                  Contact us for full details at rainbowconnectionchoir@gmail.com</br></br>
+                  Suggested donation: £3`,
     links: [
       { 
         name: "",
