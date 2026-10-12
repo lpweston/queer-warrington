@@ -61,7 +61,7 @@ export const groups: GroupInfo[] = [
     links: [
       { 
         name: "",
-        link: 'https://www.facebook.com/groups/307195896655352',
+        link: 'https://www.facebook.com/profile.php?id=61595457110681',
         icon: '/assets/icons/fb-wh.webp',
         iconAlt: 'Rainbow Connection Facebook'
       }
